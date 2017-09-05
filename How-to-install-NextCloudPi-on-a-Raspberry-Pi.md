@@ -1,4 +1,3 @@
-# How to install NextCloudPi on a Raspberry Pi
 This is the official guide on how to install NextCloudPi on a Raspberry Pi
 ## Download the Image
 You will need to use a BitTorrent client like [Transmission](https://transmissionbt.com/download/)
