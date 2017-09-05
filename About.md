@@ -1,8 +1,8 @@
-#What is NextCloudPi
+# What is NextCloudPi
 
 NextCloudPi is a ready to use Raspbian 9 image with the latest Nextcloud 12.
 
-##Features
+## Features
 * Raspbian 9 stretch
 * Nextcloud 12.0.2
 * Apache 2.4.25, with HTTP2 enabled
@@ -19,7 +19,7 @@ NextCloudPi is a ready to use Raspbian 9 image with the latest Nextcloud 12.
 * Full emoji support ( NEW 05-24-2017 )
 * Secure
 
-##Extras
+## Extras
 * NextCloudPi Web Panel ( NEW 07-24-2017 )
 * Wi-Fi ready ( NEW 03-31-2017 )
 * Automatic security updates, activated by default. ( NEW 03-21-2017 )
