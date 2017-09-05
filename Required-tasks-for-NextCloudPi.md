@@ -1,4 +1,3 @@
-# Required Tasks for NextCloudPi
 Here are the required tasks you have to run for a complete setup of NextCloudPi.
 
 ## Find the IP address of the Raspberry Pi
