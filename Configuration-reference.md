@@ -1,4 +1,3 @@
-# Configure NextCloudPi
 To configure the NextCloudPi you can use the TUI (Terminal User Interface) or the WebUI.
 ## TUI
 NOTE: *You need to have ssh enabled on your Raspberry Pi. For more info look [here](How to install NextcloudPIon a Raspberry Pi.md#First Steps)*
