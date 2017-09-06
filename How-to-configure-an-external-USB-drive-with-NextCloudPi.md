@@ -10,7 +10,8 @@ This guide will help you configure an external USB drive.
 # Format USB drive (optional)
 
 "nc-format-USB" will format your external USB drive to EXT4, with the given Label. 
-* ** Note: ** * * In order for you to be able to use an external USB drive, the USB drive must not be formatted as NTFS/FAT. *
+
+_**Note:**_  _In order for you to be able to use an external USB drive, the USB drive must not be formatted as NTFS/FAT as these do not support the user/permission system._
 
 1. Navigate to "nc-format-USB" in the TUI or the WebUI.
 2. Change the LABEL to a label you like. This is also the name of the directory that the USB drive will mount to (e.x. /media/"myLabel")
