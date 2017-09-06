@@ -2,10 +2,10 @@ This is the official guide on how to install NextCloudPi on a Raspberry Pi
 ## Download the Image
 You will need to use a BitTorrent client like [Transmission](https://transmissionbt.com/download/)
 
-[NextCloudPi 12.0.2 torrent (733MB)](https://ownyourbits.com/wp-content/uploads/NextCloudPi_08-20-17.torrent)
+[NextCloudPi 12.0.2 torrent (733MB)](https://ownyourbits.com/wp-content/uploads/NextCloudPi_08-20-17.torrent) 
 `md5sum 9b54543ccdc76be474386a0e272e4ded`
 
-[NextCloudPi 12.0.2 Magnet Link (733MB)](magnet:?xt=urn:btih:4129c1136cdc357da5dce11cc640ae26951e9d30&dn=NextCloudPi%5F08-20-17&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce)
+ <a href="magnet:?xt=urn:btih:4129c1136cdc357da5dce11cc640ae26951e9d30&dn=NextCloudPi%5F08-20-17&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce">NextCloudPi 12.0.2 Magnet Link (733MB)</a> 
 `md5sum 9b54543ccdc76be474386a0e272e4ded`
 
 ## Installing
