@@ -67,6 +67,13 @@ sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a
 
 - If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this.
 
+# Nextcloud is too slow / I get random failures / I get server errors even with a fresh image
+
+Most commonly these things are caused by hardware problems.
+
+ - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors
+ - Check your power supply. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
+
 # How can I install Plex with NextCloudPi
 
 First install plex, after configure NextCloudPi, upgrades, etc.
