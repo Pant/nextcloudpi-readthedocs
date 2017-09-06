@@ -21,15 +21,18 @@ No. These do not support the linux user/permission system.
 
 # How do I connect with SSH to the Raspberry Pi?
 
-You need to place a file named "SSH" in the boot partition of the sd card.
+There are two ways.
+
+1. You can place an empty file named `ssh` in the boot partition of the sd card (so `/boot/ssh`)
+2. You can connect a keyboard and screen to the Raspberry Pi, log in and activate it typing `sudo raspi-config`, then go to the option 'Interfacing Options' > 'SSH'
 
 # What user/permissions should I have to the external USB drive mount point, the ncdata and ncdatabase directory?
 
-| Directory | User | Group | Permissions | Permissions (numbers) |
+| Directory | User | Group | Permissions | Permission mask |
 |---|---|---|---|---|
 | Mount Point | root | root | drwxr-x--x | 751 |
 | ncdata | www-data | www-data | drwxr-x--- | 750 |
-| ncdatabase | mysql | mysql | drwxr-x--- | 750 |
+| ncdatabase | mysql | mysql | drwxr-xr-x | 755 |
 
 # Why NextCloudPi uses Apache and not Nginx
 
@@ -46,6 +49,23 @@ In dd command you need to specify the block device, not the partition. E.x.:
 ```
 sudo dd bs=4M if=NextCloudPi_xx-yy-zz.img of=/dev/sda status=progress && sync
 ```
+# Can I boot NextCloudPi from a USB drive instead of the SD card?
+
+Yes, it can be done following [this guide](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
+
+# My ISP doesn't allow me to open ports 80 and/or 443
+
+You can change the port in the apache virtual host files ( in `/etc/apache2/sites-available` ), but the Let's Encrypt authentication process won't work for you.
+
+# How to set up Let's Encrypt with blocked ports?
+
+ - If you only have port 443 available, you can use the following workaround: copy that code and after that try again from the web interface or nextcloudpi-config
+
+```
+sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a1ab6bfde7398ddf19a50d02478/etc/nextcloudpi-config.d/letsencrypt.sh -O /usr/local/etc/nextcloudpi-config.d/letsencrypt.sh
+```
+
+- If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this.
 
 # How can I install Plex with NextCloudPi
 
