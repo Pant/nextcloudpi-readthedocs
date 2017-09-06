@@ -19,7 +19,7 @@ _**Note:**_  _In order for you to be able to use an external USB drive, the USB 
 
 # Enable automount
 
-To enable automount follow the steps.
+To enable automount follow the steps:
 
 1. Navigate to "nc-automount" in the TUI or the WebUI.
 2. Change "ACTIVE" to yes
@@ -41,7 +41,7 @@ To make Database data to be on the USB Drive, follow the steps:
 2. Change "DBDIR" to your database location in the mount point.
 3. Click Run or Start.
 
-5. Configure Swap on the USB drive (optional).
+# Configure Swap on the USB drive (optional).
 
 To configure Swap location and size, follow the steps:
 
