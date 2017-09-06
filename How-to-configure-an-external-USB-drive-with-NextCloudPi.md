@@ -14,7 +14,7 @@ This guide will help you configure an external USB drive.
 _**Note:**_  _In order for you to be able to use an external USB drive, the USB drive must not be formatted as NTFS/FAT as these do not support the user/permission system._
 
 1. Navigate to "nc-format-USB" in the TUI or the WebUI.
-2. Change the LABEL to a label you like. This is also the name of the directory that the USB drive will mount to (e.x. /media/"myLabel")
+2. Change the LABEL to a label you like. This is also the name of the directory that the USB drive will mount to (e.x. /media/"myLabel").
 3. Click Run or Start.
 
 # Enable automount
@@ -22,7 +22,7 @@ _**Note:**_  _In order for you to be able to use an external USB drive, the USB 
 To enable automount follow the steps:
 
 1. Navigate to "nc-automount" in the TUI or the WebUI.
-2. Change "ACTIVE" to yes
+2. Change "ACTIVE" to yes.
 3. Click Run or Start.
 
 # Configure Nextcloud data to be on the USB drive
@@ -47,7 +47,7 @@ To configure Swap location and size, follow the steps:
 
 1. Navigate to "nc-swapfile" in the TUI or the WebUI.
 2. Change the SWAPFILE to the desired location in the mount point.
-3. Change the SWAPSIZE to the desired size of Swap File (Default: "1024MB")
+3. Change the SWAPSIZE to the desired size of Swap File (Default: "1024MB").
 
 # Final Words
 
