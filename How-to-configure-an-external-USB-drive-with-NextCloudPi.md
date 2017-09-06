@@ -1,7 +1,7 @@
 This guide will help you configure an external USB drive.
 
 # Procedure
-1. Format USB drive (optional but check notes).
+1. Format USB drive (optional but check note).
 2. Enable automount.
 3. Configure Nextcloud data to be on the USB drive.
 4. Configure Database data to be on the USB drive (optional).
