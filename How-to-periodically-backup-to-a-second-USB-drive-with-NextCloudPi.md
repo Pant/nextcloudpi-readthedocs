@@ -20,12 +20,12 @@ You first need to configure this guide. "[[nc-backup-auto|Configuration-Referenc
 3. Change the "LABEL" to a label you like. This is also the name of the directory that the USB drive will mount to (e.x. /media/"myLabel"). **Do not use the same Label to both USB drives!**
 4. Click Run or Start.
 
-## Confi"nc-format-USB"gure and activate "[[nc-backup-auto|Configuration-Reference#nc-backup-auto]]" to the second USB drive
+## Configure "nc-format-USB" and activate "[[nc-backup-auto|Configuration-Reference#nc-backup-auto]]" to the second USB drive
 
 1. Navigate to "[[nc-backup-auto|Configuration-Reference#nc-backup-auto]]" in the TUI or the WebUI.
 2. Change "ACTIVE" to "yes".
 3. Change "DESTDIR" to the mount point of the second USB drive.
-4. Change "ICLUDEDATA" to "yes" if you want to backup Nextcloud data as well (optional).
+4. Change "INCLUDEDATA" to "yes" if you want to backup Nextcloud data as well (optional).
 5. Change "BACKUPDAYS" to a desired number of days to take each backup.
 6. Change "BACKUPLIMIT" to a desired amount of backup limit. This means that for example if you set to 3 and time comes to take an other backup, the first back up will be removed and replaced with the new one.
 
