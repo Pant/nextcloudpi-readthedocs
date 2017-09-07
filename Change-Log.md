@@ -17,3 +17,5 @@
 * NextCloud online installation ( NEW 05-24-2017 )
 * Format USB drive to ext4 ( NEW 07-03-2017 )
 * UPnP automatic port forwarding ( NEW 07-03-2017 )
+
+[Full changelog](https://github.com/nextcloud/nextcloudpi/blob/master/changelog.md)
