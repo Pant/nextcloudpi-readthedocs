@@ -45,9 +45,11 @@ And looks like this
 ![nc-backup-auto](https://ownyourbits.com/wp-content/uploads/2017/08/ncp-web2.jpg)
 
 ### Special fields
-There's two fields that have a special behavior
+There's some fields fields that have a special behavior
 
  - `DESCRIPTION` is used to show a little explanation in the webUI or TUI and is a mandatory field.
- - `ACTIVE_` will show a ✓ next to the option when it has the value `yes`
+ - `ACTIVE_` will show a ✓ next to the option when it has the value `yes`. Optional.
+ - `INFO` will display the contents of this string in the interface. Used to provide some additional information such as warnings and instructions. Optional.
+ - `INFOTITLE` header for the `INFO` box. Defaults to "Info" if it is not provided. Optional.
 
 Also, any field that reads `yes` or `no` will be displayed as a checkbox in the web interface.
