@@ -41,4 +41,4 @@ You will get a list of all connected devices on your network. For more info look
 
 Now, you can start using Nextcloud! type the IP address in your browser.
 
-If you want to further configure NextCloudPi follow the [basic configuration](https://github.com/nextcloud/nextcloudpi/wiki/Basic-configuration).
+Learn [how to configure NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
