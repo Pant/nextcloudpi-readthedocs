@@ -3,7 +3,6 @@
 [nc-datadir]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-datadir
 [nc-database]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-database
 [nc-swapfile]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-swapfile
-[nc-automount]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-automount
 
 This guide will help you configure an external USB drive.
 
