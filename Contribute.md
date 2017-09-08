@@ -7,10 +7,10 @@ We try to test things out before we ship updates but we don't have the required 
 An other thing you can do is propose things you would like to see in NextCloudPi Project. If you have something in your mind, Send a [feature request](https://github.com/nextcloud/nextcloudpi/issues?utf8=%E2%9C%93&q=label:%22feature%20request%22%20), or just talk about your thoughts in the [forums](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm). The more different ideas are put on the table the better.
 
 ## Maintain 
-As every open source project, we need manpower. If you have the coding skills to fix a bug you run into yourserf, send a Pull Request. Even better, browse the issue tracker, chat with other developers or propose changes.
+As every open source project, we need manpower. If you have the coding skills to fix a bug you run into yourself, send a Pull Request. Even better, browse the issue tracker, chat with other developers or propose changes.
 
 ## Share
 Even if everything goes smooth for you and you do not have the time or the skills to do any of the above, it is really easy to help. Share the latest torrent! Be aware that every now and then, we will release a new image, so the old torrent will no longer be available in the project page.
 
 ## Spread the word
-If you are happy with Nextcloud and NextCloudPi, you can talk about it in your break or in a coffe talk.
+If you are happy with Nextcloud and NextCloudPi, you can talk about it in your break or in a coffee talk.
