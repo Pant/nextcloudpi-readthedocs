@@ -32,4 +32,4 @@ If you want to enable SSH, in order to connect to your Raspberry Pi's shell, cre
 ### Run NextCloudPi
 Remove the SD card and insert it to the Raspberry Pi. Then connect it to your home Router with an UTP cable (Ethernet) and power on your Raspberry Pi.
 
-Now you have to run the minimum [required tasks](https://github.com/nextcloud/nextcloudpi/wiki/Required-tasks-for-NextCloudPi).
+Now you have Nextcloud up and running. Learn [how to access NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)
