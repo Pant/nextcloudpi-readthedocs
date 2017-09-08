@@ -40,11 +40,11 @@ Read the blog [post](https://ownyourbits.com/2017/06/12/why-nextcloudpi-uses-apa
 
 ### Why my md5sum of the image file is different that the md5sum on the site?
 
-The md5sum on the site is the md5sum of the tar.bz2 file that you get after you download, not the image's one.
+The md5sum on the site is the md5sum of the `tar.bz2` file that you get after you download, not the image's one.
 
-### dd command doesn't burn the sd card correctly.
+### `dd` command doesn't burn the sd card correctly.
 
-In dd command you need to specify the block device, not the partition. E.x.:
+In `dd` command you need to specify the block device, not the partition. E.x.:
 
 ```
 sudo dd bs=4M if=NextCloudPi_xx-yy-zz.img of=/dev/sda status=progress && sync
@@ -59,7 +59,7 @@ You can change the port in the apache virtual host files ( in `/etc/apache2/site
 
 ### How to set up Let's Encrypt with blocked ports?
 
- - If you only have port 443 available, you can use the following workaround: copy that code and after that try again from the web interface or nextcloudpi-config
+ - If you only have port 443 available, you can use the following workaround: copy that code and after that try again from the web interface or `nextcloudpi-config`
 
 ```
 sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a1ab6bfde7398ddf19a50d02478/etc/nextcloudpi-config.d/letsencrypt.sh -O /usr/local/etc/nextcloudpi-config.d/letsencrypt.sh
