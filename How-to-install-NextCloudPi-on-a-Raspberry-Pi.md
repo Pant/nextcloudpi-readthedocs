@@ -27,7 +27,7 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 
 ## First steps
 ### Enable SSH (optional)
-If you want to enable SSH, in order to connect to your Raspberry Pi's shell, create a file named "SSH" (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
+If you want to enable SSH, in order to connect to your Raspberry Pi's shell, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
 
 ### Run NextCloudPi
 Remove the SD card and insert it to the Raspberry Pi. Then connect it to your home Router with an UTP cable (Ethernet) and power on your Raspberry Pi.
