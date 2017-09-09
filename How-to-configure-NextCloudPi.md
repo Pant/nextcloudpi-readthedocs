@@ -28,7 +28,7 @@ Alternatively, you can plug in a keyboard and HDMI screen to access the terminal
 4. Click "Open" on the bottom right.
 5. Enter password `raspberry`
 
-You now have connected to the NextCloudPi Shell. You can run the command `nextcloud-config` to open the TUI.
+You now have connected to the NextCloudPi Shell. You can run the command `nextcloudpi-config` to open the TUI.
 
 ### WebUI
 If you want to configure NextCloudPi with the WebUI:
