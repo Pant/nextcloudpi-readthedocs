@@ -37,7 +37,7 @@ To enable [`nc-automount`][nc-automount] follow the steps:
 
 To make Nextcloud data directory to be on the USB drive, follow the steps:
 
-1. Navigate to [`nc-automount`][nc-automount] in the TUI or the WebUI.
+1. Navigate to [`nc-datadir`][nc-datadir] in the TUI or the WebUI.
 2. Change `DATADIR` to your data location in the mount point.
 3. Click Run or Start.
 
