@@ -62,12 +62,12 @@ I hope this helps, if anyone has any questions please feel free to message here 
 
 Once you have these files you have your SSL certificate and you will need to put it in the correct folder on your instance of NextCloudPi. This folder is defined in `/etc/apache2/sites-available/nextcloud.conf`
 
-By default they live under `/etc/letsencrypt`
+By default they live under `/etc/ssl`
 
 ```
 ...
-SSLCertificateFile /etc/letsencrypt/live/<mydomain.com>/fullchain.pem                                         
-SSLCertificateKeyFile /etc/letsencrypt/live/<mydomain.com>/privkey.pem
+SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem                                                       
+SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
 ...
 ```
 
