@@ -41,9 +41,7 @@ You will get a list of all connected devices on your network. For more info look
 
 Now, you can start using Nextcloud! type the IP address in your browser.
 
-The default user is _admin_ and the default password is _ownyourbits_. 
-
-You should change the default password in settings/personal or in settings/users.
+The default user is _admin_ and the default password is _ownyourbits_. You should now change the default password in settings/personal or in settings/users.
 
 ![](https://user-images.githubusercontent.com/21343324/30252853-f31d11bc-9679-11e7-9591-df42c9fd13be.png)
 
