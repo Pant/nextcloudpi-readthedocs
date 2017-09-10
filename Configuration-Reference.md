@@ -125,9 +125,6 @@ Force HTTPS
 ## nc-limits
 Configure system limits for NextCloudPi
 
-## nc-news
-Install the latest News third party app
-
 ## nc-nextcloud
 Configure Nextcloud.
 
