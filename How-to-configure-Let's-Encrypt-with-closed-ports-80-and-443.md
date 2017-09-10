@@ -1,4 +1,4 @@
-_This entry has been originally written by @albrechtar [in this github question](https://github.com/nextcloud/nextcloudpi/issues/186#issuecomment-328333387)_
+_This entry was originally written by @albrechtar [in this github question](https://github.com/nextcloud/nextcloudpi/issues/186#issuecomment-328333387)_
 
 ## How to get SSL certs without using Cert Bot (in case you would need to use alternate ports on your instance of NextCloudPi. You would need to then manually update your SSL certs on your instance of NextCloudPi.
 
