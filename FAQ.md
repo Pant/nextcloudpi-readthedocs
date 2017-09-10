@@ -65,7 +65,7 @@ You can change the port in the apache virtual host files ( in `/etc/apache2/site
 sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a1ab6bfde7398ddf19a50d02478/etc/nextcloudpi-config.d/letsencrypt.sh -O /usr/local/etc/nextcloudpi-config.d/letsencrypt.sh
 ```
 
-- If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this.
+- If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-Let's-Encrypt-with-closed-ports-80-and-443) ).
 
 ### Nextcloud is too slow / I get random failures / I get server errors even with a fresh image
 
