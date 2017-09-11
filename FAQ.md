@@ -7,9 +7,13 @@ This code also generates the [NextCloudPi ARM docker image](https://hub.docker.c
 
 Follow the guide [How to install NextCloudPi on a Raspberry Pi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-a-Raspberry-Pi). Don't forget the [Required Tasks](https://github.com/nextcloud/nextcloudpi/wiki/Required-Tasks-for-NextCloudPi).
 
-### Why do I need to run the [Required Tasks](https://github.com/nextcloud/nextcloudpi/wiki/Required-Tasks-for-NextCloudPi)?
+### How can I access from outside?
 
-You only need to do that in order to make Nextcloud accessible from the outside of your house.
+See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside)
+
+### I have been updating through `nc-update` but Nextcloud is not in the latest version
+
+`nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you should do it through the internal updater (in admin section of Nextcloud)
 
 ### Do I have to configure every entry in the WebUI and the TUI?
 
