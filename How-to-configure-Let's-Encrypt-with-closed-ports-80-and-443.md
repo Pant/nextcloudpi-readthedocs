@@ -1,6 +1,8 @@
 _This entry was originally written by @albrechtar [in this github question](https://github.com/nextcloud/nextcloudpi/issues/186#issuecomment-328333387)_
 
-## How to get SSL certs without using Cert Bot (in case you would need to use alternate ports on your instance of NextCloudPi. You would need to then manually update your SSL certs on your instance of NextCloudPi.
+## How to get SSL certs without using Cert Bot (in case you would need to use alternate ports on your instance of NextCloudPi)
+
+You would need to then manually update your SSL certs on your instance of NextCloudPi.
 
 1.  You will need a domain name that allows you to point to other name servers as well as edit the DNS records.  I purchased my own (most free 3rd tier domains would not allow this.  So I recommend you go to namecheap.com and purchase your domain name (they have them for as low as 2.09 for the first year. Then proceed to dynu.com.  Signup and then click the little gear in the top right area it will take you to your control panel(Screen Shot 1).  You will also need to go to namecheap or wherever you get your domain name and add the name servers for Dynu.  They have very easy to follow tutorials and instructions if you are unable to figure this out.
      1a)  Click DDNS services.
