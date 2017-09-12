@@ -8,6 +8,8 @@ To access the terminal, you need to have ssh enabled on your Raspberry Pi. For m
 
 Alternatively, you can plug in a keyboard and HDMI screen to access the terminal.
 
+![](https://camo.githubusercontent.com/4b2c6bbb044a6bd59a01582017fa91ab85e023a5/68747470733a2f2f6f776e796f7572626974732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031372f30332f6e63702d636f6e662d373030783435362e6a7067)
+
 #### Raspberry Pi
 1. Connect keyboard and HDMI screen.
 2. Turn on Raspberry Pi with NextCloudPi SD card image.
@@ -35,6 +37,8 @@ If you want to configure NextCloudPi with the WebUI:
 1. Open a web browser.
 2. Write in the URL "https://"raspberryPiAddress":4443", where "raspberryPiAddress" (without quotes) should be replaced with your Raspberry Pi's IP Address.
 3. There should be an message saying that the address you are visiting is not secure. You should accept the self-signed certificate. After this you should be able to see the Web Panel.
+
+![](https://ownyourbits.com/wp-content/uploads/2017/09/ncp-web-demo.gif)
 
 ---
 
