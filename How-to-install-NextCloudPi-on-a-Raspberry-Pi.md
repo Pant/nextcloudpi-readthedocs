@@ -5,22 +5,31 @@ You will need to use a BitTorrent client like [Transmission](https://transmissio
 Click on the torrent or the magnet link in the [ownyourbits website](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
 
 ## Installing
+
+You can run NextCloudPi from an SD card or from a USB drive.
+
+### Option 1: run from SD card
+
 If your computer has a slot for SD cards, insert the card. If not, insert the card into an SD card reader, then connect the reader to your computer.
 
-### Linux & Mac
+#### Linux & Mac
 1. Open a terminal and run the following commands.
 2. Replace "user" with your user name and run command `cd /home/user/Downloads`.
 3. Run command `tar -xvf NextCloudPi-lite_02-12-17.tar.bz2` to extract the image.
 4. Run command `sudo dd bs=4M if=NextCloudPi-lite_02-12-17.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
 4. Run command `sync`.
 
-### Windows
+#### Windows
 1. Install Etcher from [their website](https://etcher.io/)
 2. Install 7-Zip from [their website](http://www.7-zip.org/)
 3. Run 7-Zip manager, find your downloaded file, select it and click the Extract icon.
 4. Run Etcher and click "Select Image". Find your image you have just extracted and click "Open".
 5. Etcher automaticaly detects the SD card, but verify that is the one you want the image to be installed on.
 6. Click "Flash" in Ether.
+
+### Option 2: run from USB drive
+
+Follow [these steps](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)
 
 ## First steps
 ### Enable SSH (optional)
