@@ -29,7 +29,7 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 
 ### Option 2: run from USB drive
 
-Follow [these steps](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)
+Follow [these steps](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
 
 ## First steps
 ### Enable SSH (optional)
