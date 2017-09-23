@@ -23,7 +23,7 @@ It needs to have three functions or _steps_ called `install()`, `configure()` an
  - The _configure_ step is run when 
     - launched from [`ncp-web`][ncp-web],or `nextcloudpi-config`
     - during installation ( during build, or from [`ncp-update`][ncp-update] ) if it has a field `ACTIVE_=yes`
- - The _cleanup_ step will be run during the image building process only, to leave the system as clean as possible after installation
+ - The _cleanup_ step will be run during the image building process only, to leave the system as clean as possible after installation. Optional.
 
 
 ### Public fields
