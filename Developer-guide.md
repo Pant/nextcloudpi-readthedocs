@@ -17,7 +17,7 @@ chmod 660 /usr/local/etc/nextcloudpi-config.d/*
 ```
 
 ### Steps
-It needs to have three functions or _steps_ called `install()`, `configure()` and `cleanup()`
+It needs to have two functions or _steps_ called `install()` and `configure()`, and optionally another one called `cleanup()`.
 
  - The _install_ step is run during the build process and also during [`ncp-update`][ncp-update] if it hasn't been installed before.
  - The _configure_ step is run when 
