@@ -53,3 +53,11 @@ There's some fields fields that have a special behavior
  - `INFOTITLE` header for the `INFO` box. Defaults to "Info" if it is not provided. Optional.
 
 Also, any field that reads `yes` or `no` will be displayed as a checkbox in the web interface.
+
+## Code style
+
+Please, check for style and common mistakes by running [shellcheck](http://www.shellcheck.net/) on your script before submitting.
+
+```
+shellcheck -s bash myscript.sh
+```
