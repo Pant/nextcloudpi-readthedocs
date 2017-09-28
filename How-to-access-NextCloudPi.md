@@ -9,7 +9,7 @@ The default DNS address is "nextcloudpi.local".
 
 If you are using Windows you may have to install [Bonjour Services for Windows](https://support.apple.com/kb/DL999)  to make the .local domains work.
 
-Your initial nextcloud installation should be readily accessible simply under https://nextcloudpi, otherwise you need to find out its IP address through one of the following ways.
+Your initial nextcloud installation should be readily accessible simply under https://nextcloudpi.local, otherwise you need to find out its IP address through one of the following ways.
 
 ## Find the IP address of the Raspberry Pi
 You need to find the local IP address of the Raspberry Pi in order to connect to it and configure it.
