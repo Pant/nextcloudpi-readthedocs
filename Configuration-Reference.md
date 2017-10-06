@@ -19,7 +19,9 @@ Run the TUI (`nextcloud-config`) or use the WebUI.
 3. Change (optional) BANTIME in seconds. Default: 600 (10mins)
 4. Change (optional) "FINDTIME" in seconds. Default: 600 (10mins)
 5. Change (optional) "MAXRETRY" in retries. Default 6 retries.
-6. Click Run or Start
+6. Change (optional) "EMAIL" with your personal email to receive ban notifications.
+7. Change (optional) "MAILALERTS" to activate/deactivate email notifications.
+8. Click Run or Start
 
 ## freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
