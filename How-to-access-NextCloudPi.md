@@ -46,6 +46,26 @@ The local IP address of this Raspberry Pi is `192.168.0.131`
 
 You will get a list of all connected devices on your network. For more info look at the [FAQ](http://angryip.org/faq/) of Angry IP Scanner.
 
+## Access from outside home
+
+See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside)
+
+## Using your DDNS domain inside and outside home
+
+Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside).
+
+That way, your phone, tablet and laptop can seamlessly access your cloud regardless where you are. If your router doesn't support _NAT loopback_, you might have to setup and use a local DNS server.
+
+1 ) First, try to access using your working DDNS domain, for instance _mycloud.freeDNS.org_
+
+2 ) If it doesn't work, probably you need to setup [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and if you know your ISP DNS also type it in the box, otherwise leave the default.
+
+3 ) Finally, we have to setup or computers and devices to use that DNS server when we are connected inside our house.
+
+  3.1 ) Some routers allow to configure this in the DNS configuration section for all devices in the house
+
+  3.2 ) Otherwise, we will have to configure each device to use our NextCloudPi DNS. For more in depth information on this see [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/)
+
 ---
 
 Now, you can start using Nextcloud! type the IP address in your browser.
