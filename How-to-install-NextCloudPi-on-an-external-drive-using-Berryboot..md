@@ -19,7 +19,7 @@ You can choose to install the operating system files:
 - on networked storage (for more information see: storing your files on a Synology NAS)
 Be aware that if you choose an external drive, the files of the operating system will be stored there, but you still need to keep the SD card in the Pi to boot from.
 
-WARNING: all existing files on the disk will be erased.
+**WARNING: all existing files on the disk will be erased.**
 
 When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to
 
