@@ -35,11 +35,11 @@ Tweaks
 
 If the image you are converting is based on Debian/Raspbian delete the etc/console-setup/cached_UTF-8_del.kmap.gz file before converting the image to force regeneration of the cached keyboard mapping on first boot. This is to make sure it uses the keyboard layout set in Berryboot instead of default British.
 
-If you don't have NCP squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
+If you don't have a NextCloudPi squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
 If you have your own custom image, and need to convert it to squashfs, it will be the object of another how to. In the mean time use the [instructions here](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)
 
 See also
 
-How to convert Rasbianfs to squashfs
-Main Berryboot page
+How to convert Rasbianfs to squashfs  
+Main Berryboot page  
 To be continued ;-)
