@@ -29,7 +29,7 @@ Importing a squashfs image can be done through:
 - copying from usb
 
 Boot your RPI with Berryboot sd-card and exernal drive used in Part 1.
-Put your SquashFS formatted image on a USB stick, go to the “Operating system installer”, hold down your mouse button over “Add OS” and select “Install from USB stick” If your image prefers to have a certain memory split use the extension .img128 .img192, .img224 or .img240 instead of .img.
+Put your SquashFS formatted image on a USB stick, go to the “Operating system installer”, **hold down** your mouse button over **“Add OS”** and select “Install from USB stick” 
 
 If you don't have a NextCloudPi squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)  
 Or use this [link] to import and download directly from the internet into the Berryboot menu.
@@ -45,6 +45,5 @@ How to convert Rasbianfs to squashfs
 Main Berryboot page  
 
 Tweaks
-
-If the image you are converting is based on Debian/Raspbian delete the etc/console-setup/cached_UTF-8_del.kmap.gz file before converting the image to force regeneration of the cached keyboard mapping on first boot. This is to make sure it uses the keyboard layout set in Berryboot instead of default British.
-To be continued ;-)
+- If your image prefers to have a certain memory split use the extension .img128 .img192, .img224 or .img240 instead of .img.
+- If the image you are converting is based on Debian/Raspbian delete the etc/console-setup/cached_UTF-8_del.kmap.gz file before converting the image to force regeneration of the cached keyboard mapping on first boot. This is to make sure it uses the keyboard layout set in Berryboot instead of default British.
