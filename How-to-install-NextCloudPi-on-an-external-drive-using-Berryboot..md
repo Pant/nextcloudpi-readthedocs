@@ -21,7 +21,7 @@ When done you'll be presented with OS installation selection screen, just click 
 
 ## Part 2 Import the NextCloudPi.img into the Berryboot menu
 
-Importing can be done through:
+Importing a squashfs image can be done through:
 - downloading from network location
 - copying from usb
 
