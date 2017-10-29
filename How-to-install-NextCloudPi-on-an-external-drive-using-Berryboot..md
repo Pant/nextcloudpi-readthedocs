@@ -1,7 +1,7 @@
 A step by step guide to installing NextCloudPi to an external drive using Berryboot.
 In first place we need to install Berryboot, a bootloader and management tool for OS installations on your Raspberry Pi. You will choose where your NextCloud installation will reside in this part.  In the second part we will use specially squashfs formatted image to install the NextCloudPi
 
-Part 1: First time boot and choosing device to install Nextcloud to.
+## Part 1: First time boot and choosing device to install Nextcloud to.
 
 1. Download [berryboot-20170527-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi2-pi3.zip) if you have a quadcore RPI. Download [berryboot-20170527-pi0-pi1-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi0-pi1-pi2-pi3.zip) singlecore RPI.
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
@@ -19,7 +19,7 @@ WARNING: all existing files on the disk will be erased.
 
 When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to
 
-Part 2 Import the NextCloudPi.img into the Berryboot menu
+## Part 2 Import the NextCloudPi.img into the Berryboot menu
 
 Importing can be done through:
 - downloading from network location
