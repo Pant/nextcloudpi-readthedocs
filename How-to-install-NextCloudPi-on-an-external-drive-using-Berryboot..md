@@ -23,7 +23,7 @@ WARNING: all existing files on the disk will be erased.
 When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to
 
 ## Part 2 Import the NextCloudPi.img into the Berryboot menu
-[[https://user-images.githubusercontent.com/8775469/32148526-b80e3934-bcf8-11e7-9855-96f371ee45d4.jpg]]
+[[https://user-images.githubusercontent.com/8775469/32148601-d812147a-bcf9-11e7-96f7-f33faed236f2.jpg]]
 Importing a squashfs image can be done through:
 - downloading from network location
 - copying from usb
