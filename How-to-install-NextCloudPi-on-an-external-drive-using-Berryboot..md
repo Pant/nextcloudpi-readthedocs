@@ -24,3 +24,5 @@ When done you'll be presented with OS installation selection screen, just click 
 Importing can be done through:
 - downloading from network location
 - copying from usb
+
+To be continued ;-)
