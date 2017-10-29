@@ -6,8 +6,8 @@ In first place we need to install Berryboot, a bootloader and management tool fo
 1. Download [berryboot-20170527-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi2-pi3.zip) if you have a quadcore RPI. Download [berryboot-20170527-pi0-pi1-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi0-pi1-pi2-pi3.zip) for a singlecore RPI.
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
 3. Insert the SD card into your RPI and power it up for first boot.
-4. You'll be presented with following screen:
-![BerrybootWelcomScreen](https://drive.google.com/open?id=0B1wGkGPW-CxLX0Z2NlhsYlRDWTA) [[https://drive.google.com/open?id=0B1wGkGPW-CxLX0Z2NlhsYlRDWTA]] In this first screen you can enable or disable overscan, check your network connection, set your time-zone and keyboard layout.If your Pi is connected to the Internet BerryBoot will try to detect your location based on your IP-address, and set the right timezone automatically. Verify that it is correct and press “ok”
+4. You'll be presented with following Berryboot's Welcome Screen:
+[[https://user-images.githubusercontent.com/8775469/32147239-5a3d5218-bce4-11e7-9947-c54a0e8d1357.png]] In this first screen you can enable or disable overscan, check your network connection, set your time-zone and keyboard layout.If your Pi is connected to the Internet BerryBoot will try to detect your location based on your IP-address, and set the right timezone automatically. Verify that it is correct and press “ok”
 5. In the next screen: ![Choosing were to install screen](https://drive.google.com/open?id=0B1wGkGPW-CxLbk5aNHNORTRJamM) [[https://drive.google.com/open?id=0B1wGkGPW-CxLbk5aNHNORTRJamM]] Select where you want to store the operating system files, and press “format”
 You can choose to install the operating system files: 
 - on the SD card itself
