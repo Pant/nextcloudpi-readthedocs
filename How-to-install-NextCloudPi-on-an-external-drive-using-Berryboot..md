@@ -7,8 +7,11 @@ In first place we need to install Berryboot, a bootloader and management tool fo
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
 3. Insert the SD card into your RPI and power it up for first boot.
 4. You'll be presented with following Berryboot's Welcome Screen:
-[[https://user-images.githubusercontent.com/8775469/32147239-5a3d5218-bce4-11e7-9947-c54a0e8d1357.png]] In this first screen you can enable or disable overscan, check your network connection, set your time-zone and keyboard layout.If your Pi is connected to the Internet BerryBoot will try to detect your location based on your IP-address, and set the right timezone automatically. Verify that it is correct and press “ok”
-5. In the next screen: ![Choosing were to install screen](https://drive.google.com/open?id=0B1wGkGPW-CxLbk5aNHNORTRJamM) [[https://drive.google.com/open?id=0B1wGkGPW-CxLbk5aNHNORTRJamM]] Select where you want to store the operating system files, and press “format”
+[[https://user-images.githubusercontent.com/8775469/32147239-5a3d5218-bce4-11e7-9947-c54a0e8d1357.png]]   
+In this first screen you can enable or disable overscan, check your network connection, set your time-zone and keyboard layout.If your Pi is connected to the Internet BerryBoot will try to detect your location based on your IP-address, and set the right timezone automatically. Verify that it is correct and press “ok”
+5. In the next screen you choose were to install:  
+[[https://user-images.githubusercontent.com/8775469/32147241-6218820a-bce4-11e7-9d74-26066dff5424.png]]   
+Select where you want to store the operating system files, and press “format”
 You can choose to install the operating system files: 
 - on the SD card itself
 - on an external USB stick/disk.
@@ -25,4 +28,18 @@ Importing a squashfs image can be done through:
 - downloading from network location
 - copying from usb
 
+Boot your RPI with Berryboot sd-card and exernal drive used in Part 1.
+Put your SquashFS formatted image on a USB stick, go to the “Operating system installer”, hold down your mouse button over “Add OS” and select “Install from USB stick” If your image prefers to have a certain memory split use the extension .img128 .img192, .img224 or .img240 instead of .img.
+
+Tweaks
+
+If the image you are converting is based on Debian/Raspbian delete the etc/console-setup/cached_UTF-8_del.kmap.gz file before converting the image to force regeneration of the cached keyboard mapping on first boot. This is to make sure it uses the keyboard layout set in Berryboot instead of default British.
+
+If you don't have NCP squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
+If you have your own custom image, and need to convert it to squashfs, it will be the object of another how to. In the mean time use the [instructions here](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)
+
+See also
+
+How to convert Rasbianfs to squashfs
+Main Berryboot page
 To be continued ;-)
