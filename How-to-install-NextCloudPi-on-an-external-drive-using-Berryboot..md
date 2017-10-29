@@ -7,4 +7,4 @@ Part 1: First time boot and choosing device to install Nextcloud to.
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
 3. Insert the SD card into your RPI and power it up for first boot.
 4. You'll be presented with following screen:
-
+![BerrybootWelcomScreen](https://pi3.ovps.nl:1443/index.php/s/Nm065jBJsG6MgW5)
