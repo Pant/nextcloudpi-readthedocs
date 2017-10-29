@@ -31,8 +31,11 @@ Importing a squashfs image can be done through:
 Boot your RPI with Berryboot sd-card and exernal drive used in Part 1.
 Put your SquashFS formatted image on a USB stick, go to the “Operating system installer”, hold down your mouse button over “Add OS” and select “Install from USB stick” If your image prefers to have a certain memory split use the extension .img128 .img192, .img224 or .img240 instead of .img.
 
-If you don't have a NextCloudPi squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
-If you have your own custom image, and need to convert it to squashfs, it will be the object of another how to. In the mean time use the [instructions here](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)
+If you don't have a NextCloudPi squashfs image, you can [download it here (__*shortly*__)](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)  
+Or use this [link] to import and download directly from the internet into the Berryboot menu.
+Once available in the menu hit exit to reboot and wait for NCP to start. 
+
+If you have your own custom image, and need to convert it to squashfs, this will be the object of another how to. In the mean time use the [instructions here](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)
 
 See also
 
