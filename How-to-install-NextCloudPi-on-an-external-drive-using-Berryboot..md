@@ -23,6 +23,8 @@ Be aware that if you choose an external drive, the files of the operating system
 
 When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to
 
+Presently the squashfs NextCloudPi image for Berryboot can be [downloaded by Torrent only](https://drive.google.com/open?id=0B1wGkGPW-CxLX0pPaW42eXRQOVU) Thanks for seeding ;)
+
 ## Part 2 Import the NextCloudPi.img into the Berryboot menu
 [[https://user-images.githubusercontent.com/8775469/32148601-d812147a-bcf9-11e7-96f7-f33faed236f2.jpg]]
 Importing a squashfs image can be done through:
@@ -42,8 +44,8 @@ If you have your own custom image, and need to convert it to squashfs, this will
 
 See also
 
-How to convert Rasbianfs to squashfs  
-Main Berryboot page  
+[How to convert Rasbianfs to squashfs](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)  
+[Main Berryboot page](http://www.berryterminal.com/doku.php/berryboot)  
 
 Tweaks
 - If your image prefers to have a certain memory split use the extension .img128 .img192, .img224 or .img240 instead of .img.
