@@ -40,7 +40,7 @@ Once installed and available in the menu hit exit to reboot and wait for NCP to 
 There will be short delay before being greeted by Berryboot Menu, and another 10sec delay, in which you can interupt booting and hit the edit menu button to add another or clone/copy your OS in the menu editor. If not just wait 10sec or hit the boot button. If you see the NCP logo, you are ready to [Start using](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi) and personalise your own NextCloudPi instance.
 [[https://user-images.githubusercontent.com/8775469/32148896-276b15b4-bcfd-11e7-84b9-a1eba36f7e6e.jpg]]
 
-If you have your own custom image, and need to convert it to squashfs, this will be the object of another how to. In the mean time use the [instructions here](http://www.berryterminal.com/doku.php/berryboot/adding_custom_distributions)
+If you have your own custom image, and need to convert it to squashfs, this will be the object of another how to. In the mean time use the instructions through link below.
 
 See also
 
