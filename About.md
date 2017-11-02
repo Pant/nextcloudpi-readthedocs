@@ -4,7 +4,7 @@ NextCloudPi is a ready to use Raspbian 9 image with the latest Nextcloud 12.
 
 ## Features
 * Raspbian 9 stretch
-* Nextcloud 12.0.2
+* Nextcloud 12.0.3
 * Apache 2.4.25, with HTTP2 enabled
 * PHP 7.0 (double the speed of PHP5!)
 * MariaDB 10
