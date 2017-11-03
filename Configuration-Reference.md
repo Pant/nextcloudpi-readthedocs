@@ -5,7 +5,9 @@
 Configure a NFS network file system server. This is a lightweight way to mount your cloud files through LAN in a Linux computer.
 
 ## dnsmasq
-This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
+This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. 
+
+See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
 
 ## fail2ban
 From [https://www.fail2ban.org](https://www.fail2ban.org) 
