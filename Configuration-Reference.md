@@ -2,10 +2,10 @@
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
 ## NFS
-Configure a NFS network file system server (for Linux LAN)
+Configure a NFS network file system server. This is a lightweight way to mount your cloud files through LAN in a Linux computer.
 
 ## dnsmasq
-Configure DNS server with cache
+This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
 
 ## fail2ban
 From [https://www.fail2ban.org](https://www.fail2ban.org) 
@@ -167,18 +167,11 @@ Configure system limits for NextCloudPi.
 3. Change `MEMORYLIMIT` to the memory limit you want (default=768M).
 4. Click Run or Start.
 
-## nc-news
-Install the latest News third party app.
-
-### How to install
-1. Navigate to `nc-news` in the TUI or the WebUI.
-
-
 ## nc-nextcloud
-Configure Nextcloud.
+Download and install a specific Nextcloud version. This destroys any existing instance.
 
 ## nc-notify-updates
-Get notified for updates (Pending or Installed).
+Get notified for updates (Pending or Installed) through the Nextcloud notification system.
 
 ### How to enable
 1. Navigate to `nc-notify-updates` in the TUI or the WebUI.
@@ -196,8 +189,6 @@ Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM
 
 ## nc-restore
 Restore from a backup.
-
-
 
 ## nc-scan-auto
 Automate a Nextcloud scan for user files.
