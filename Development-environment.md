@@ -1,5 +1,7 @@
 In order to facilitate development, the x86 NextCloudPi docker container can be used.
 
+Install docker and docker-compose and
+
 ```
 git clone https://github.com/nextcloud/nextcloudpi.git
 cd nextcloudpi
