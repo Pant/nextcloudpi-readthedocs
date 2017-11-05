@@ -8,7 +8,7 @@ cd nextcloudpi
 docker-compose -f docker-compose-ncpdev.yml up
 ```
 
-You can now access the interface at `https://localhost:4443`. 
+We can now access the interface at `https://localhost:4443`. 
 
 We can start working in the folder `ncp-web` from the repo and refresh the browser to see the changes live.
 
