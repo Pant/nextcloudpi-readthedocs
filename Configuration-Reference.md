@@ -59,6 +59,12 @@ In order to trust a connection to a website and send your user name and password
 ## modsecurity
 Web Application Firewall for extra security (experimental)
 
+This is a really strong layer of security that makes sure that even if there is a vulnerability in Nextcloud code, it will be blocked by modsecurity in most cases.
+
+The downside is that it can break some Apps, so disable it if something doesn't work for you. Tested with the most common Apps.
+
+Learn more [here](https://ownyourbits.com/2017/03/23/modsecurity-web-application-firewall-for-nextcloud/)
+
 ## nc-automount
 Enable this feature if you want your Rasperry Pi to automount USB drives.
 
