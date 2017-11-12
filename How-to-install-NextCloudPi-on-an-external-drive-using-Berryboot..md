@@ -21,9 +21,7 @@ Be aware that if you choose an external drive, the files of the operating system
 
 **WARNING: all existing files on the disk will be erased.**
 
-When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to
-
-Presently the squashfs NextCloudPi image for Berryboot can be [downloaded by Torrent only](https://drive.google.com/open?id=0B1wGkGPW-CxLX0pPaW42eXRQOVU) Thanks for seeding ;)
+When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to 
 
 ## Part 2 Import the NextCloudPi.img into the Berryboot menu
 [[https://user-images.githubusercontent.com/8775469/32148601-d812147a-bcf9-11e7-96f7-f33faed236f2.jpg]]
