@@ -8,25 +8,20 @@ Configure a NFS network file system server. This is a lightweight way to mount y
 This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. 
 
 See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
-
 ## fail2ban
-From [https://www.fail2ban.org](https://www.fail2ban.org) 
-> Fail2ban scans log files (e.g. /var/log/apache/error_log) and bans IPs that show the malicious signs -- too many password failures, seeking for exploits, etc.
+As soon as your NextClouPi is connected to the internet it might get attacked. Most attacks are probably automated attacks by botnets or scripts trying to break into your System by simply using standard username/password combinations like admin/admin. [fail2ban](https://github.com/fail2ban/fail2ban/wiki/How-fail2ban-works2) scans your webserver logs (which can be found under /var/log/apache2/error.log) for failed login attempts. If there are to many failed attempts (default is 6 failed attempts within 10 minutes) fail2ban will ban the attacker's IP address for a certain amount of time (default is 10 minutes). If you activate mail alerts you will receive emails when fail2ban locks out certain IP addresses. 
+NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
 
-### Features of Fail2ban in NextCloudPi
-- SSH jail
-- Nextcloud login jail
 
 ### How to activate
 Run the TUI (`nextcloud-config`) or use the WebUI.
 1. Change `ACTIVE` to `yes`
-2. Change (optional) `NCLOG` to the nextcloud.log. Default: /var/www/nextcloud/data/nextcloud.log. **Important Note:** Change the log address if you have changed the data directory of nextcloud ([nc-datadir](#nc-datadir))
-3. Change (optional) BANTIME in seconds. Default: 600 (10mins)
-4. Change (optional) `FINDTIME` in seconds. Default: 600 (10mins)
-5. Change (optional) `MAXRETRY` in retries. Default 6 retries.
-6. Change (optional) `EMAIL` with your personal email to receive ban notifications.
-7. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
-8. Click Run or Start
+2. Change (optional) `BANTIME` (in seconds, default: 600 = 10 minutes) to change the duration of a ban for a certain IP address after too many failed login attempts.
+3. Change (optional) `FINDTIME` (in seconds, default: 600 = 10 minutes) to change the time slot in which  failed login attempts are counted and the IP address gets banned.
+4. Change (optional) `MAXRETRY` (default: 6 attempts) to change the number of failed login attempts that trigger an IP address ban.
+5. Change (optional) `EMAIL` with your personal email to receive ban notifications.
+6. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
+7. Click Run (WebUI) or Start (TUI)
 
 ## freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
