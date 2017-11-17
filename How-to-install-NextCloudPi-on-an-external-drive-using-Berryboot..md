@@ -32,7 +32,7 @@ Importing a squashfs image can be done through:
 Boot your RPI with Berryboot sd-card and exernal drive used in Part 1.
 Put your SquashFS formatted image on a USB stick, go to the “Operating system installer”, **hold down** your mouse button over **“Add OS”** and select “Install from USB stick” 
 
-If you don't have a NextCloudPi squashfs image yet, you can [download it here](https://ownyourbits.com/downloads/)  
+If you don't have a NextCloudPi squashfs image yet, you can [download torrent here](https://ownyourbits.com/downloads/NextCloudPi_11-12-17_for_berryboot.img.torrent)  
 Or use this [link] to import and download directly from the internet into the Berryboot menu.
 Once installed and available in the menu hit exit to reboot and wait for NCP to start. 
 There will be short delay before being greeted by Berryboot Menu, and another 10sec delay, in which you can interupt booting and hit the edit menu button to add another or clone/copy your OS in the menu editor. If not just wait 10sec or hit the boot button. If you see the NCP logo, you are ready to [Start using](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi) and personalise your own NextCloudPi instance.
