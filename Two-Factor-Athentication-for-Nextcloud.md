@@ -2,8 +2,8 @@ In Nextcloud, there is the option to set up Two Factor Authentication. The steps
 
 1. Install `TOTP` app on Nextcloud.
 2. Enable `TOTP` on `Personal Settings`, under `TOTP second-factor auth` section. A QR code will show up.
-3. Install `andOTP` on your android phone (you can use any TOTP client you want, `andOTP` is available in f-droid)
-4. Scan the QR code that is shown in step 2 with `andOTP.
+3. Install `andOTP` on your android phone (you can use any TOTP client you want, `andOTP` is available in F-droid)
+4. Scan the QR code that is shown in step 2 with `andOTP`.
 5. `andOTP` and Nextcloud are merged and now every 30 seconds a new TOTP password is generated.
 
 Now when you log in you will be prompted, in a second step, to type a TOTP password. Type the password shown in the `andOTP` app.
