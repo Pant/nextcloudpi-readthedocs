@@ -41,14 +41,18 @@ Warning, this will permanently set the Raspberry Pi to only boot from USB. If yo
 
 
 ## First steps
+
 ### Enable SSH (optional)
 
-There are two ways to enable SSH in NCP.
+Secure shell (SSH) provides a powerfull command line based text interface to configure NCP for experts, and is not needed to just use NCP.
 
-#### SSH file in boot directory
-If you want to enable SSH, in order to connect to your Raspberry Pi's shell, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
+#### Before the first run
 
-#### From WebUI / TUI 
+If you need secure shell access on the first boot, in order to connect to your Raspberry Pi, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
+
+
+#### Once NCP is running
+
 1. Navigate to the WebUI or the TUI.
 2. Select [`SSH`][ssh] from the list.
 3. Change `Enabled` to `yes`.
