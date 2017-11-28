@@ -3,7 +3,7 @@
 This guide will help you access NextCloudPi.
 
 ## Access directly
-The default DNS address is "nextcloudpi.local".
+The default DNS address is `nextcloudpi.local`.
 
 ![](https://ownyourbits.com/wp-content/uploads/2017/09/local-access1.jpg)
 
