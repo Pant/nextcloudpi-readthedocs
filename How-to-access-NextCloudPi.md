@@ -40,8 +40,8 @@ MAC Address: AA:BB:CC:11:22:33 (Raspberry Pi Foundation)
 The local IP address of this Raspberry Pi is `192.168.0.131`
 
 ### Windows
-1. Install "Angry IP Scanner" from [it's website](http://angryip.org/).
-2. Run "Angry IP Scanner" and put your network range and netmask. For example "From: 192.168.0.0 To: 192.168.0.255 Netmask: /24".
+1. Install `Angry IP Scanner` from [it's website](http://angryip.org/).
+2. Run `Angry IP Scanner` and put your network range and netmask. For example `From: 192.168.0.0` `To: 192.168.0.255` `Netmask: /24`.
 3. Hit start.
 
 You will get a list of all connected devices on your network. For more info look at the [FAQ](http://angryip.org/faq/) of Angry IP Scanner.
@@ -70,7 +70,7 @@ That way, your phone, tablet and laptop can seamlessly access your cloud regardl
 
 Now, you can start using Nextcloud! type the IP address in your browser.
 
-The default user is _admin_ and the default password is _ownyourbits_. You should now change the default password in settings/personal or in settings/users.
+The default user is `admin` and the default password is `ownyourbits`. You should now change the default password in settings/personal or in settings/users.
 
 ![](https://user-images.githubusercontent.com/21343324/30252853-f31d11bc-9679-11e7-9591-df42c9fd13be.png)
 
