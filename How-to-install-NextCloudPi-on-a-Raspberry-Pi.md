@@ -1,3 +1,5 @@
+[ssh]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ssh
+
 ## Download the Image
 If you are comfortable using BitTorrent please use and share the Torrent files to save us some server traffic, thank you!
 You can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/).
@@ -24,7 +26,7 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 3. Run 7-Zip manager, find your downloaded .tar.bz2 file, right click and choose "extract here". Next select the .tar file you just extracted, right click and choose "extract here" again. You should now see an .img file.
 4. Run Etcher and click "Select Image". Find your image (the .image file) you have just extracted and click "Open".
 5. Etcher automatically detects the SD card, but verify that is the one you want the image to be installed on.
-6. Click "Flash" in Ether.
+6. Click "Flash" in Etcher.
 
 ### Option 2: Run from USB drive
 
@@ -32,7 +34,20 @@ Follow [these steps](https://www.raspberrypi.org/documentation/hardware/raspberr
 
 ## First steps
 ### Enable SSH (optional)
+
+There are two ways to enable SSH in NCP.
+
+#### SSH file in boot directory
 If you want to enable SSH, in order to connect to your Raspberry Pi's shell, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
+
+#### From WebUI / TUI 
+1. Navigate to the WebUI or the TUI.
+2. Select [`SSH`][ssh] from the list.
+3. Change `Enabled` to `yes`.
+4. Type in `USER` an existing or a new user that you want to create.
+5. Type in `PASS` a password to update the password for an existing user, or to create a password for a new user.
+6. Type in `Confirm` your password again.
+7. Click Run or start.
 
 ### Run NextCloudPi
 Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry Pi to your home router with an ethernet cable and power on your Raspberry Pi.
