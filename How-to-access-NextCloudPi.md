@@ -2,20 +2,20 @@
 
 This guide will help you access NextCloudPi.
 
-## Access directly
-The default DNS address is `nextcloudpi.local`.
+## Instant Domain Name Access
+When up and running, your device should become accessible at [https://nextcloudpi](https://nextcloudpi) or [https://nextcloudpi.local](https://nextcloudpi.local).
 
 ![](https://ownyourbits.com/wp-content/uploads/2017/09/local-access1.jpg)
 
-If you are using Windows you may have to install [Bonjour Services for Windows](https://support.apple.com/kb/DL999)  to make the .local domains work.
+If you are using Windows you may have to install [Bonjour Services for Windows](https://support.apple.com/kb/DL999)  to make it discover the .local domains. If your Browser redirects you to some search engine, you may try pasting the whole adress (including https://) at once.
 
-Your initial nextcloud installation should be readily accessible simply under https://nextcloudpi.local, otherwise you need to find out its IP address through one of the following ways.
+If this does not work, you try the following.
 
 ## Find the IP address of the Raspberry Pi
 You need to find the local IP address of the Raspberry Pi in order to connect to it and configure it.
 
 ### From the screen
-If you connect a monitor with HDMI cable to your Raspberry Pi, you will see the local IP address.
+If you connect a monitor with a HDMI cable to your Raspberry Pi, you will see the local IP address.
 
 ![screen-ip](https://ownyourbits.com/wp-content/uploads/2017/02/nextcloudpi_boot.jpg)
 
