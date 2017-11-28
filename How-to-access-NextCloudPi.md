@@ -9,7 +9,7 @@ When up and running, your device should become accessible at [https://nextcloudp
 
 If you are using Windows you may have to install [Bonjour Services for Windows](https://support.apple.com/kb/DL999)  to make it discover the .local domains. If your Browser redirects you to some search engine, you may try pasting the whole adress (including https://) at once.
 
-If this does not work, you try the following.
+If this does not work, try the following.
 
 ## Find the IP address of the Raspberry Pi
 You need to find the local IP address of the Raspberry Pi in order to connect to it and configure it.
