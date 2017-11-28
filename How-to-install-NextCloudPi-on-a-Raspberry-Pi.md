@@ -47,7 +47,7 @@ If you want to enable SSH, in order to connect to your Raspberry Pi's shell, cre
 4. Type in `USER` an existing or a new user that you want to create.
 5. Type in `PASS` a password to update the password for an existing user, or to create a password for a new user.
 6. Type in `Confirm` your password again.
-7. Click Run or start.
+7. Click Run or Start.
 
 ### Run NextCloudPi
 Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry Pi to your home router with an ethernet cable and power on your Raspberry Pi.
