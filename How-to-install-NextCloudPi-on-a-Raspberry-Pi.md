@@ -16,9 +16,10 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 #### Linux & Mac
 1. Open a terminal and run the following commands.
 2. Replace "user" with your user name and run command `cd /home/user/Downloads` (or any other folder you've saved the files to).
-3. Replace XX-XX-XX with the version you downloaded and run the command `tar -xvf NextCloudPi_XX-XX-XX.tar.bz2` to extract the image.
-4. Run command `sudo dd bs=4M if=NextCloudPi_XX-XX-XX.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
-4. Run command `sync`.
+3. Check the file for corruption (optional). Run the command `md5sum NextCloudPi_XX-XX-XX.tar.bz2` and compare it with the hash in file `md5sum`, which you can find in downloads page.
+4. Replace XX-XX-XX with the version you downloaded and run the command `tar -xvf NextCloudPi_XX-XX-XX.tar.bz2` to extract the image.
+5. Run command `sudo dd bs=4M if=NextCloudPi_XX-XX-XX.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
+6. Run command `sync`.
 
 #### Windows
 1. Install Etcher from [their website](https://etcher.io/)
