@@ -29,9 +29,16 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 5. Etcher automatically detects the SD card, but verify that is the one you want the image to be installed on.
 6. Click "Flash" in Etcher.
 
-### Option 2: Run from USB drive
 
-Follow [these steps](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
+### Option 2: Hybrid (/boot partition on SD card, / partition on USB)
+
+This will limit the media errors that usually happen when running from SD card, but will result in spinning up a USB harddisk more often. After the Option 1 steps you can [move the root partition to HD or SSD](https://elinux.org/Transfer_system_disk_from_SD_card_to_hard_disk). On Armbian based images you may install a tool to do this: `apt install armbian-config`.
+
+
+### Option 3: Run from USB drive
+
+Warning, this will permanently set the Raspberry Pi to only boot from USB. If you want this, follow [these steps](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
+
 
 ## First steps
 ### Enable SSH (optional)
