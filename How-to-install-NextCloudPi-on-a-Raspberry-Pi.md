@@ -40,7 +40,7 @@ This will limit the media errors that usually happen when running from SD card, 
 Warning, this will permanently set the Raspberry Pi to only boot from USB. If you want this, follow [these steps](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
 
 ### Option 4: Install NextCloudPi on SD or external usb drive with Berryboot 
-[Wiki/HowTo](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-an-external-drive-using-Berryboot.)
+[Wiki/HowTo here](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-an-external-drive-using-Berryboot.)
 
 ## First steps
 
