@@ -50,3 +50,5 @@ From here you can configure everything that you need. See the [configuration ref
 You can follow these [steps to access from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside).
 
 You can follow these [steps to host your data in a USB drive](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi).
+
+You can follow [this tutorial](https://ownyourbits.com/2017/12/30/sync-nextcloud-tasks-calendars-and-contacts-on-your-android-device/) to sync your NextCloudPi Files, Contacts, Tasks and Calendars with your Android phone.
