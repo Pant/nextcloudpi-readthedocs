@@ -1,17 +1,17 @@
 ### What is NextCloudPi?
 
-NextCloudPi is a ready to use image for Raspberry Pi.
+NextCloudPi is a ready to use image for Raspberry Pi that runs NextCloud software to enable your Pi to be a home cloud server.
 This code also generates the [NextCloudPi ARM docker image](https://hub.docker.com/r/ownyourbits/nextcloudpi/).
 
 ### How do I install NextCloudPi on a Raspberry Pi?
 
 Follow the guide [How to install NextCloudPi on a Raspberry Pi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-a-Raspberry-Pi). Don't forget the [Required Tasks](https://github.com/nextcloud/nextcloudpi/wiki/Required-Tasks-for-NextCloudPi).
 
-### How can I access from outside?
+### How can I access from outside my home network?
 
 See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside)
 
-### I have been updating through `nc-update` but Nextcloud is not in the latest version
+### I have been updating through `nc-update` but why isn't Nextcloud on the latest version?
 
 `nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you should do it through the internal updater (in admin section of Nextcloud)
 
@@ -38,15 +38,15 @@ There are two ways.
 | ncdata | www-data | www-data | drwxr-x--- | 750 |
 | ncdatabase | mysql | mysql | drwxr-xr-x | 755 |
 
-### Why NextCloudPi uses Apache and not Nginx
+### Why does NextCloudPi uses Apache and not Nginx?
 
 Read the blog [post](https://ownyourbits.com/2017/06/12/why-nextcloudpi-uses-apache-and-not-nginx/).
 
-### Why my md5sum of the image file is different that the md5sum on the site?
+### Why is my md5sum of the image file different than the md5sum on the site?
 
 The md5sum on the site is the md5sum of the `tar.bz2` file that you get after you download, not the image's one.
 
-### `dd` command doesn't burn the sd card correctly.
+### Why `dd` command doesn't burn the sd card correctly?
 
 In `dd` command you need to specify the block device, not the partition. E.x.:
 
@@ -57,11 +57,11 @@ sudo dd bs=4M if=NextCloudPi_xx-yy-zz.img of=/dev/sda status=progress && sync
 
 Yes, it can be done following [this guide](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
 
-### My ISP doesn't allow me to open ports 80 and/or 443
+### What if my ISP doesn't allow me to open ports 80 and/or 443?
 
 You can change the port in the apache virtual host files ( in `/etc/apache2/sites-available` ), but the Let's Encrypt authentication process won't work for you.
 
-### How to set up Let's Encrypt with blocked ports?
+### How do I set up Let's Encrypt with blocked ports?
 
  - If you only have port 443 available, you can use the following workaround: copy that code and after that try again from the web interface or `nextcloudpi-config`
 
@@ -71,14 +71,14 @@ sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a
 
 - If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-Let's-Encrypt-with-closed-ports-80-and-443) ).
 
-### Nextcloud is too slow / I get random failures / I get server errors even with a fresh image
+### Why is Nextcloud so slow / failing randomly / getting server errors even with a fresh image?
 
 Most commonly these things are caused by hardware problems.
 
  - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors
  - Check your power supply. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
 
-### How can I install Plex with NextCloudPi
+### How can I install Plex with NextCloudPi?
 
 First install plex, after configure NextCloudPi, upgrades, etc.
 
