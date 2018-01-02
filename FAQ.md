@@ -75,7 +75,7 @@ sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a
 
 Most commonly these things are caused by hardware problems.
 
- - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors
+ - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors. You can also check the md5sum after reading it again and assert that it matches the md5sum of the image that you just copied.
  - Check your power supply. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
 
 ### How can I install Plex with NextCloudPi?
