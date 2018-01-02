@@ -47,7 +47,7 @@ After this you should be able to see the Web Panel.
 
 From here you can configure everything that you need. See the [configuration reference](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference) for an explanation of all the options.
 
-You can follow these [steps to access from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside).
+You can follow these [steps to access from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network).
 
 You can follow these [steps to host your data in a USB drive](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi).
 
