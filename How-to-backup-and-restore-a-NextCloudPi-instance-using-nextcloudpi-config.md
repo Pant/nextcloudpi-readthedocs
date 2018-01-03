@@ -27,6 +27,9 @@ We now have backups of our NC installation directory, database and the configura
 Still no actual data included yet. Next is a backup or rather BTRFS snapshot of our ncdata-directory.
 Note: This will only work if you used BTRFS instead of ext4 when formating your NC data partition.
 ![](https://user-images.githubusercontent.com/8775469/34511814-776e2dfa-f05e-11e7-8b42-fc4ed7a777df.png) 
+![](https://user-images.githubusercontent.com/8775469/34511817-7a0bae8e-f05e-11e7-86fa-9866889b36c4.png)
+![](https://user-images.githubusercontent.com/8775469/34511818-7c1d397c-f05e-11e7-86bc-88d5e3f4fc3c.png)
+It will confirm the name and location of the snapshot taken upon completion.
 
 ..............
 This a a work in progress, thank you for your patience ;-)
