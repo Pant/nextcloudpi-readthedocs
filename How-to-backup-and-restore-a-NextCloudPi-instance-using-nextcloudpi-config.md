@@ -23,5 +23,10 @@ Select destination for backup of configuration:
 ![](https://user-images.githubusercontent.com/8775469/34511811-72e6c85a-f05e-11e7-803f-bf306a539cf6.png)
 ![](https://user-images.githubusercontent.com/8775469/34511813-74e6f3aa-f05e-11e7-9b41-40f9535606a9.png)
 
+We now have backups of our NC installation directory, database and the configuration files. 
+Still no actual data included yet. Next is a backup or rather BTRFS snapshot of our ncdata-directory.
+Note: This will only work if you used BTRFS instead of ext4 when formating your NC data partition.
+![](https://user-images.githubusercontent.com/8775469/34511814-776e2dfa-f05e-11e7-8b42-fc4ed7a777df.png) 
+
 ..............
 This a a work in progress, thank you for your patience ;-)
