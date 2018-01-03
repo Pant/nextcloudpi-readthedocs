@@ -1,6 +1,6 @@
 You may want to move your NCP instance to a larger drive or restore it after a hardware failure.
 
-You can visit https://your-local-IP:4443 or start nextcloudpi-config type following from your NCP terminal
+You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
 
 `sudo nextcloudpi-config`
 
