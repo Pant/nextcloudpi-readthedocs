@@ -13,5 +13,9 @@ We are going to use nc-backup to back-up our NC instance to a file.
 
 The output will confirm if operation was successful and where the backup file is stored.
 
+You may run backups automatically using nc-backup-auto
+![](https://user-images.githubusercontent.com/8775469/34511804-692730ac-f05e-11e7-9ab0-f0ad3500d4df.png)
+To enable/disable, type yes/no in the 'active' field, and adjust other settings to your needs 
+
 ..............
 This a a work in progress, thank you for your patience ;-)
