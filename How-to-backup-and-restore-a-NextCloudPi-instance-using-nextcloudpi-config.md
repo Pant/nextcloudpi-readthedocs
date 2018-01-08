@@ -67,3 +67,4 @@ Time for some patience again ;-) It might take some time depending size.
 
 ..............
 This a a work in progress, thank you for your patience ;-)
+Please comment or ask for help [HERE](https://github.com/nextcloud/nextcloudpi/issues/269)
