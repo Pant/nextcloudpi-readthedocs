@@ -50,6 +50,20 @@ Wait, go make coffee or tea or both, this may take while and depends on how much
 ![22-nc-backup-launch-backup-nc-bkp_date-tar-created](https://user-images.githubusercontent.com/8775469/34664359-c022104c-f45b-11e7-9acd-a333c3363ffd.png)
 Note the name and location of the backup created. Hit enter to exit.
 
+### Restoring a backup including your data
+
+Restoring a NCP instance and using nc-restore looks almost the same as creating the backup.
+You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
+
+`sudo nextcloudpi-config`
+
+Move up and down with arrow-keys, use tab+enter to select(execute) or finish(cancel)
+Select nc-restore hit enter
+![30-nc-restore-select-in-ncp-config](https://user-images.githubusercontent.com/8775469/34664376-e0e1036a-f45b-11e7-850e-7a1ed4cd6d89.png)
+Make sure you adjust the name and location to reflect yours. In example below, it failed, because I chose the wrong file. It worked after correcting it to reflect the backup created in previous step./media/btrfs/nextcloud-bkp_20180107.tar
+![31-nc-restore-configure-location](https://user-images.githubusercontent.com/8775469/34664380-e942ef78-f45b-11e7-80ce-b7201909e7e9.png)
+Time for some patience again ;-) It might take some time depending size.
+![32-nc-restore-overwrite-old-instance-terminal-output](https://user-images.githubusercontent.com/8775469/34664383-ed643652-f45b-11e7-9a43-1f36790b5336.png)
 
 ..............
 This a a work in progress, thank you for your patience ;-)
