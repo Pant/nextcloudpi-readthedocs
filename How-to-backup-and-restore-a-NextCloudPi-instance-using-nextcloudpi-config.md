@@ -1,5 +1,7 @@
 You may want to move your NCP instance to a larger drive or restore it after a hardware failure.
 
+## Making backup excluding your data
+
 You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
 
 `sudo nextcloudpi-config`
@@ -31,6 +33,23 @@ Note: This will only work if you used BTRFS instead of ext4 when formating your 
 ![](https://user-images.githubusercontent.com/8775469/34511818-7c1d397c-f05e-11e7-86bc-88d5e3f4fc3c.png)
 It will confirm the name and location of the snapshot taken upon completion.
 You may want to enable nc-snapshot-auto to have regular snapshots taken automatically.
+
+### Making backup including your data
+
+Below you will find the some of the same steps as above, difference being that ncdata (your files) will be included here, so this may take a long time to execute depending how much data you have stored. My Pi3 took about 20-30minutes to write 15Gb to an external usb drive.
+
+Again, You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
+
+`sudo nextcloudpi-config`
+
+![20-nc-backup-select-in-ncp-config](https://user-images.githubusercontent.com/8775469/34664327-9c050340-f45b-11e7-82ec-fe4beab8017b.png)
+Move up and down with arrow-keys, use tab+enter to select(execute) or finish(cancel)
+Select destination location by typing the path: /media/btrfs is mine. Yours may be different. Type yes in include data field and hit enter to start the backup process.
+![21-nc-backup-set-destination-and-include-data](https://user-images.githubusercontent.com/8775469/34664336-a17b62ec-f45b-11e7-9d1d-a31f2dccc90b.png)
+Wait, go make coffee or tea or both, this may take while and depends on how much data you are backing up.
+![22-nc-backup-launch-backup-nc-bkp_date-tar-created](https://user-images.githubusercontent.com/8775469/34664359-c022104c-f45b-11e7-9acd-a333c3363ffd.png)
+Note the name and location of the backup created. Hit enter to exit.
+
 
 ..............
 This a a work in progress, thank you for your patience ;-)
