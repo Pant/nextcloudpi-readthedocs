@@ -36,7 +36,7 @@ You may want to enable nc-snapshot-auto to have regular snapshots taken automati
 
 ### Making backup including your data
 
-Below you will find the some of the same steps as above, difference being that ncdata (your files) will be included here, so this may take a long time to execute depending how much data you have stored. My Pi3 took about 20-30minutes to write 15Gb to an external usb drive.
+Below you will find some of the same steps as above, difference being that ncdata (your files) will be included here, so this may take a long time to execute depending how much data you have stored. My Pi3 took about 20-30minutes to write 15Gb to an external usb drive.
 
 Again, You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
 
