@@ -36,7 +36,9 @@ You now have connected to the NextCloudPi Shell. You can run the command `nextcl
 If you want to configure NextCloudPi with the WebUI:
 1. Open a web browser.
 2. Write in the URL "https://"raspberryPiAddress":4443", where "raspberryPiAddress" (without quotes) should be replaced with your Raspberry Pi's IP Address.
-3. There should be an message saying that the address you are visiting is not secure. You should accept the self-signed certificate. 
+3. There should be an message saying that the address you are visiting is not secure. You should accept the self-signed certificate. You can do this by clicking advanced on the warning page and then clicking to add exception as shown in the image below:
+![Accept Signed NCP certificate.](https://user-images.githubusercontent.com/14947634/34748770-10015646-f596-11e7-8f56-4e33cf5c9260.png)
+This happens because by default browsers do not recognize self signed certificates. Later you can [get a certificate from Let's Encrypt](https://github.com/nextcloud/nextcloudpi/wiki/How-to-get-certificate-with-Letsencrypt-using-DNS-to-verify-domain) that your browser will recognize.
 4. You will be asked for a password. On older installations it is the same one as the `pi` user, so it will be by default user `pi`, password `raspberry`. On newer installations this changed to user `ncp` and password `ownyourbits`. You should change this password after initial configuration using the `nc-passwd` dialog.
 
 After this you should be able to see the Web Panel.
