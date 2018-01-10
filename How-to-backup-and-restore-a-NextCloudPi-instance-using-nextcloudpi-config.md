@@ -67,7 +67,7 @@ Make sure you adjust the name and location to reflect yours. In example below, i
 Time for some patience again ;-) It might take some time depending size.
 ![32-nc-restore-overwrite-old-instance-terminal-output](https://user-images.githubusercontent.com/8775469/34664383-ed643652-f45b-11e7-9a43-1f36790b5336.png)
 
-[Video demonstration how to restore your ncp instance with ncp-web](https://youtu.be/XMnOB12-Oks)
+[Video demonstration how to restore your ncp instance with ncp-web](https://youtu.be/YdXVIJPZWvw)
 ..............
 This a a work in progress, thank you for your patience ;-)
 Please comment or ask for help [HERE](https://github.com/nextcloud/nextcloudpi/issues/269)
