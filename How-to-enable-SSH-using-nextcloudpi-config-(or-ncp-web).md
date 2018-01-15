@@ -23,3 +23,4 @@ Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
 
 Thanks for your comments, please report any issues or ask questions [here](https://github.com/nextcloud/nextcloudpi/issues/356)
 
+[A short video demonstrating enable ssh in ncp-web](https://youtu.be/mjt9wTef5AA)
