@@ -263,3 +263,9 @@ Enable Automatic installation of security updates to keep your cloud safe.
 2. Change `ACTIVE` to `yes`.
 3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
 4. Click Run or Start.
+
+### SSH Activate/deactivate 
+
+In order to enable SSH, the password for user pi can not remain set to the default raspberry.
+You HAVE to create a NEW password for pi if you want this program to enable SSH, it will fail if you dont!
+Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
