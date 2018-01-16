@@ -269,3 +269,9 @@ Enable Automatic installation of security updates to keep your cloud safe.
 In order to enable SSH, the password for user pi can not remain set to the default raspberry.
 You HAVE to create a NEW password for pi if you want this program to enable SSH, it will fail if you dont!
 Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
+
+1. Navigate to `SSH` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change the password.
+4. Confirm new password.
+4. Click Run or Start.
