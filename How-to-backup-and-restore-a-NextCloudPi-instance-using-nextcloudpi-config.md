@@ -11,7 +11,7 @@ You can visit https://nextcloudpi.local:4443 for NCP's web interface or start ne
 Move up and down with arrow-keys, use tab+enter to select(execute) or finish(cancel)
 
 We are going to use nc-backup to back-up our NC instance to a file.
-![](https://user-images.githubusercontent.com/8775469/35038821-41cd42ca-fb7c-11e7-9b34-f6286bfddc68.png)
+
 ![](https://user-images.githubusercontent.com/8775469/34511800-664637ac-f05e-11e7-995c-f23e05d143ed.png)
 
 The output will confirm if operation was successful and where the backup file is stored.
