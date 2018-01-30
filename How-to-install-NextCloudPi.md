@@ -1,9 +1,10 @@
 [ssh]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ssh
 
-## Download the Image
-If you are comfortable using BitTorrent please use and share the Torrent files to save us some server traffic, thank you!
-You can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/).
-You  find the torrent link as well as a magnet link and a direct download at [ownyourbits.com](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/)
+## Download the Image for your Hardware
+
+If you are comfortable using BitTorrent please use it for downloading and share the Torrent files to save us some server traffic, thank you! For this you can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/) and leave it running to continue serving the files after downloading.
+
+You  find the torrent, as well as a magnet links to and the direct downloads of the NextcloudPi system images in the [introductory NextcloudPi article](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/) (and in the articles about [x86 and ARM Hardware Docker images](https://ownyourbits.com/2017/11/15/nextcloudpi-dockers-for-x86-and-arm/), and [odroid HC1 and armbian image generation](https://ownyourbits.com/2017/12/04/nextcloudpi-comes-nc-12-0-4-odroid-hc1-and-armbian-support-btrfs-snapshots-diagnostics-tools-and-an-awesome-case/)).
 
 ## Installing
 
