@@ -17,7 +17,7 @@ See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-fro
 
 ### Do I have to configure every entry in the WebUI and the TUI?
 
-No. You only need to run the [Required Tasks](https://github.com/nextcloud/nextcloudpi/wiki/Required-Tasks-for-NextCloudPi). Everything else is optional.
+No. You only need to run the Wizard to have a working Nextcloud instance. Everything else is optional.
 
 ### Can I use an external USB drive with NTFS/FAT filesystem?
 
