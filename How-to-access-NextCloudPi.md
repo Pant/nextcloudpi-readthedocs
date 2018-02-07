@@ -70,7 +70,7 @@ That way, your phone, tablet and laptop can seamlessly access your cloud regardl
 
 Now, you can start using Nextcloud! type the IP address in your browser.
 
-The default user is `admin` and the default password is `ownyourbits`. You should now change the default password in settings/personal or in settings/users.
+The default user is `ncp` and the default password is `ownyourbits`. You should now change the default password in settings/personal or in settings/users.
 
 ![](https://user-images.githubusercontent.com/21343324/30252853-f31d11bc-9679-11e7-9591-df42c9fd13be.png)
 
