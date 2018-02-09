@@ -171,7 +171,7 @@ Configure system limits for NextCloudPi.
 4. Click Run or Start.
 
 ## nc-nextcloud
-Download and install a specific Nextcloud version. This destroys any existing instance.
+Download and install a specific Nextcloud version. This destroys any existing instance. You need to run nc-init after completing nc-nextcloud, to take care of setting up database and cron jobs.
 
 ## nc-notify-updates
 Get notified for updates (Pending or Installed) through the Nextcloud notification system.
