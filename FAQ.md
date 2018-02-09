@@ -21,7 +21,13 @@ No. You only need to run the Wizard to have a working Nextcloud instance. Everyt
 
 ### Can I use an external USB drive with NTFS/FAT filesystem?
 
-No. These do not support the linux user/permission system. You can read/write to NTFS/FAT filesystems though.
+No. These do not support the linux user/permission system.
+
+You can read/write to NTFS/FAT filesystems, but the permissions need to be set for the whole drive, which leads to many problems.
+
+Secondly, the performance can be really bad in linux, and this is very noticeable on the pi.
+
+For this reasons, this is not supported. Do it at your own risk.
 
 ### How do I connect with SSH to the Raspberry Pi?
 
