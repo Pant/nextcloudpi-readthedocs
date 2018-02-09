@@ -38,10 +38,10 @@ There are two ways.
 
 ### What are pre-set users/passwords on NextCloudPi?
 
-For ssh or terminal pi/raspberry (root/1234 on armbian)
-For https://nextcloudpi.local:4443/ ncp/ownyourbits,  
-For https://nextcloudpi.local ncp/ownyourbits
-For Database user is ncadmin/password is generated dynamically and stored in /root/.my.cnf
+* For ssh or terminal pi/raspberry (root/1234 on armbian)
+* For https://nextcloudpi.local:4443/ ncp/ownyourbits,  
+* For https://nextcloudpi.local ncp/ownyourbits
+* For Database user is ncadmin/password is generated dynamically and stored in /root/.my.cnf
 
 ### What user/permissions should I have to the external USB drive mount point, the ncdata and ncdatabase directory?
 
