@@ -36,6 +36,13 @@ There are two ways.
 1. You can place an empty file named `ssh` in the boot partition of the sd card (so `/boot/ssh`)
 2. You can connect a keyboard and screen to the Raspberry Pi, log in and activate it typing `sudo raspi-config`, then go to the option 'Interfacing Options' > 'SSH'
 
+### What are pre-set users/passwords on NextCloudPi?
+
+For ssh or terminal pi/raspberry (root/1234 on armbian)
+For https://nextcloudpi.local:4443/ ncp/ownyourbits,  
+For https://nextcloudpi.local ncp/ownyourbits
+For Database user is ncadmin/password is generated dynamically and stored in /root/.my.cnf
+
 ### What user/permissions should I have to the external USB drive mount point, the ncdata and ncdatabase directory?
 
 | Directory | User | Group | Permissions | Permission mask |
