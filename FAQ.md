@@ -5,7 +5,7 @@ This code also generates the [NextCloudPi ARM docker image](https://hub.docker.c
 
 ### How do I install NextCloudPi on a Raspberry Pi?
 
-Follow the guide [How to install NextCloudPi on a Raspberry Pi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-a-Raspberry-Pi).
+Follow the guide [How to install NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi).
 
 ### How can I access from outside my home network?
 
