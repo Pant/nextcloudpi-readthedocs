@@ -1,6 +1,6 @@
 Updates run by `ncp-update` take the latest version from the `master` branch of the repo. 
 
-These features need to be well tested in order to be merged to tha branch. The typical workflow is
+These features need to be well tested in order to be merged to that branch. The typical workflow is
 
 - Create a feature in a local separate branch
 - Create a Pull Request to the `devel` branch
