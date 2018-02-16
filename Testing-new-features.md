@@ -10,8 +10,8 @@ These features need to be well tested in order to be merged to that branch. The 
 In order to test the `devel` or any other branch, the tester can do the following
 
 - Start a fresh instance of the SD card image on a testing board, or QEMU
-- run `sudo ncp-update devel`
-- test
+- Run `sudo ncp-update devel`
+- Test
 
 This command will bring your system to the `devel` brach. In case we decided to keep a separate branch for this feature, say `feature_1`, we could test it with
 
