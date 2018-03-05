@@ -92,6 +92,8 @@ Most commonly these things are caused by hardware problems.
  - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors. You can also check the md5sum after reading it again and assert that it matches the md5sum of the image that you just copied.
  - Check your power supply. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
 
+Also, see [this page](https://github.com/nextcloud/nextcloudpi/wiki/Why-is-my-Pi-so-slow%3F) on performance tips.
+
 ### How can I install Plex with NextCloudPi?
 
 First install plex, after configure NextCloudPi, upgrades, etc.
