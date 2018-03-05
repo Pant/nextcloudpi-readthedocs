@@ -6,8 +6,8 @@ Data is pulled from and pushed to RAM, micro-SD-card and if used, USB-Storage.
 ## Micro SD Card
 [RPI3 micro-sd-card speed](https://raspberrypi.stackexchange.com/questions/43618/raspberry-pi-3-micro-sd-card-speed) is slow! Circa 20MB/s.
 ## USB-Storage
-Data must pass Ethernet or WLAN to go too the users.
-When external USB storage is used, the data are pulled from USB and pushed too the same BUS back to pass Ethernet-Interface. Ethernet takes 10MB/s of these 35MBs so 25MB/s are left in the same Moment for other USB devices like your external USB-Storage!
+Data must pass Ethernet or WLAN to go to the users.
+When external USB storage is used, the data are pulled from USB and pushed on the same BUS back to pass Ethernet-Interface. Ethernet takes 10MB/s of these 35MBs so 25MB/s are left in the same Moment for other USB devices like your external USB-Storage. This is the bottleneck!
 
 On shared media there is also the latency higher when processes are waiting for accessing data.
 # What can we do? Or what is best practice?
