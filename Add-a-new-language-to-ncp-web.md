@@ -1,0 +1,42 @@
+In order to create a new language for _ncp-web_, follow these steps
+
+- start your [development environment](https://github.com/nextcloud/nextcloudpi/wiki/Development-environment)
+
+- download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.tar.gz)
+
+- those files should be copied to `etc/nextcloupi-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`
+
+- edit those files to add the translation to your language. You can check the results in your browser at `https://localhost:4443`. Refresh to see any changes
+
+-send a pull request with the changes to the _devel_ branch
+
+Example: translate the original template of `nc-backup`
+
+```
+{
+    "translations": {
+        "BACKUPLIMIT": "BACKUPLIMIT",
+        "Backup this NC instance to a file": "Backup this NC instance to a file",
+        "COMPRESS": "COMPRESS",
+        "DESTDIR": "DESTDIR",
+        "INCLUDEDATA": "INCLUDEDATA",
+        "nc-backup": "nc-backup"
+    }
+}
+```
+
+to German
+
+```
+{"translations": 
+  {
+    "nc-backup": "Backup erstellen",
+    "DESTDIR": "Zielverzeichnis",
+    "INCLUDEDATA": "Inkl. Dateien",
+    "COMPRESS": "Komprimieren",
+    "BACKUPLIMIT": "Maximale Anzahl"
+  }
+}
+```
+
+
