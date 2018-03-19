@@ -28,14 +28,15 @@ Example: translate the original template of `nc-backup`
 to German
 
 ```
-{"translations": 
-  {
-    "nc-backup": "Backup erstellen",
-    "DESTDIR": "Zielverzeichnis",
-    "INCLUDEDATA": "Inkl. Dateien",
-    "COMPRESS": "Komprimieren",
-    "BACKUPLIMIT": "Maximale Anzahl"
-  }
+{
+    "translations": {
+        "BACKUPLIMIT": "Maximale Anzahl", 
+        "Backup this NC instance to a file": "Erstelle eine Backupdatei von dieser NC-Instanz", 
+        "COMPRESS": "Kompression", 
+        "DESTDIR": "Zielverzeichnis", 
+        "INCLUDEDATA": "Inkl. Dateien", 
+        "nc-backup": "Backup erstellen" 
+    } 
 }
 ```
 
