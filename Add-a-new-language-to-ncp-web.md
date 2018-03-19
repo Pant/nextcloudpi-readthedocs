@@ -4,7 +4,7 @@ In order to create a new language for _ncp-web_, follow these steps
 
 - download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.tar.gz)
 
-- those files should be copied to `etc/nextcloupi-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`. You can find your the languagecode for your currently used language (here)[http://mybrowserinfo.com/detail.asp?bhcp=1], under 'User Language'. 
+- those files should be copied to `etc/nextcloupi-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`. You can find your the languagecode for your currently used language [here](http://mybrowserinfo.com/detail.asp?bhcp=1), under 'User Language'. 
 
 - edit those files to add the translation to your language. You can check the results in your browser at `https://localhost:4443`. Refresh to see any changes
 
