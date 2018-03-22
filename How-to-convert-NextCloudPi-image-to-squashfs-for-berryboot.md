@@ -34,9 +34,6 @@ uncomment /boot in fstab and let it point to LABEL=boot  or /dev/mmcblk0p1
 
 `$ sudo kpartx -d image_you_want_to_convert.img `
 
-For sharing torrent and upload to server
-Md5sum created_NCPberryboot.img > ncpbb_img.md5sum.txt
-tar cfvz berryboot_img.tar.gz /path/to/folder/img_plus_md5sum
 
 Notes: 
 
