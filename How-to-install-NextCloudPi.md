@@ -49,7 +49,7 @@ NOTE: help needed to further explain the required steps in this section. If you 
 
 ### Enable SSH (optional)
 
-Secure shell (SSH) provides a powerfull command line based text interface to configure NCP for experts, and is not needed to just use NCP.
+Secure shell (SSH) provides a powerful command line based text interface to configure NCP for experts, and is not needed to just use NCP.
 
 #### Before the first run
 
