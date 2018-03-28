@@ -43,7 +43,6 @@ Yes, it's [here](https://github.com/nextcloud/nextcloudpi/blob/master/changelog.
 ### What are pre-set users/passwords on NextCloudPi?
 
 * For ssh or terminal pi/raspberry (root/1234 on armbian)
-* For ssh or terminal ncp/ownyourbits (you have to change the password manually! See #434 #430)
 * For nextcloudpi.local:4443 ncp/ownyourbits,  
 * For nextcloudpi.local ncp/ownyourbits
 * For Database user is ncadmin/password is generated dynamically and stored in /root/.my.cnf
