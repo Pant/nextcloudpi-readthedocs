@@ -48,11 +48,11 @@ You will get a list of all connected devices on your network. For more info look
 
 ## Access from outside home
 
-See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside)
+See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
 
 ## Using your DDNS domain inside and outside home
 
-Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside).
+Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network).
 
 That way, your phone, tablet and laptop can seamlessly access your cloud regardless where you are. If your router doesn't support _NAT loopback_, you might have to setup and use a local DNS server.
 
