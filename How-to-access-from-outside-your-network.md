@@ -23,7 +23,7 @@ Note: You only need one DDNS service.
 
 Read [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi#using-your-ddns-domain-inside-and-outside-home) if you have problems accessing from inside your home with the DDNS domain URL.
 
-##### FreeDNS (freedns.afraid.com)
+##### FreeDNS (freedns.afraid.org)
 Run the TUI (`nextcloud-config`) or use the WebUI.
 Log in to freedns.afraid.com and click "Dynamic DNS". Right click on "Direct URL" next to your record. Paste it in a text editor and select only the hash (the characters after the "?").
 1. Navigate to [`freeDNS`][freeDNS] in the TUI or the WebUI.
