@@ -60,7 +60,7 @@ That way, your phone, tablet and laptop can seamlessly access your cloud regardl
 
 2 ) If it doesn't work, probably you need to setup [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and if you know your ISP DNS also type it in the box, otherwise leave the default.
 
-3 ) Finally, we have to setup or computers and devices to use that DNS server when we are connected inside our house.
+3 ) Finally, we have to setup our computers and devices to use that DNS server when we are connected inside our house.
 
   3.1 ) Some routers allow to configure this in the DNS configuration section for all devices in the house
 
