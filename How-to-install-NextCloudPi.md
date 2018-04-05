@@ -4,7 +4,7 @@
 
 If you are comfortable using BitTorrent please use it for downloading and share the Torrent files to save us some server traffic, thank you! For this you can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/) and leave it running to continue serving the files after downloading.
 
-You  find the torrent, as well as a magnet links to and the direct downloads of the NextcloudPi system images in the [introductory NextcloudPi article](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/) (and in the articles about [x86 and ARM Hardware Docker images](https://ownyourbits.com/2017/11/15/nextcloudpi-dockers-for-x86-and-arm/), and [odroid HC1 and armbian image generation](https://ownyourbits.com/2017/12/04/nextcloudpi-comes-nc-12-0-4-odroid-hc1-and-armbian-support-btrfs-snapshots-diagnostics-tools-and-an-awesome-case/)).
+You  find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPi system images in the [introductory NextcloudPi article](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/) (and in the articles about [x86 and ARM Hardware Docker images](https://ownyourbits.com/2017/11/15/nextcloudpi-dockers-for-x86-and-arm/), and [odroid HC1 and armbian image generation](https://ownyourbits.com/2017/12/04/nextcloudpi-comes-nc-12-0-4-odroid-hc1-and-armbian-support-btrfs-snapshots-diagnostics-tools-and-an-awesome-case/)).
 
 ## Installing
 
@@ -49,16 +49,16 @@ NOTE: help needed to further explain the required steps in this section. If you 
 
 ### Enable SSH (optional)
 
-Secure shell (SSH) provides a powerful command line based text interface to configure NCP for experts, and is not needed to just use NCP.
+Secure shell (SSH) provides a powerful command line based text interface to configure NextCloudPi for experts, and is not needed to just use NextCloudPi.
 
 #### Before the first run
 
 If you need secure shell access on the first boot, in order to connect to your Raspberry Pi, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
 
 
-#### Once NCP is running
+#### Once NextCloudPi is running
 
-1. Navigate to the WebUI or the TUI.
+1. [Navigate to the WebUI or the TUI](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
 2. Select [`SSH`][ssh] from the list.
 3. Change `Enabled` to `yes`.
 4. Type in `USER` an existing or a new user that you want to create.
