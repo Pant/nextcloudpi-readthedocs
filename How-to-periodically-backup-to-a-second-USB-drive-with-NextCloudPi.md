@@ -4,6 +4,8 @@
 
 This guide will help you set up automatic backup to a second USB drive.
 
+_Important: make sure you use the drive label in nc-datadir and other configuration options. Use names such as `/media/myCloudDrive`, instead of `/media/USBdrive`, or otherwise the system will not be able to guess which drive holds the data and which one holds the backups._
+
 ## Procedure
 1. Complete at least steps 2 and 3 of the [[Guide to configure an external USB drive with NextCloudPi|How-to-configure-an-external-USB-drive-with-NextCloudPi]].
 2. Format second USB drive with [`nc-format-USB`][nc-format-USB] (optional but see Note).
