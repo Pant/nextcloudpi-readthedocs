@@ -2,7 +2,7 @@ In order to create a new language for _ncp-web_, follow these steps
 
 - start your [development environment](https://github.com/nextcloud/nextcloudpi/wiki/Development-environment)
 
-- download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.tar.gz)
+- download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.zip)
 
 - those files should be copied to `etc/nextcloupi-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`. You can find the languagecode for your currently used language [here](http://mybrowserinfo.com/detail.asp), under 'User Language'. 
 
