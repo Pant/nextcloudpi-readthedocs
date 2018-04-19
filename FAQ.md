@@ -9,7 +9,7 @@ Follow the guide [How to install NextCloudPi](https://github.com/nextcloud/nextc
 
 ### How can I access from outside my home network?
 
-See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside)
+See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
 
 ### I have been updating through `nc-update` but why isn't Nextcloud on the latest version?
 
