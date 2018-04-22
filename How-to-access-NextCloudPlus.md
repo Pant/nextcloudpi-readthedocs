@@ -2,6 +2,8 @@
 
 This guide will help you access NextCloudPlus.
 
+# Access
+
 ## Instant Domain Name Access
 When up and running, your device should become accessible at [https://nextcloudplus](https://nextcloudplus) or [https://nextcloudplus.local](https://nextcloudplus.local).
 
@@ -68,12 +70,18 @@ That way, your phone, tablet and laptop can seamlessly access your cloud regardl
 
 ---
 
-Now, you can start using Nextcloud! type the IP address in your browser.
+# Activation
 
-The default user is `ncp` and the default password is `ownyourbits`. You should now change the default password in settings/personal or in settings/users.
+Now, we can start using NextCloudPlus! first type the IP address or domain in your browser, then we have to activate NCP.
 
-![](https://user-images.githubusercontent.com/21343324/30252853-f31d11bc-9679-11e7-9591-df42c9fd13be.png)
+We will be presented with an activation page. Print the page or copy the passwords, and hit 'Activate'. We can change these passwords later with `nc-admin` and `nc-passwd`.
 
+![](https://ownyourbits.com/wp-content/uploads/2018/04/ncp-activation.gif)
 
+We will be redirected to ncp-web where we can run the first run Wizard.
 
-Learn [how to configure NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
+![](https://ownyourbits.com/wp-content/uploads/2017/10/wizard-demo1.gif)
+
+From this point we can access Nextcloud by the IP address, nextcloudplus.local or the DDNS domain name we have registered. We can access the web panel at port 4443, for example https://nextcloudplus.local:4443
+
+Next, learn [how to configure NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
