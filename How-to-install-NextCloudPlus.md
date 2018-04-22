@@ -71,4 +71,4 @@ Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry
 
 ---
 
-Now you have Nextcloud up and running, now setup it up by learning [how to access NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)
+Now you have Nextcloud up and running, now setup it up by learning [how to access NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPlus)
