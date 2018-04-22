@@ -4,11 +4,11 @@
 
 If you are comfortable using BitTorrent please use it for downloading and share the Torrent files to save us some server traffic, thank you! For this you can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/) and leave it running to continue serving the files after downloading.
 
-You  find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPi system images in the [introductory NextcloudPi article](https://ownyourbits.com/2017/02/13/nextcloud-ready-raspberry-pi-image/) (and in the articles about [x86 and ARM Hardware Docker images](https://ownyourbits.com/2017/11/15/nextcloudpi-dockers-for-x86-and-arm/), and [odroid HC1 and armbian image generation](https://ownyourbits.com/2017/12/04/nextcloudpi-comes-nc-12-0-4-odroid-hc1-and-armbian-support-btrfs-snapshots-diagnostics-tools-and-an-awesome-case/)).
+You  find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPlus system images at [nextcloudplus.com](https://nextcloudplus.com).
 
 ## Installing
 
-You can run NextCloudPi from an SD card or from a USB drive.
+You can run NextCloudPlus from an SD card or from a USB drive.
 
 ### Option 1: Run from SD card
 
@@ -17,9 +17,9 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 #### Linux & Mac
 1. Open a terminal and run the following commands.
 2. Replace "user" with your user name and run command `cd /home/user/Downloads` (or any other folder you've saved the files to).
-3. Check the file for corruption (optional). Run the command `md5sum NextCloudPi_XX-XX-XX.tar.bz2` and compare it with the hash in file `md5sum`, which you can find in downloads page.
-4. Replace XX-XX-XX with the version you downloaded and run the command `tar -xvf NextCloudPi_XX-XX-XX.tar.bz2` to extract the image.
-5. Run command `sudo dd bs=4M if=NextCloudPi_XX-XX-XX.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
+3. Check the file for corruption (optional). Run the command `md5sum NextCloudPlus_XX-XX-XX.tar.bz2` and compare it with the hash in file `md5sum`, which you can find in downloads page.
+4. Replace XX-XX-XX with the version you downloaded and run the command `tar -xvf NextCloudPlus_XX-XX-XX.tar.bz2` to extract the image.
+5. Run command `sudo dd bs=4M if=NextCloudPlus_XX-XX-XX.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
 6. Run command `sync`.
 
 #### Windows
@@ -42,21 +42,21 @@ Warning, this will permanently set the Raspberry Pi to only boot from USB. If yo
 
 NOTE: help needed to further explain the required steps in this section. If you are taking this path, please consider editing this wiki.
 
-### Option 4: Install NextCloudPi on SD or external usb drive with Berryboot 
-[Wiki/HowTo here](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-an-external-drive-using-Berryboot.)
+### Option 4: Install NextCloudPlus on SD or external usb drive with Berryboot 
+[Wiki/HowTo here](https://github.com/nextcloud/nextcloudplus/wiki/How-to-install-NextCloudPi-on-an-external-drive-using-Berryboot.)
 
 ## First steps
 
 ### Enable SSH (optional)
 
-Secure shell (SSH) provides a powerful command line based text interface to configure NextCloudPi for experts, and is not needed to just use NextCloudPi.
+Secure shell (SSH) provides a powerful command line based text interface to configure NextCloudPlus for experts, and is not needed to just use NextCloudPlus.
 
 #### Before the first run
 
 If you need secure shell access on the first boot, in order to connect to your Raspberry Pi, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
 
 
-#### Once NextCloudPi is running
+#### Once NextCloudPlus is running
 
 1. [Navigate to the WebUI or the TUI](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
 2. Select [`SSH`][ssh] from the list.
@@ -66,7 +66,7 @@ If you need secure shell access on the first boot, in order to connect to your R
 6. Type in `Confirm` your password again.
 7. Click Run or Start.
 
-### Run NextCloudPi
+### Run NextCloudPlus
 Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry Pi to your home router with an ethernet cable and power on your Raspberry Pi.
 
 ---
