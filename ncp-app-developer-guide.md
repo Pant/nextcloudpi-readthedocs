@@ -9,7 +9,7 @@ See also [how to use the development environment](https://github.com/nextcloud/n
 
 ## Anatomy of a ncp-app
 
-An option, such as [`nc-datadir`][nc-datadir], consists of a single bash _.sh_ file that lives in `/usr/local/etc/nextcloudpi-config.d`.
+An option, such as [`nc-datadir`][nc-datadir], consists of a single bash _.sh_ file that lives in `/usr/local/etc/ncp-config.d`.
 
 In order to be launched from the web interface, it needs a permission mask 660 and ownership root:www-data
 
