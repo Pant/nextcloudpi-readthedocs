@@ -14,8 +14,8 @@ An option, such as [`nc-datadir`][nc-datadir], consists of a single bash _.sh_ f
 In order to be launched from the web interface, it needs a permission mask 660 and ownership root:www-data
 
 ```
-chown -R root:www-data /usr/local/etc/nextcloudpi-config.d 
-chmod 660 /usr/local/etc/nextcloudpi-config.d/*
+chown -R root:www-data /usr/local/etc/ncp-config.d 
+chmod 660 /usr/local/etc/ncp-config.d/*
 ```
 
 ### Steps
