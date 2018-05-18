@@ -7,7 +7,7 @@ This section explains the basics for creating a new functionality that will show
 
 See also [how to use the development environment](https://github.com/nextcloud/nextcloudpi/wiki/Development-environment).
 
-## Anatomy of a NextCloudPi option
+## Anatomy of a ncp-app
 
 An option, such as [`nc-datadir`][nc-datadir], consists of a single bash _.sh_ file that lives in `/usr/local/etc/nextcloudpi-config.d`.
 
