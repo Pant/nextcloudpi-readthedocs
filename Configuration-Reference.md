@@ -10,7 +10,7 @@ This is a DNS server that you might need in case you cannot access you cloud fro
 See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
 ## fail2ban
 As soon as your NextClouPi is connected to the internet it might get attacked. Most attacks are probably automated attacks by botnets or scripts trying to break into your System by simply using standard username/password combinations like admin/admin. [fail2ban](https://github.com/fail2ban/fail2ban/wiki/How-fail2ban-works2) scans your webserver logs (which can be found under /var/log/apache2/error.log) for failed login attempts. If there are to many failed attempts (default is 6 failed attempts within 10 minutes) fail2ban will ban the attacker's IP address for a certain amount of time (default is 10 minutes). If you activate mail alerts you will receive emails when fail2ban locks out certain IP addresses. 
-NextCloudPlus uses fail2ban to secure Nextcloud logins as well as SSH logins.
+NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
 
 
 ### How to activate
@@ -42,7 +42,7 @@ Log in to freedns.afraid.com and click "Dynamic DNS". Right click on "Direct URL
 
 ## letsencrypt
 
-In order to trust a connection to a website and send your user name and password, you need a SSL certificate. The SSL certificate ensures that the communication is encrypted, so everything you send can only be viewed by the server and not someone who impersonates him. By default NextCloudPlus provides a self signed SSL certificate in order to encrypt your communication but it is strongly recomended that you use a certificate from a certificate authority. The NextCloudPlus can run the Let's Encrypt client which gets a certificate from https://letsencrypt.org for your (sub)Domain Name. NextCloudPlus also configures the web server to use it and renews the certificate once a month.
+In order to trust a connection to a website and send your user name and password, you need a SSL certificate. The SSL certificate ensures that the communication is encrypted, so everything you send can only be viewed by the server and not someone who impersonates him. By default NextCloudPi provides a self signed SSL certificate in order to encrypt your communication but it is strongly recomended that you use a certificate from a certificate authority. The NextCloudPi can run the Let's Encrypt client which gets a certificate from https://letsencrypt.org for your (sub)Domain Name. NextCloudPi also configures the web server to use it and renews the certificate once a month.
 
 ### Configure
 1. Navigate to `letsencrypt` in the TUI or the WebUI.
@@ -69,7 +69,7 @@ Enable this feature if you want your Rasperry Pi to automount USB drives.
 3. Click Run or Start.
 
 ## nc-autoupdate-ncp
-Automatically update NextCloudPlus.
+Automatically update NextCloudPi.
 
 ### How to enable
 1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
@@ -138,7 +138,7 @@ Do this if you want to format your USB Drive and make it compatible with linux u
 3. Click Run or Start.
 
 ## nc-forward-ports
-NextCloudPlus has implemented a UPnP client to be able to configure the Router to port forward to your Raspberry Pi.
+NextCloudPi has implemented a UPnP client to be able to configure the Router to port forward to your Raspberry Pi.
 
 ### Requirements
 You need to enable UPnP on your Router. Also disable it after you configure port forwarding.
@@ -160,7 +160,7 @@ Force secure connection using HTTPS.
 (Re)initiate Nextcloud to a clean configuration.
 
 ## nc-limits
-Configure system limits for NextCloudPlus.
+Configure system limits for NextCloudPi.
 
 > **Note** that `MAXFILESIZE` can be at maximum `2G` for now, due to limitation of 32bit php.
 
@@ -252,8 +252,8 @@ Configure SMB/CIFS file server (for Mac/Linux/Windows)
 1. Navigate to `samba` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 3. Change `NCUSER` to your Nextcloud User (default=admin).
-4. Change `USER` to the NextCloudPlus User (default=pi).
-5. Change `PWD` to the NextCloudPlus User's Password.
+4. Change `USER` to the NextCloudPi User (default=pi).
+5. Change `PWD` to the NextCloudPi User's Password.
 6. Click Run or Start.
 
 ## unattended-upgrades
