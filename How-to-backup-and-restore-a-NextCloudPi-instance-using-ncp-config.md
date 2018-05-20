@@ -51,7 +51,7 @@ Wait, go make coffee or tea or both, this may take while and depends on how much
 ![22-nc-backup-launch-backup-nc-bkp_date-tar-created](https://user-images.githubusercontent.com/8775469/34664359-c022104c-f45b-11e7-9acd-a333c3363ffd.png)
 Note the name and location of the backup created. Hit enter to exit.
 
-[View video](https://youtu.be/FV80ZE9t6cE) showing how to backup an NCP instance through NextCloudPlus web interface.
+[View video](https://youtu.be/FV80ZE9t6cE) showing how to backup an NCP instance through NextCloudPi web interface.
 
 ### Restoring a backup including your data
 
