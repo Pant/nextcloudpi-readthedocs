@@ -7,13 +7,20 @@ This code also generates the [NextCloudPi ARM docker image](https://hub.docker.c
 
 Follow the guide [How to install NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi).
 
+### I get stuck at "Waiting for Activation" / Nextcloud is so slow / failing randomly / getting server errors even with a fresh image?
+
+Most commonly these things are caused by hardware problems.
+
+ - **Check your SD card**: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors. You can also check the md5sum after reading it again and assert that it matches the md5sum of the image that you just copied.
+ - **Check your power supply**. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
+
 ### How can I access from outside my home network?
 
 See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
 
 ### I have been updating through `nc-update` but why isn't Nextcloud on the latest version?
 
-`nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you should do it through the internal updater (in admin section of Nextcloud)
+`nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you use `nc-update-nextcloud`.
 
 ### Do I have to configure every entry in the WebUI and the TUI?
 
@@ -87,13 +94,6 @@ sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a
 ```
 
 - If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-Let's-Encrypt-with-closed-ports-80-and-443) ).
-
-### Why is Nextcloud so slow / failing randomly / getting server errors even with a fresh image?
-
-Most commonly these things are caused by hardware problems.
-
- - Check your SD card: take it out, copy the whole image to your computer and then copy it back to the SD. Assert that there are no read/write errors. You can also check the md5sum after reading it again and assert that it matches the md5sum of the image that you just copied.
- - Check your power supply. Many cheap power supplies are not stable enough for reliable functioning. Also try to have external supplies for your external HDDs.
 
 Also, see [this page](https://github.com/nextcloud/nextcloudpi/wiki/Why-is-my-Pi-so-slow%3F) on performance tips.
 
