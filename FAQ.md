@@ -7,7 +7,7 @@ This code also generates the [NextCloudPi ARM docker image](https://hub.docker.c
 
 Follow the guide [How to install NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi).
 
-### I get stuck at "Waiting for Activation" / Nextcloud is so slow / failing randomly / getting server errors even with a fresh image?
+### I get stuck at "NC not yet initialized..." / Nextcloud is so slow / failing randomly / getting server errors even with a fresh image?
 
 Most commonly these things are caused by hardware problems.
 
