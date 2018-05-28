@@ -4,6 +4,8 @@ In order to create a new language for _ncp-web_, follow these steps
 
 - download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.zip)
 
+- learn your language code [here](https://www.metamodpro.com/browser-language-codes)
+
 - those files should be copied to `etc/ncp-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`. You can find the languagecode for your currently used language [here](http://mybrowserinfo.com/detail.asp), under 'User Language'. 
 
 - edit those files to add the translation to your language. You can check the results in your browser at `https://localhost:4443`. Refresh to see any changes
