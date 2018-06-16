@@ -48,7 +48,7 @@ The local IP address of this Raspberry Pi is `192.168.0.131`
 
 You will get a list of all connected devices on your network. For more info look at the [FAQ](http://angryip.org/faq/) of Angry IP Scanner.
 
-## Access from outside home
+## Access from outside home network
 
 See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
 
