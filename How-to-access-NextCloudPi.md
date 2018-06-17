@@ -64,7 +64,7 @@ If your router doesn't support automatic _NAT loopback_, you should try to confi
 
 Otherwise, you might have to setup and use a local DNS server.
 
-1 ) You may enable [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and the IP of your router. Alternatively, you may use your ISP's DNS server addresses. Be aware that the default uses google servers.
+1 ) If it doesn't work, probably you need to setup [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and if you know your ISP DNS also type it in the box, otherwise leave the default.
 
 2 ) Finally, we have to setup our computers and devices to use that DNS server when we are connected inside our house.
 
