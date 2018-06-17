@@ -1,6 +1,6 @@
 [nc-wifi]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-wifi
 
-This guide will help you access NextCloudPi.
+This guide will help you access NextCloudP.
 
 # Access
 
@@ -52,7 +52,7 @@ You will get a list of all connected devices on your network. For more info look
 
 See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
 
-## Using your DDNS domain inside and outside home
+## Using your DDNS domain also inside NextCloudP's home network
 
 Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network).
 
