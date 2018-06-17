@@ -56,17 +56,21 @@ See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-fro
 
 Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network).
 
-That way, your phone, tablet and laptop can seamlessly access your cloud regardless where you are. If your router doesn't support _NAT loopback_, you might have to setup and use a local DNS server.
+That way, your phone, tablet and laptop can seamlessly access your cloud regardless where you are.
 
-1 ) First, try to access using your working DDNS domain, for instance _mycloud.freeDNS.org_
+First, try to access using your working DDNS domain, for instance _mycloud.freeDNS.org_
 
-2 ) If it doesn't work, probably you need to setup [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and if you know your ISP DNS also type it in the box, otherwise leave the default.
+If your router doesn't support automatic _NAT loopback_, you should try to configure an additional address entry for your domain (pointing to the local NCP IP) in the DNS server or forwarder of the router. (For example, if the router uses dnsmasq: `address=/your.domain/192.168.0.131`)
 
-3 ) Finally, we have to setup our computers and devices to use that DNS server when we are connected inside our house.
+Otherwise, you might have to setup and use a local DNS server.
 
-  3.1 ) Some routers allow to configure this in the DNS configuration section for all devices in the house
+1 ) If it doesn't work, probably you need to setup [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered domain, and if you know your ISP DNS also type it in the box, otherwise leave the default.
 
-  3.2 ) Otherwise, we will have to configure each device to use our NextCloudPi DNS. For more in depth information on this see [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/)
+2 ) Finally, we have to setup our computers and devices to use that DNS server when we are connected inside our house.
+
+  2.1 ) Some routers allow to configure this in the DNS configuration section for all devices in the house
+
+  2.2 ) Otherwise, we will have to configure each device to use our NextCloudPi DNS. For more in depth information on this see [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/)
 
 ---
 
