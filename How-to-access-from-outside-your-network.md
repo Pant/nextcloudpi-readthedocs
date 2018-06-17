@@ -5,7 +5,7 @@
 
 You can do these steps from the TUI or from the WebUI.
 
-#### Port Forward with [`nc-forward-ports`][nc-forward-ports] 
+#### Port Forwarding with [`nc-forward-ports`][nc-forward-ports] 
 
 Most home Routers come with a firewall installed which blocks outside requests to inside computers. In order for you to access your Nextcloud from the outside of your house, you need to allow ports 80 and 443 and forward them to your Raspberry Pi. For that reason NextCloudPi has an UPnP client which does just that in an easy way.
 
