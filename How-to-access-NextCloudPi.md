@@ -68,7 +68,7 @@ If that is not possible, you may enable and use a DNS server on NextCloudP.
 
 * B1) Enable the [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered DDNS domain as DOMAIN, and the IP of your router (as DNSSERVER).
 
-* B2) Let your computers and devices use NextCloudP's DNS server when connected inside our house:
+* B2) Let your computers and devices use NextCloudP's DNS server when connected inside your house:
 
   * 2.1) Preferably, your router allows to announce a configurable DNS Server to your devices in its DHCP configuration,
 
