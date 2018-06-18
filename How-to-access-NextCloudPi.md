@@ -62,17 +62,17 @@ First, just try to access NCP using your working DDNS domain, for instance _mycl
 
 If your router doesn't support automatic _NAT loopback_, you should try
 
-* A) to configure an additional address entry for your domain (pointing to the local NCP IP) in the DNS server or forwarder of your router. (For example, if the router uses dnsmasq: `address=/your.domain/192.168.0.131`)
+* A) to configure an additional address entry for your domain on the router (pointing to the local NextCloudP IP) in the DNS server or forwarder of your router. (For example, if the router uses dnsmasq and the IP is as in the example above: `address=/your.domain/192.168.0.131`)
 
 If that is not possible, you may enable and use a DNS server on NextCloudP.
 
-* B1)  Enable the [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered DDNS domain as DOMAIN, and the IP of your router (as DNSSERVER).
+* B1) Enable the [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered DDNS domain as DOMAIN, and the IP of your router (as DNSSERVER).
 
 * B2) Let your computers and devices use NextCloudP's DNS server when connected inside our house:
 
-  * 2.1) Either your router allows to configure a DNS Server in the DHCP configuration that is annouced to all devices in the house,
+  * 2.1) Preferably, your router allows to announce a configurable DNS Server to your devices in its DHCP configuration,
 
-  * 2.2) or, you will have to configure each device to use the NextCloudP as DNS server. For more in depth information on this see [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/)
+  * 2.2) Otherwise, you will have to configure the NextCloudP's IP as primary and secondary DNS server for your local network connection (usually in the network manager). For more in depth information on this see [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/)
 
 ---
 
