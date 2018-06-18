@@ -60,9 +60,9 @@ That way, your phone, tablet and laptop can seamlessly access your cloud regardl
 
 First, just try to access NCP using your working DDNS domain, for instance _mycloud.freeDNS.org_
 
-If your router doesn't support automatic _NAT loopback_, you should try
+If it works your're all set, otherwise your router doesn't support automatic _NAT loopback_, and you should try
 
-* A) to configure an additional address entry for your domain on the router (pointing to the local NextCloudP IP) in the DNS server or forwarder of your router. (For example, if the router uses dnsmasq and the IP is as in the example above: `address=/your.domain/192.168.0.131`)
+* A) to configure an additional address entry for your domain (that points to the local NextCloudP IP) in the DNS server or forwarder of your router. (For example, if the router uses dnsmasq and the IP is as in the example above: `address=/your.ddns.domain/192.168.0.131`)
 
 If that is not possible, you may enable and use a DNS server on NextCloudP.
 
