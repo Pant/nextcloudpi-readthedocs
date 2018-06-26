@@ -22,7 +22,7 @@ Initially just checking that the board boots, activation and wizard works, and n
 - orangepi version (new)
 - docker version armhf @ushills 
 - docker version x86 @ushills @not_real_name
-- curl installer (debian) @ovpso
+- curl installer (debian) @ovpso alias @Oliver_Van
 
 ## Test cases
 
