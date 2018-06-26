@@ -1,5 +1,7 @@
 This document describes the workflow to building and testing NCP.
 
+All help is welcome. The more testers there are the less each single one of them has to work. Please, write us in the [forums](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm) or [Telegram](https://t.me/NextCloudPi) if you are interested.
+
 ## Procedure
 
 @nachoparker is in change of batch building all the appliances. The build system automatically uploads the images to [downloads/testing](ownyourbits.com/downloads/testing).
