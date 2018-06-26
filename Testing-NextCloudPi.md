@@ -4,7 +4,7 @@ This document describes the workflow to building and testing NCP.
 
 ## Procedure
 
-@nachoparker is in change of batch building all the appliances. The build system automatically uploads the images to [downloads/testing](ownyourbits.com/downloads/testing).
+@nachoparker is in change of batch building all the appliances. The build system automatically uploads the images to [downloads/testing](https://ownyourbits.com/downloads/testing).
 
 When the images for a new release are ready, @nachoparker will create a post in the [forums](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm), quoting all the volunteer testers in this document. They will receive an email notification.
 
