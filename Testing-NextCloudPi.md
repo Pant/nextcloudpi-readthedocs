@@ -35,6 +35,15 @@ Here we will list the test cases to be performed first manually, and we will gra
 - Wizard works
 - Nextcloud logs in, navigates to the 'admin' section and there are no warnings.
 
-If you feel that you can help with some Python/bash tests, please contribute to the tests in the [tests](https://github.com/nextcloud/nextcloudpi/tree/master/tests) folder of this repo.
-
 [add more]
+
+## Writing automated tests
+
+If you feel that you can help with some **Python/Bash/Expect automated tests**, please **contribute** to the code in the [tests](https://github.com/nextcloud/nextcloudpi/tree/master/tests) folder of this repo.
+
+The following technologies are suggested, but more suggestions are welcome.
+
+- [TAP](https://testanything.org) Test anything protocol. A standard testing protocol with bindings for [Jenkins](https://wiki.jenkins.io/display/JENKINS/TAP+Plugin) and many [programming languages](https://testanything.org/producers.html).
+- [BATS](https://github.com/sstephenson/bats) - a Bash testing suite that supports the TAP protocol
+- [python selenium](https://selenium-python.readthedocs.io/) tool to test web based interfaces in python.
+- expect, pexpect...
