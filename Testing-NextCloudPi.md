@@ -24,8 +24,6 @@ Initially just checking that the board boots, activation and wizard works, and n
 - docker version x86 @ushills 
 - curl installer (debian) @ovpso
 
----
-
 ## Test cases
 
 Here we will list the test cases to be performed first manually, and we will gradually automate.
