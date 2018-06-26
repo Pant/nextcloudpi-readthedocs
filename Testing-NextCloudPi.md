@@ -35,4 +35,6 @@ Here we will list the test cases to be performed first manually, and we will gra
 - Wizard works
 - Nextcloud logs in, navigates to the 'admin' section and there are no warnings.
 
+If you feel that you can help with some Python/bash tests, please contribute to the tests in the [tests](https://github.com/nextcloud/nextcloudpi/tree/master/tests) folder of this repo.
+
 [add more]
