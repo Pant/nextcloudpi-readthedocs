@@ -21,7 +21,7 @@ Initially just checking that the board boots, activation and wizard works, and n
 - bananapi version @theCalcaholic 
 - orangepi version (new)
 - docker version armhf @ushills 
-- docker version x86 @ushills 
+- docker version x86 @ushills @not_real_name
 - curl installer (debian) @ovpso
 
 ## Test cases
