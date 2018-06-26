@@ -43,5 +43,5 @@ The following technologies are suggested, but other suggestions are welcome.
 
 - [TAP](https://testanything.org) Test anything protocol. A standard testing protocol with bindings for [Jenkins](https://wiki.jenkins.io/display/JENKINS/TAP+Plugin) and many [programming languages](https://testanything.org/producers.html).
 - [BATS](https://github.com/sstephenson/bats) - a Bash testing suite that supports the TAP protocol
-- [python selenium](https://selenium-python.readthedocs.io/) tool to test web based interfaces in python.
+- [python selenium](https://selenium-python.readthedocs.io/) - tool to test web based interfaces in python.
 - expect, pexpect...
