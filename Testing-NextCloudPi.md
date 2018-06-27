@@ -16,7 +16,7 @@ Initially just checking that the board boots, activation and wizard works, and n
 
 - rpi version @nachoparker @kanuahs 
 - rpi berryboot version
-- odroid version - @bit67 @nachoparker 
+- odroid version - @bit67 @nachoparker @kunibert
 - rock64 version @nachoparker  
 - bananapi version @theCalcaholic 
 - orangepi version (new)
