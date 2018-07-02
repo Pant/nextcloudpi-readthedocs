@@ -6,6 +6,8 @@
 
 This guide will help you configure an external USB drive.
 
+**Important note:** If you are using only one USB drive, you can leave the default path `/media/USBdrive` for all configuration options, but if you are going to use more than one you need to reference them by _label_, or NCP will not be able to know which one is which. For instance, if the label of the drive is _mylabel_ then use the path `/media/mylabel` for items such as `nc-datadir`, `nc-database` and so on.
+
 # Procedure
 1. Format USB drive (optional but check note).
 2. Enable [`nc-automount`][nc-automount].
