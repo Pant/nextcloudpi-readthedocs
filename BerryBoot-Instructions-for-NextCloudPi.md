@@ -1,4 +1,4 @@
-# Installation instructions for NextCloudPi on BerryBoot
+# BerryBoot Instructions for NextCloudPi
 
 ### Items Required:
 
