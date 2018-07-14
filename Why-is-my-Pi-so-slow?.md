@@ -22,7 +22,8 @@ We have 1GB RAM which is nice but not for every Nextcloud-App is this enough to 
 * The new Talk-App of Nextcloud 13 is eating a pretty lot of RAM and slows down login. So you should avoid to use Talk on the Raspberrypi if you doesn't want to have a bad user experience.
 * Theming-App also slows down login because the Theme must be loaded after defaults are loaded. If you use your own Logo and backgroud this must also be loaded and slows down first Page load before you can login.
 * Preview Pictures are generated on demand. This is slow! There is an Nextcloud-App called [Preview-Generator](https://apps.nextcloud.com/apps/previewgenerator) which shifts the on demand load of preview generating to an interval (10 Minutes) based preview generating for new pictures. This speeds opening pictures up because there is no demand to generate a preview but due to IO limitation is loading of picture-previews in the Gallery-App still slow.
-
+* Do not use sqlite! Despite the fact that sqlite is a light weight database, nextcloud uses concurrent writes.
+* Enable http/2 for apache2 for significant speed increases. https://httpd.apache.org/docs/2.4/howto/http2.html
 **_Please add here other Nextcloud-Apps users should avoid to use or which have a significant performance impact!_**
 
 ## Database
