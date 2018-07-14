@@ -24,6 +24,7 @@ We have 1GB RAM which is nice but not for every Nextcloud-App is this enough to 
 * Preview Pictures are generated on demand. This is slow! There is an Nextcloud-App called [Preview-Generator](https://apps.nextcloud.com/apps/previewgenerator) which shifts the on demand load of preview generating to an interval (10 Minutes) based preview generating for new pictures. This speeds opening pictures up because there is no demand to generate a preview but due to IO limitation is loading of picture-previews in the Gallery-App still slow.
 * Do not use sqlite! Despite the fact that sqlite is a light weight database, nextcloud uses concurrent writes.
 * Enable http/2 for apache2 for significant speed increases. https://httpd.apache.org/docs/2.4/howto/http2.html
+
 **_Please add here other Nextcloud-Apps users should avoid to use or which have a significant performance impact!_**
 
 ## Database
