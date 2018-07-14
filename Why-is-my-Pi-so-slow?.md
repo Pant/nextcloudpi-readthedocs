@@ -29,8 +29,3 @@ We have 1GB RAM which is nice but not for every Nextcloud-App is this enough to 
 By default the database is cached to RAM if it is smaller then 15MB.
 This can be increased if database is bigger then 15MB.
 Maybe there are other tweaks to speed things up. 
-* Do not use sqlite! Despite the fact that sqlite is a light weight database, nextcloud uses concurrent writes.
-
-## Apache2 Configuration
-Optimization tips for apache
-* Enable http/2 for apache2 for significant speed increases. https://httpd.apache.org/docs/2.4/howto/http2.html
