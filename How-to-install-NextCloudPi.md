@@ -8,9 +8,11 @@ You  find the torrent, as well as a magnet links to and the direct downloads of 
 
 ## MD5 checksum (to verify the download)
 Can be generated in Windows using the Command Prompt & the command
+
     certutil -hashfile  <path to the file>\<filename> MD5
 
 Linux (from shell)
+
     md5sum <path to the file>\<filename>
 
 ## Installing
