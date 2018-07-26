@@ -6,6 +6,13 @@ If you are comfortable using BitTorrent please use it for downloading and share 
 
 You  find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPi system images at [nextcloudpi.com](https://nextcloudpi.com).
 
+## MD5 checksum (to verify the download)
+Can be generated in Windows using the Command Prompt & the command
+    certutil -hashfile  <path to the file>\<filename> MD5
+
+Linux (from shell)
+    md5sum <path to the file>\<filename>
+
 ## Installing
 
 You can run NextCloudPi from an SD card or from a USB drive.
