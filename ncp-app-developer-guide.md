@@ -9,7 +9,7 @@ See also [how to use the development environment](https://github.com/nextcloud/n
 
 ## Anatomy of a ncp-app
 
-An option, such as [`nc-datadir`][nc-datadir], consists of a single bash _.sh_ file that lives in `/usr/local/etc/ncp-config.d`.
+An ncp configuration option, such as [`nc-datadir`][nc-datadir], is defined by a single bash _.sh_ file in `/usr/local/etc/ncp-config.d`.
 
 In order to be launched from the web interface, it needs a permission mask 660 and ownership root:www-data
 
@@ -18,14 +18,14 @@ chown -R root:www-data /usr/local/etc/ncp-config.d
 chmod 660 /usr/local/etc/ncp-config.d/*
 ```
 
-### Steps
-It needs to have two functions or _steps_ called `install()` and `configure()`, and optionally another one called `cleanup()`.
+### Functions
+It needs to define two functions called `install()` and `configure()`, and optionally another one called `cleanup()`.
 
- - The _install_ step is run during the build process and also during [`ncp-update`][ncp-update] if it hasn't been installed before.
- - The _configure_ step is run when 
+ - The _install()_ function is called during the build process and also during [`ncp-update`][ncp-update] if it hasn't been installed before.
+ - The _configure()_ function is called when 
     - launched from [`ncp-web`][ncp-web],or `ncp-config`
     - during installation ( during build, or from [`ncp-update`][ncp-update] ) if it has a field `ACTIVE_=yes`
- - The _cleanup_ step will be run during the image building process only, to leave the system as clean as possible after installation. Optional.
+ - The _cleanup()_ function is only called at the end of the image building process, to leave the system as clean as possible after installation. Optional.
 
 
 ### Public fields
