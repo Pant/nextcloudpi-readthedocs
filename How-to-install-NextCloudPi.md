@@ -35,7 +35,7 @@ If your computer has a slot for SD cards, insert the card. If not, insert the ca
 1. Install Etcher from [their website](https://etcher.io/)
 2. Install 7-Zip from [their website](http://www.7-zip.org/)
 3. Run 7-Zip manager, find your downloaded .tar.bz2 file, right click and choose "extract here". Next select the .tar file you just extracted, right click and choose "extract here" again. You should now see an .img file.
-4. Run Etcher and click "Select Image". Find your image (the .image file) you have just extracted and click "Open".
+4. Run Etcher and click "Select Image". Find your image (the .img file) you have just extracted and click "Open".
 5. Etcher automatically detects the SD card, but verify that is the one you want the image to be installed on.
 6. Click "Flash" in Etcher.
 
