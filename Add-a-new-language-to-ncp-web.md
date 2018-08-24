@@ -10,6 +10,8 @@ In order to create a new language for _ncp-web_, follow these steps
 
 - edit those files to add the translation to your language. You can check the results in your browser at `https://localhost:4443`. Refresh to see any changes
 
+- add the language code to `ncp-web/ncp-web.cfg`
+
 - send a pull request with the changes to the _devel_ branch
 
 Example: translate the original template of `nc-backup`
