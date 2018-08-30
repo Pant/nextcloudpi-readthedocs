@@ -5,7 +5,7 @@ This guide will help you access NextCloudP.
 # Access
 
 ## Instant Domain Name Access
-When up and running, your device should become accessible at [https://nextcloudplus](https://nextcloudplus) or [https://nextcloudplus.local](https://nextcloudplus.local).
+When up and running, your device should become accessible at [https://nextcloudpi](https://nextcloudpi) or [https://nextcloudpi.local](https://nextcloudpi.local).
 
 ![](https://ownyourbits.com/wp-content/uploads/2017/09/local-access1.jpg)
 
