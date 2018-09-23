@@ -15,7 +15,7 @@ Ideally we would have at least two volunteers per board, so nobody is pressured 
 Initially just checking that the board boots, activation and wizard works, and nextcloud logs in should be enough. We will gradually replace this manual method for some automated testing scripts.
 
 - rpi version @nachoparker @kanuahs 
-- rpi berryboot version
+- rpi berryboot version @ovpso alias @Oliver_Van
 - odroid version - @bit67 @nachoparker @kunibert
 - rock64 version @nachoparker  
 - bananapi version @theCalcaholic 
