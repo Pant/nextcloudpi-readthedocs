@@ -23,7 +23,7 @@ Run the TUI (`nextcloud-config`) or use the WebUI.
 6. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
 7. Click Run (WebUI) or Start (TUI)
 
-## freeDNS
+## DDNS_freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
 
 Most home users do not have a static IP but rather a dynamic IP that changes from time to time. in order for you to be able to access your Nextcloud instance, from outside of your house, without typing an IP address you need a DDNS service which tracks IP changes and updates the DNS records. 
@@ -33,7 +33,7 @@ You need to register an account on [FreeDNS](https://freedns.afraid.org/) and se
 ### How to activate
 Run the TUI (`nextcloud-config`) or use the WebUI.
 Log in to freedns.afraid.com and click "Dynamic DNS". Right click on "Direct URL" next to your record. Paste it in a text editor and select only the hash (the letters after the "?").
-1. Navigate to `freeDNS` in the TUI or the WebUI.
+1. Navigate to `DDNS_freeDNS` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`
 3. Change the `UPDATEHASH` with yours (delete the example and paste with ctrl+shift+V)
 4. Change `DOMAIN` with your Domain Name you have registered.
