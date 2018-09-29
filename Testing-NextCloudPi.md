@@ -30,6 +30,7 @@ Here we will list the test cases to be performed first manually, and we will gra
 
 - Image boots
 - Activation works
+- First run wizard shows up
 - Wizard works
 - Nextcloud logs in, navigates to the 'admin' section and there are no warnings.
 
