@@ -29,7 +29,7 @@ Initially just checking that the board boots, activation and wizard works, and n
 ```
 wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/devel/install.sh
 chmod +x install.sh
-sed -i 's|^BRANCH=master|BRANCH=devel|'
+sed -i 's|^BRANCH=master|BRANCH=devel|' install.sh
 ./install.sh
 ```
 
