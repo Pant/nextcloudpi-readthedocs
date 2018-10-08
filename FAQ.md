@@ -36,12 +36,13 @@ Secondly, the performance can be really bad in linux, and this is very noticeabl
 
 For this reasons, this is not supported. Do it at your own risk.
 
-### How do I connect with SSH to the Raspberry Pi?
+### How do I connect with SSH to NextCloudPi?
 
-There are two ways.
+There are three ways.
 
-1. You can place an empty file named `ssh` in the boot partition of the sd card (so `/boot/ssh`)
-2. You can connect a keyboard and screen to the Raspberry Pi, log in and activate it typing `sudo raspi-config`, then go to the option 'Interfacing Options' > 'SSH'
+1. From ncp-web, activate SSH from the `SSH` option.
+2. (Rpi only) You can place an empty file named `ssh` in the boot partition of the sd card (so `/boot/ssh`)
+3. (Rpi only) You can connect a keyboard and screen to the Raspberry Pi, log in and activate it typing `sudo raspi-config`, then go to the option 'Interfacing Options' > 'SSH'
 
 ### Is there a changelog?
 
