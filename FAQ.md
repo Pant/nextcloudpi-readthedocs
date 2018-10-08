@@ -50,10 +50,13 @@ Yes, it's [here](https://github.com/nextcloud/nextcloudpi/blob/master/changelog.
 
 ### What are pre-set users/passwords on NextCloudPi?
 
-* For ssh or terminal pi/raspberry (root/1234 on armbian)
-* For nextcloudpi.local:4443 ncp/ownyourbits,  
-* For nextcloudpi.local ncp/ownyourbits
-* For Database user is ncadmin/password is generated dynamically and stored in /root/.my.cnf
+There are no pre-set passwords, the following are randomly generated upon first access during activation.
+
+* For terminal `pi`/`raspberry` (`root`/`1234` on Armbian)
+* For SSH: generated on demand on ncp-web `SSH` section.
+* For nextcloudpi.local:4443 `ncp`/`<random>`  
+* For nextcloudpi.local `ncp`/`<random>`
+* For Database user is `ncadmin`/`<random in /root/.my.cnf>`
 
 ### What user/permissions should I have to the external USB drive mount point, the ncdata and ncdatabase directory?
 
