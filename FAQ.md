@@ -1,6 +1,6 @@
 ### What is NextCloudPi?
 
-It’s an officially recognized Nextcloud community project that provides a working Nextcloud instance out of the box in the form of SD card image for the Raspberry Pi, Odroid HC1 and other boards, x86 and ARM docker containers, and an installer for any Debian-based system.
+NCP an officially recognized Nextcloud community project that provides a working Nextcloud instance out of the box in the form of SD card image for the Raspberry Pi, Odroid HC1 and other boards, x86 and ARM docker containers, and an installer for any Debian-based system.
 
 ### How do I install NextCloudPi on a Raspberry Pi?
 
