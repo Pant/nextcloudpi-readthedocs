@@ -15,7 +15,7 @@ Alternatively, you can plug in a keyboard and HDMI screen to access the terminal
 2. Turn on Raspberry Pi with NextCloudPi SD card image.
 3. Login with user `pi` and password `raspberry`.
 4. (optional) type `sudo raspi-config` and enable SSH in `Interfacing Options".
-5. (optional) type `sudo nextcloudpi-config` and use [`nc-wifi`][nc-wifi] to connect to your WLAN.
+5. (optional) type `sudo ncp-config` and use [`nc-wifi`][nc-wifi] to connect to your WLAN.
 
 #### Linux / Mac
 1. Open a terminal.
