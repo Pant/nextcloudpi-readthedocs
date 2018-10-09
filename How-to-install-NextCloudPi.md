@@ -8,13 +8,16 @@ You'll find the torrent, as well as a magnet links to and the direct downloads o
 
 
 ## MD5 checksum (to verify the download)
+
+From the Terminal (GNU/Linux & macOS)
+
+```bash
+md5sum FILE_PATH
+```
+
 Can be generated in Windows using the Command Prompt & the command
 
     certutil -hashfile  <path to the file>\<filename> MD5
-
-Linux (from shell)
-
-    md5sum <path to the file>\<filename>
 
 ## Installing
 
@@ -24,9 +27,24 @@ You can run NextCloudPi from an SD card or from a USB drive.
 
 If your computer has a slot for SD cards, insert the card. If not, insert the card into an SD card reader, then connect the reader to your computer.
 
-#### Linux & Mac
+#### GNU/Linux & macOS
+
+##### Graphical Interface
+
+1. Download NextCloudPi from [their website](https://ownyourbits.com/nextcloudpi/#download):
+2. Double-click the `.tar.bz2` file and click "Extract"
+3. Click "Show the files"
+4. Download Etcher from [their website](https://etcher.io/)
+5. Double-click the `.zip` file
+6. Double-click the `.AppImage` file
+7. Click "Select Image" in the Window that just opened. Find your image (the `.img` file) you have just extracted and click "Open".
+8. Etcher automatically detects the SD card, but verify that is the one you want the image to be installed on.
+9. Click "Flash" in Etcher.
+
+##### Terminal
+
 1. Open a terminal and run the following commands.
-2. Replace "user" with your user name and run command `cd /home/user/Downloads` (or any other folder you've saved the files to).
+2. Run command `cd /home/${USER}/Downloads` (or any other folder you've saved the files to).
 3. Check the file for corruption (optional). Run the command `md5sum NextCloudPi_XX-XX-XX.tar.bz2` and compare it with the hash in file `md5sum`, which you can find in downloads page.
 4. Replace XX-XX-XX with the version you downloaded and run the command `tar -xvf NextCloudPi_XX-XX-XX.tar.bz2` to extract the image.
 5. Run command `sudo dd bs=4M if=NextCloudPi_XX-XX-XX.img of=/dev/sdx`, where `/dev/sdx` is your sd card name. (For more info look [here](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md))
