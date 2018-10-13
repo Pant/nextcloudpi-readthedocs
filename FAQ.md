@@ -99,8 +99,3 @@ sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a
 - If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-Let's-Encrypt-with-closed-ports-80-and-443) ).
 
 Also, see [this page](https://github.com/nextcloud/nextcloudpi/wiki/Why-is-my-Pi-so-slow%3F) on performance tips.
-
-### How can I install Plex with NextCloudPi?
-
-First install plex, after configure NextCloudPi, upgrades, etc.
-
