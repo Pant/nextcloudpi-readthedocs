@@ -1,5 +1,7 @@
 You may want to move your NCP instance to a larger drive or restore it after a hardware failure.
 
+_Note:_ check out [this article](https://ownyourbits.com/2018/10/19/nextcloudpi-backup-strategies/) on deciding your backup strategy.
+
 ## Making backup excluding your data
 
 You can visit https://nextcloudpi.local:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
