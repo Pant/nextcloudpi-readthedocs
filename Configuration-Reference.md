@@ -201,7 +201,33 @@ If the `data` folder of Nextcloud was not included in the backup you may need to
 ...
 ```
 
+## nc-rsync
+To get the rsync connection between the ncp and a backup-server working you need to establish two main steps:
+1. The backup-server needs to have a user. This user needs diskspace, the permission for ssh-autologin and the right to use rsync.
+2. On your ncp, root needs to be allowed to ssh-autologin to the user of the backup-server.
 
+Step 1: 
+Please check what you need to do on your server side. In case you use a Synology NAS (DiskStation, RackStation), you need to enable ssh ("Control Panel", "Terminal & SNMP"), give the user - which you use to backup the data - administration access ("Control Panel", "User"), and enable Rsync ("Control Panel", "File Sharing", "File Services").
+
+Step 2: 
+* Login to your ncp on the terminal
+* change to the root account (sudo -s)
+* go to the home directory of the root (cd ~)
+* follow these steps to create the auto-login for the root user: [http://linuxproblem.org/art_9.html](http://linuxproblem.org/art_9.html) (a: root user, A: the IP of the ncp, b: user at the backup-server, B: IP of the backup server)
+* make sure that ssh-access works for the root user to the backup-server
+
+After these steps you should be able to backup your data with rsync between the ncp and the backup-server. Test this with the following command:
+
+`rsync -e 'ssh -p 22' -av /home/pi/ b@B:/path/to/your/backup/`
+
+If this works check the following next command:
+
+`rsync -e 'ssh -p 22' -aAv /home/pi/ b@B:/path/to/your/backup/`
+
+If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script.
+
+## nc-rsync-auto
+See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
 
 ## nc-scan-auto
 Automate a Nextcloud scan for user files.
