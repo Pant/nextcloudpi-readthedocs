@@ -29,21 +29,49 @@ Initially just checking that the board boots, activation and wizard works, and n
 ```
 wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/devel/install.sh
 chmod +x install.sh
-sed -i 's|^BRANCH=master|BRANCH=devel|' install.sh
+sed -i 's|^BRANCH=master|BRANCH=devel|' install.sh ncp.sh
 ./install.sh
 ```
 
 ## Test cases
 
-Here we will list the test cases to be performed first manually, and we will gradually automate.
+In the `tests` folders there are several tests that can be performed to thoroughly verify the build.
 
+- Flash image
 - Image boots
-- Activation works
-- First run wizard shows up
-- Wizard works
-- Nextcloud logs in, navigates to the 'admin' section and there are no warnings.
+- Run automated tests
 
-[add more]
+### Automated tests
+
+The tests are located in the [tests](https://github.com/nextcloud/nextcloudpi/tree/master/tests) folder. You can download them directly from github, or clone the repo
+
+```
+git clone git@github.com:nextcloud/nextcloudpi.git
+cd nextcloudpi/tests
+```
+
+### System tests
+
+There are different tests available. We need python 3 and python selenium installed. The test results will be saved in `test_log.txt`
+
+```
+./system_tests.py [user@ip]
+```
+This test can be run from the board or from our computer. If we don't specify arguments it will try to guess if the NCP instance is local, is a local docker container, or a remote instance at `pi@nextclodpi.local`. It will make sure that everything is installed and running.
+
+### Activation tests
+
+```
+./activation_tests [ip]
+```
+This test will go through the activation process and verify it. It will save the random credentials in `test_cfg.txt` and subsequent tests will use those credentials if found. If no IP is provided it will try `localhost`.
+
+### Nextcloud tests
+
+```
+./nextcloud_tests [--new] [ip]
+```
+This test will make sure that Nextcloud works and is well configured. It will use the random credentials in `test_cfg.txt`, or ask for credentials if not found. Use `--new` if you don't want to use the stored credentials. If no IP is provided it will try `localhost`.
 
 ## Writing automated tests
 
