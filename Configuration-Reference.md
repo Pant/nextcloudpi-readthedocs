@@ -224,7 +224,7 @@ If this works check the following next command:
 
 `rsync -e 'ssh -p 22' -aAv /home/pi/ b@B:/path/to/your/backup/`
 
-If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script.
+If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script (this counts for ncp version 0.64.2, the ACL option might be dropped in later versions, please check).
 
 ## nc-rsync-auto
 See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
