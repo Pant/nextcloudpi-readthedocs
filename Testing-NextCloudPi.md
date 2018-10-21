@@ -24,15 +24,6 @@ Initially just checking that the board boots, activation and wizard works, and n
 - docker version x86 @ushills @not_real_name
 - curl installer (debian) @ovpso alias @Oliver_Van
 
-## Testing the curl installer from the `devel` branch
-
-```
-wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/devel/install.sh
-chmod +x install.sh
-sed -i 's|^BRANCH=master|BRANCH=devel|' install.sh ncp.sh
-./install.sh
-```
-
 ## Test cases
 
 In the `tests` folders there are several tests that can be performed to thoroughly verify the build.
