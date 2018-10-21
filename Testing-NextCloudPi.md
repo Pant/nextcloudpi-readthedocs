@@ -57,6 +57,8 @@ There are different tests available. We need python 3 and python selenium instal
 ```
 ./system_tests.py [user@ip]
 ```
+![ncp_system_tests](https://user-images.githubusercontent.com/21343324/47269139-58909780-d549-11e8-9686-69122d986b51.png)
+
 This test can be run from the board or from our computer. If we don't specify arguments it will try to guess if the NCP instance is local, is a local docker container, or a remote instance at `pi@nextclodpi.local`. It will make sure that everything is installed and running.
 
 ### Activation tests
@@ -64,6 +66,7 @@ This test can be run from the board or from our computer. If we don't specify ar
 ```
 ./activation_tests [ip]
 ```
+![ncp_activation_tests](https://user-images.githubusercontent.com/21343324/47269157-95f52500-d549-11e8-8253-9450ef4d2f49.png)
 This test will go through the activation process and verify it. It will save the random credentials in `test_cfg.txt` and subsequent tests will use those credentials if found. If no IP is provided it will try `localhost`.
 
 ### Nextcloud tests
@@ -71,6 +74,7 @@ This test will go through the activation process and verify it. It will save the
 ```
 ./nextcloud_tests [--new] [ip]
 ```
+![ncp_nextcloud_tests](https://user-images.githubusercontent.com/21343324/47269138-57f80100-d549-11e8-933a-ff37160bc862.png)
 This test will make sure that Nextcloud works and is well configured. It will use the random credentials in `test_cfg.txt`, or ask for credentials if not found. Use `--new` if you don't want to use the stored credentials. If no IP is provided it will try `localhost`.
 
 ## Writing automated tests
