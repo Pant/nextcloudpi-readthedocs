@@ -1,6 +1,6 @@
 In terminal type:
 
-`sudo nextcloudpi-config`
+`sudo ncp-config` (used to be nextcloudpi-config) 
 
 or visit https://nextcloudpi.local:4443
 and login with
@@ -21,6 +21,6 @@ Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
 
 ![Enable SSH yes screenshot](https://user-images.githubusercontent.com/8775469/34931808-cb1eaf30-f9d0-11e7-9494-0d51bfdc3a16.png)
 
-Thanks for your comments, please report any issues or ask questions [here](https://github.com/nextcloud/nextcloudpi/issues/356)
+Thanks for your comments, please ask questions [here](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm) and report any technical issues at [here](https://github.com/nextcloud/nextcloudpi/issues/356)
 
 [A short video demonstrating enable ssh in ncp-web](https://youtu.be/mjt9wTef5AA)
