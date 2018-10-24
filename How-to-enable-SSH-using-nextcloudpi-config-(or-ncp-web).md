@@ -5,7 +5,7 @@ In terminal type:
 or visit https://nextcloudpi.local:4443
 and login with
 user: ncp
-password: ownyourbits
+password: Generated at activation (used to be: ownyourbits)
 
 Scroll down nextcloudpi-config screen and select SSH:
 ![nextcloudpi-config screenshot](https://user-images.githubusercontent.com/8775469/34931799-c403a9bc-f9d0-11e7-9eaf-30864cdf657c.png)
