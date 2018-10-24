@@ -192,8 +192,10 @@ Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM
 
 ## nc-restore
 Restore a previously backuped Nextcloud instance.<br>
-If the `data` folder of Nextcloud was not included in the backup you may need to update the location of that folder in /var/www/nextcloud/config/config.php after a restore:
+If the `data` folder of Nextcloud was not included in the backup: After restoring, edit /var/www/nextcloud/config/config.php and point your Nextcloud instance to the path where the data is. After that run nc-scan to make Nextcloud aware of the new files.
+
 ```
+file: config.php
 ...
 'datadirectory' => '/<your-path>/ncdata',
 ...
