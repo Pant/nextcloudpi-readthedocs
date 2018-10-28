@@ -28,8 +28,8 @@ sudo ./qemu-pi.sh NextCloudPi_03-13-17.img
 
 ## Using VirtualBox
 
-Follow [this guide](http://ediy.com.my/index.php/blog/item/52-virtualbox-raspberry-pi-emulator)
+Follow [this guide](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
 
 ## Using virt-manager
 
--- help needed --
+Follow [this guide](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
