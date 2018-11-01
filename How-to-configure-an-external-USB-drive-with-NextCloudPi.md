@@ -17,7 +17,7 @@ This guide will help you configure an external USB drive.
 
 # Format USB drive (optional)
 
-[`nc-format-USB`][nc-format-USB] will format your external USB drive to EXT4, with the given Label. 
+[`nc-format-USB`][nc-format-USB] will format your external USB drive to BTRFS, with the given Label. 
 
 _**Note 1:**_  _In order for you to be able to use an external USB drive, the USB drive must not be formatted as NTFS/FAT as these do not support the user/permission system._
 
