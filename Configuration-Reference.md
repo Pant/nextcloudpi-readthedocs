@@ -61,7 +61,7 @@ The downside is that it can break some Apps, so disable it if something doesn't 
 Learn more [here](https://ownyourbits.com/2017/03/23/modsecurity-web-application-firewall-for-nextcloud/)
 
 ## nc-automount
-Enable this feature if you want your Rasperry Pi to automount USB drives.
+Enable this feature if you want your device to automount USB drives.
 
 ### How to enable
 1. Navigate to `nc-automount` in the TUI or the WebUI.
