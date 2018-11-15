@@ -14,7 +14,7 @@ NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
 
 
 ### How to activate
-Run the TUI (`nextcloud-config`) or use the WebUI.
+Run the TUI (`ncp-config`) or use the WebUI.
 1. Change `ACTIVE` to `yes`
 2. Change (optional) `BANTIME` (in seconds, default: 600 = 10 minutes) to change the duration of a ban for a certain IP address after too many failed login attempts.
 3. Change (optional) `FINDTIME` (in seconds, default: 600 = 10 minutes) to change the time slot in which  failed login attempts are counted and the IP address gets banned.
