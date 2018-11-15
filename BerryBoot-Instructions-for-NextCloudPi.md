@@ -77,3 +77,5 @@
 1. Click on ‘Exit’
 1. The Pi should reboot
 1. Start configuring and using your new NextCloudPi image...
+
+View screenshots [of Berryboot start screen and menu options.](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi-on-an-external-drive-using-Berryboot.)
