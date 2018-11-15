@@ -96,6 +96,6 @@ You can change the port in the apache virtual host files ( in `/etc/apache2/site
 sudo wget https://raw.githubusercontent.com/nextcloud/nextcloudpi/beb9bc1ee2909a1ab6bfde7398ddf19a50d02478/etc/nextcloudpi-config.d/letsencrypt.sh -O /usr/local/etc/nextcloudpi-config.d/letsencrypt.sh
 ```
 
-- If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-Let's-Encrypt-with-closed-ports-80-and-443) ).
+- If you don't have port 443 available, you will have to do it manually. You can use the Let's Encrypt DNS challenge authentication for this ( [wiki entry](https://github.com/nextcloud/nextcloudpi/wiki/How-to-get-certificate-with-Letsencrypt-using-DNS-to-verify-domain) ).
 
 Also, see [this page](https://github.com/nextcloud/nextcloudpi/wiki/Why-is-my-Pi-so-slow%3F) on performance tips.
