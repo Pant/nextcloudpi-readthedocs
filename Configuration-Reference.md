@@ -31,7 +31,7 @@ Most home users do not have a static IP but rather a dynamic IP that changes fro
 You need to register an account on [FreeDNS](https://freedns.afraid.org/) and setup a (sub)Domain Name.
 
 ### How to activate
-Run the TUI (`nextcloud-config`) or use the WebUI.
+Run the TUI (`ncp-config`) or use the WebUI.
 Log in to freedns.afraid.com and click "Dynamic DNS". Right click on "Direct URL" next to your record. Paste it in a text editor and select only the hash (the letters after the "?").
 1. Navigate to `DDNS_freeDNS` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`
@@ -271,7 +271,7 @@ Enable or disable the WebUI.
 ## no-ip
 Use the DDNS (Dynamic DNS) service by noip.com.
 
-Run the TUI (`nextcloud-config`) or use the WebUI.
+Run the TUI (`ncp-config`) or use the WebUI.
 1. Navigate to `no-ip` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 3. Change `USER` with your user name.
