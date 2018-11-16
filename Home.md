@@ -6,17 +6,18 @@ If this is your first time with NextCloudPi, start with the [Installation Guide]
 
 All the wiki pages are available alphabetically from the right side bar, in an effort to make them more accessible here they are listed into three main categories. It is a work in progress......
 
+
 | Getting Started             | Configure                     | Maintain             |
 | :-------------------------- | :---------------------------: | -------------------: |
 | [Home & Overview](https://github.com/nextcloud/nextcloudpi/wiki)            | [Adding languages](https://github.com/nextcloud/nextcloudpi/wiki/Add-a-new-language-to-ncp-web)              | [Enable SSH](https://github.com/nextcloud/nextcloudpi/wiki/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web))           |
-| How to Install              | Configuration Reference       | Email settings       |
-| How to Access LAN           | Configure External USB drive  | Backup & Restore     |
-| How to Access WAN           | NCP-config                    | Auto Backup         | 
+| [How to Install](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi)              | [Configuration Reference](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference)       | [Email settings](https://github.com/nextcloud/nextcloudpi/wiki/Email-settings)       |
+| [How to Access LAN](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)           | [Configure External USB drive](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-an-external-USB-drive-with-NextCloudPi)  | [Backup & Restore](https://github.com/nextcloud/nextcloudpi/wiki/How-to-backup-and-restore-a-NextCloudPi-instance-using-ncp-config)     |
+| [How to Access WAN](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)           | [NCP-config](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi)                    | [Auto Backup](https://github.com/nextcloud/nextcloudpi/wiki/How-to-periodically-backup-to-a-second-USB-drive-with-NextCloudPi)         | 
 | How to Berryboot 1          | Letsencrypt                   | Contribute           |
 | How to Berryboot 2          | Letsencrypt DNS               | Development env      |
 | FAQ                         | Letsencrypt closed ports      | Testing NCP          |
 | Why is my Pi slow           | Sync NC to Android         | Workflow Testing Feature|
-| How & where to get help     | 2FAuthentication              | Update Lynis         |
+| [How & where to get help](https://github.com/nextcloud/nextcloudpi/wiki/How-and-where-to-get-help)      | 2FAuthentication              | Update Lynis         |
 | New page here               | New page here                 | App developers guide |
 | New page here               | New page here                 | New page here        |
 | New page here               | New page here                 | New page here        |
