@@ -1,6 +1,6 @@
 ## Where
 
-* Your best chance at getting help and getting answers is asking questions on the [forum](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm). **Please** do take the time to investigate (search), maybe your question as already been answered. Thank you!
+* Your best chance at getting help and getting answers is asking questions on the [forum](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm). **Please do** take the time to investigate (search), maybe your question as already been answered. Thank you!
 
 * For general discussion you can join us at [Telegram chat group](https://t.me/NextCloudPi)
 
