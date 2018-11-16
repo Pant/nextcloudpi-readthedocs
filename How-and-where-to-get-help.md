@@ -14,4 +14,4 @@
 
 * Make sure you give your question a **meaningful title!** "Help me I'm a Noob or I'm stuck" is not going to raise much interest. 
 
-### By asking questions and reporting issues, we can all contribute to improving the software we are using. Thank you for contributing!
+#### By asking questions and reporting issues, we can all contribute to improving the software we are using. Thank you for contributing!
