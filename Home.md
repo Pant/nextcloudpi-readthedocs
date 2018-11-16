@@ -8,7 +8,7 @@ All the wiki pages are available alphabetically from the right side bar, in an e
 
 | Getting Started             | Configure                     | Maintain             |
 | :-------------------------- | :---------------------------: | -------------------: |
-| Home & Overview            | Adding languages              | Enable SSH           |
+| [Home & Overview](https://github.com/nextcloud/nextcloudpi/wiki)            | [Adding languages](https://github.com/nextcloud/nextcloudpi/wiki/Add-a-new-language-to-ncp-web)              | [Enable SSH](https://github.com/nextcloud/nextcloudpi/wiki/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web))           |
 | How to Install              | Configuration Reference       | Email settings       |
 | How to Access LAN           | Configure External USB drive  | Backup & Restore     |
 | How to Access WAN           | NCP-config                    | Auto Backup         | 
