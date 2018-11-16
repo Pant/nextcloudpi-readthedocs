@@ -4,7 +4,7 @@ Welcome to the NextCloudPi wiki! This is a collection of information about how t
 
 If this is your first time with NextCloudPi, start with the [Installation Guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi)
 
-All the available wiki pages are available alphabetically from the right side bar, in an effort to make them more accessible here the are listed into three main categories. It is a work in progress......
+All the available wiki pages are available alphabetically from the right side bar, in an effort to make them more accessible here they are listed into three main categories. It is a work in progress......
 
 | Getting Started             | Configure                     | Maintain             |
 | :-------------------------- | :---------------------------: | -------------------: |
