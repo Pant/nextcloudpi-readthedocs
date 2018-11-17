@@ -24,7 +24,7 @@ Alternatively, you can plug in a keyboard and HDMI screen to access the terminal
 
 
 #### Windows
-1. Install Putty from [it's website](http://www.putty.org/)
+1. Install Putty from [its website](http://www.putty.org/)
 2. Run Putty and write the IP address of your Raspberry Pi in the "Host Name" box.
 3. Select "SSH" from the "Connection type" buttons. The port number should now change to "22".
 4. Click "Open" on the bottom right.
