@@ -53,6 +53,8 @@ To make Database data to be on the USB Drive, follow the steps:
 
 # Configure Swap on the USB drive (optional).
 
+_Note: this is **not** supported in BTRFS, use ZRAM for that._
+
 To configure Swap location and size, follow the steps:
 
 1. Navigate to [`nc-swapfile`][nc-swapfile] in the TUI or the WebUI.
