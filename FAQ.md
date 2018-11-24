@@ -53,8 +53,8 @@ There are no pre-set passwords, the following are randomly generated upon first 
 
 * For terminal `pi`/`raspberry` (`root`/`1234` on Armbian)
 * For SSH: generated on demand on ncp-web `SSH` section.
-* For nextcloudpi.local:4443 `ncp`/`<random>`  
-* For nextcloudpi.local `ncp`/`<random>`
+* For nextcloudpi.local:4443 `ncp`/`<random>`  (stored and reset in nc-passwd)
+* For nextcloudpi.local `ncp`/`<random>`       (stored and reset in nc-admin)
 * For Database user is `ncadmin`/`<random in /root/.my.cnf>`
 
 ### What user/permissions should I have to the external USB drive mount point, the ncdata and ncdatabase directory?
