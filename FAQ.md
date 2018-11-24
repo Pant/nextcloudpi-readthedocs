@@ -19,7 +19,7 @@ See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-fro
 
 ### I have been updating through `nc-update` but why isn't Nextcloud on the latest version?
 
-`nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you use `nc-update-nextcloud`. Or better still : enable nc-autoupdate and nc-autoupdate-nextcloud so your instance will always be automatically update to the latest stable version of NCP and NC. It is not advisable to use NC's own update facility at present.
+`nc-update` only updates NextCloudPi related stuff. In order to upgrade the Nextcloud instance itself you use `nc-update-nextcloud`. Or better still : enable nc-autoupdate and nc-autoupdate-nextcloud so your instance will always be automatically update to the latest stable version of NCP and NC. It is not advisable (for NCP users) to use NC's own update facility at present.
 
 ### Do I have to configure every entry in the WebUI and the TUI?
 
