@@ -38,12 +38,29 @@ For this to work you need to install and configure **ssmtp** and **bsd-mailx**, 
  
 `sudo apt-get install ssmtp bsd-mailx`
  
-Files created manually:
-/root/.forward   #used nano to add; pi@localhost
+File created manually:
+/root/.forward  
+ 
+#used nano to add; 
+
+**pi@localhost**
+
+`sudo nano /root/.forward`
+
 Files edited:
+
 /etc/ssmtp/revaliases
-#used nano to add: root:my@gmail.com:smtp.gmail.com:587
+
+`sudo nano /etc/ssmtp/revaliases`
+
+#used nano to add: 
+
+**root:my@gmail.com:smtp.gmail.com:587**
+
+and
 /etc/ssmtp/ssmtp.conf
+
+`sudo nano /etc/ssmtp/ssmtp.conf`
 #mine looks like this:
 #
 #Config file for sSMTP sendmail
