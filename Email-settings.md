@@ -102,4 +102,5 @@ MX records are consulted. Commonly mailhosts are named mail.domain.com
 To protect your account info:
 
 `sudo chgrp pi /etc/ssmtp/ssmtp.conf`
+
 `sudo chmod 640 /etc/ssmtp/ssmtp.conf`
