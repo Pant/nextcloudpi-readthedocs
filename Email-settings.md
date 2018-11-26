@@ -67,27 +67,29 @@ and
 #
 #The person who gets all mail for userids < 1000
 #Make this empty to disable rewriting.
-root=my@gmail.com
+**root=my@gmail.com**
 
 #The place where the mail goes. The actual machine name is required no
 #MX records are consulted. Commonly mailhosts are named mail.domain.com
-mailhub=smtp.gmail.com:587
-AuthUser=my@gmail.com
-AuthPass=**********
-UseTLS=Yes
-UseSTARTTLS=Yes
+
+**mailhub=smtp.gmail.com:587**
+**AuthUser=my@gmail.com**
+**AuthPass=************
+**UseTLS=Yes**
+**UseSTARTTLS=Yes**
 
 
 #Where will the mail seem to come from?
-rewriteDomain=my.tld
+
+**rewriteDomain=my.tld**
 
 #The full hostname
-hostname=myhostname
+**hostname=myhostname**
 
 #Are users allowed to set their own From: address?
 #YES - Allow the user to specify their own From: address
 #NO - Use the system generated From: address
-FromLineOverride=YES
+**FromLineOverride=YES**
 
 To protect your account info:
 
