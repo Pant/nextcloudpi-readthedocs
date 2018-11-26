@@ -46,7 +46,7 @@ Files edited:
 /etc/ssmtp/ssmtp.conf
 #mine looks like this:
 #
-# Config file for sSMTP sendmail
+#Config file for sSMTP sendmail
 #
 #The person who gets all mail for userids < 1000
 #Make this empty to disable rewriting.
