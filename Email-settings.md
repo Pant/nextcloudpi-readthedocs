@@ -29,3 +29,50 @@ In `Email server` area of `Additional settings` add the following:
 6. Click `Store Credentials`
 
 You can now click `Send email` to test your settings. the administrator user will receive a test email.
+
+###SSMTP
+
+There is a third way to set up your email, if the first two did not get the job done.
+
+For this to work you need to install and configure **ssmtp** and **bsd-mailx**, which also installs the required libraries. It will also remove Postfix if it is installed.
+ 
+`sudo apt-get install ssmtp bsd-mailx`
+ 
+Files created manually:
+/root/.forward   #used nano to add; pi@localhost
+Files edited:
+/etc/ssmtp/revaliases
+#used nano to add: root:my@gmail.com:smtp.gmail.com:587
+/etc/ssmtp/ssmtp.conf
+#mine looks like this:
+#
+# Config file for sSMTP sendmail
+#
+# The person who gets all mail for userids < 1000
+# Make this empty to disable rewriting.
+root=my@gmail.com
+
+# The place where the mail goes. The actual machine name is required no
+# MX records are consulted. Commonly mailhosts are named mail.domain.com
+mailhub=smtp.gmail.com:587
+AuthUser=my@gmail.com
+AuthPass=**********
+UseTLS=Yes
+UseSTARTTLS=Yes
+
+
+# Where will the mail seem to come from?
+rewriteDomain=my.tld
+
+# The full hostname
+hostname=myhostname
+
+# Are users allowed to set their own From: address?
+# YES - Allow the user to specify their own From: address
+# NO - Use the system generated From: address
+FromLineOverride=YES
+
+To protect your account info:
+
+`sudo chgrp pi /etc/ssmtp/ssmtp.conf`
+`sudo chmod 640 /etc/ssmtp/ssmtp.conf`
