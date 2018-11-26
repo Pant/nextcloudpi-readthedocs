@@ -30,7 +30,7 @@ In `Email server` area of `Additional settings` add the following:
 
 You can now click `Send email` to test your settings. the administrator user will receive a test email.
 
-###SSMTP
+## SSMTP
 
 There is a third way to set up your email, if the first two did not get the job done.
 
