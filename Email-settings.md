@@ -55,7 +55,7 @@ Files edited:
 
 #used nano to add: 
 
-**root:my@mxroute.com:smtp.gmail.com:587**
+**root:my@mxroute.com:smtp.mxroute.com:587**
 
 and
 /etc/ssmtp/ssmtp.conf
