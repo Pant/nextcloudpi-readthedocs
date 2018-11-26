@@ -55,7 +55,7 @@ Files edited:
 
 #used nano to add: 
 
-**root:my@gmail.com:smtp.gmail.com:587**
+**root:my@mxroute.com:smtp.gmail.com:587**
 
 and
 /etc/ssmtp/ssmtp.conf
@@ -67,14 +67,14 @@ and
 #
 #The person who gets all mail for userids < 1000
 #Make this empty to disable rewriting.
-**root=my@gmail.com**
+**root=my@mxroute.com**
 
 #The place where the mail goes. The actual machine name is required no
 MX records are consulted. Commonly mailhosts are named mail.domain.com
 
-**mailhub=smtp.gmail.com:587**
+**mailhub=smtp.mxroute.com:587**
 
-**AuthUser=my@gmail.com**
+**AuthUser=my@mxroute.com**
 
 **AuthPass=************
 
