@@ -4,6 +4,9 @@ In order to create a new language for _ncp-web_, follow these steps
 
 - download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.zip)
 
+_You can view the Chinese translation, which is the most translated translation of the current NCP. (using Chinese translation as a template)_
+_Since the file has not been updated for a long time, we started making new templates._
+
 - learn your language code [here](https://www.metamodpro.com/browser-language-codes)
 
 - those files should be copied to `etc/ncp-config.d/l10n/<app>/<languagecode>.json`, except for `__core__.json`, which goes to `ncp-web/l10n/<languagecode>.json`. You can find the languagecode for your currently used language [here](http://mybrowserinfo.com/detail.asp), under 'User Language'. 
@@ -42,6 +45,3 @@ to German
         "nc-backup": "Backup erstellen" 
     } 
 }
-```
-
-
