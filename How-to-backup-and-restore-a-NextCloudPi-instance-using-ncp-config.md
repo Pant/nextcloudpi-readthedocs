@@ -4,9 +4,9 @@ _Note:_ check out [this article](https://ownyourbits.com/2018/10/19/nextcloudpi-
 
 ## Making backup excluding your data
 
-You can visit https://nextcloudpi.local:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
+You can visit https://nextcloudpi.local:4443 for NCP's web interface or start ncp-config from your NCP terminal by typing:
 
-`sudo nextcloudpi-config`
+`sudo ncp-config`
 
 ![ ](https://user-images.githubusercontent.com/8775469/34511790-5bedb6f4-f05e-11e7-9d60-bba86e2c2166.png)
 
@@ -41,9 +41,9 @@ You may want to enable nc-snapshot-auto to have regular snapshots taken automati
 
 Below you will find some of the same steps as above, difference being that ncdata (your files) will be included here, so this may take a long time to execute depending how much data you have stored. My Pi3 took about 20-30minutes to write 15Gb to an external usb drive.
 
-Again, You can visit https://nextcloudpi.local:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
+Again, You can visit https://nextcloudpi.local:4443 for NCP's web interface or start ncp-config from your NCP terminal by typing:
 
-`sudo nextcloudpi-config`
+`sudo ncp-config`
 
 ![20-nc-backup-select-in-ncp-config](https://user-images.githubusercontent.com/8775469/34664327-9c050340-f45b-11e7-82ec-fe4beab8017b.png)
 Move up and down with arrow-keys, use tab+enter to select(execute) or finish(cancel)
@@ -58,9 +58,9 @@ Note the name and location of the backup created. Hit enter to exit.
 ### Restoring a backup including your data
 
 Restoring a NCP instance and using nc-restore looks almost the same as creating the backup.
-You can visit https://your-local-IP:4443 for NCP's web interface or start nextcloudpi-config from your NCP terminal by typing:
+You can visit https://your-local-IP:4443 for NCP's web interface or start ncp-config from your NCP terminal by typing:
 
-`sudo nextcloudpi-config`
+`sudo ncp-config`
 
 Move up and down with arrow-keys, use tab+enter to select(execute) or finish(cancel)
 Select nc-restore hit enter
