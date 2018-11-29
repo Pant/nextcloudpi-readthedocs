@@ -10,7 +10,7 @@ Most home Routers come with a firewall installed which blocks outside requests t
 
 The port forwarding can be set up in your routers configuration interface, or, with NextCloudP's Universal Plug-and-Play (UPnP) client [`nc-forward-ports`][nc-forward-ports] which does just that in an easy way.
 
-Note: *You need UPnP to be temporarily enabled in your routers configuration. It is recommended that you disable it again after you've run the command.*
+Note: *You need UPnP to be temporarily enabled in your routers configuration. It is reccommended that you disable it again after you've run the command.*
 
 1. Navigate to [`nc-forward-ports`][nc-forward-ports] in the TUI or the WebUI.
 2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
