@@ -83,6 +83,11 @@ Secure shell (SSH) provides a powerful command line based text interface to conf
 
 If you need secure shell access on the first boot, in order to connect to your Raspberry Pi, create a file named `ssh` (without any extension) at the boot partition of your SD card. (More info [here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
 
+Hint for Odroid-users: that is not working with the Odroid-image. 
+
+### Run NextCloudPi
+Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry Pi to your home router with an ethernet cable and power on your Raspberry Pi.
+
 
 #### Once NextCloudPi is running
 
@@ -93,9 +98,6 @@ If you need secure shell access on the first boot, in order to connect to your R
 5. Type in `PASS` a password to update the password for an existing user, or to create a password for a new user.
 6. Type in `Confirm` your password again.
 7. Click Run or Start.
-
-### Run NextCloudPi
-Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry Pi to your home router with an ethernet cable and power on your Raspberry Pi.
 
 ---
 
