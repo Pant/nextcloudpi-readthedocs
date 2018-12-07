@@ -1,6 +1,6 @@
 For now all info on this subject is [here](https://ownyourbits.com/category/btrfs/)
 
-In order to restore the data from a snapshot, you replace the ncdata subvolume, as per example:
+In order to restore the data from a snapshot, you replace the ncdata subvolume, as **for example**:
 
 ### To remove datadir
 `sudo btrfs subvolume delete /media/USBdrive/ncdata` 
