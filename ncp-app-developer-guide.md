@@ -1,3 +1,18 @@
+
+
+
+
+
+
+# *** THIS INFORMATION IS OUTDATED ***
+
+
+
+
+
+
+
+
 [ncp-web]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ncp-web
 [nc-datadir]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-datadir
 [ncp-update]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ncp-update
