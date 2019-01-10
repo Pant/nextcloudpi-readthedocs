@@ -1,6 +1,71 @@
 [nc-scan-auto]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan-auto
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
+# BACKUPS
+## nc-backup-auto
+Perform automatic backups.
+
+### How to enable
+1. Navigate to `nc-backup-auto` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `DESTDIR` to a desired location for the backups.
+4. Change `INCLUDEDATA` to `yes` (optional), to backup your data as well.
+5. Change `BACKUPDAYS` to the number of days to perform the backup.
+6. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
+7. Click Run or Start.
+
+## nc-backup
+Perform a manual backup.
+
+### How to configure
+1. Navigate to `nc-backup` in the TUI or the WebUI.
+2. Change `DESTDIR` to the desired location you want your backup to be.
+3. Change `INCLUDEDATA` to `yes` if you want to include the Nextcloud data to the backup as well.
+4. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
+5. Click Run or Start.
+
+## nc-restore
+Restore a previously backuped Nextcloud instance.<br>
+If the `data` folder of Nextcloud was not included in the backup: After restoring, edit /var/www/nextcloud/config/config.php and point your Nextcloud instance to the path where the data is. After that run nc-scan to make Nextcloud aware of the new files.
+
+```
+file: config.php
+...
+'datadirectory' => '/<your-path>/ncdata',
+...
+'logfile' => '/<your-path>/ncdata/nextcloud.log',
+...
+```
+
+## nc-rsync
+To get the rsync connection between the ncp and a backup-server working you need to establish two main steps:
+1. The backup-server needs to have a user. This user needs diskspace, the permission for ssh-autologin and the right to use rsync.
+2. On your ncp, root needs to be allowed to ssh-autologin to the user of the backup-server.
+
+Step 1: 
+Please check what you need to do on your server side. In case you use a Synology NAS (DiskStation, RackStation), you need to enable ssh ("Control Panel", "Terminal & SNMP"), give the user - which you use to backup the data - administration access ("Control Panel", "User"), and enable Rsync ("Control Panel", "File Sharing", "File Services").
+
+Step 2: 
+* Login to your ncp on the terminal
+* change to the root account (sudo -s)
+* go to the home directory of the root (cd ~)
+* follow these steps to create the auto-login for the root user: [http://linuxproblem.org/art_9.html](http://linuxproblem.org/art_9.html) (a: root user, A: the IP of the ncp, b: user at the backup-server, B: IP of the backup server)
+* make sure that ssh-access works for the root user to the backup-server
+
+After these steps you should be able to backup your data with rsync between the ncp and the backup-server. Test this with the following command:
+
+`rsync -e 'ssh -p 22' -av /home/pi/ b@B:/path/to/your/backup/`
+
+If this works check the following next command:
+
+`rsync -e 'ssh -p 22' -aAv /home/pi/ b@B:/path/to/your/backup/`
+
+If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script (this counts for ncp version 0.64.2, the ACL option might be dropped in later versions, please check).
+
+## nc-rsync-auto
+See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
+
+
 ## NFS
 Configure a NFS network file system server. This is a lightweight way to mount your cloud files through LAN in a Linux computer.
 
@@ -77,27 +142,6 @@ Automatically update NextCloudPi.
 3. Change the user to be notified when new updates are installed (default=admin).
 4. Click Run or Start.
 
-## nc-backup-auto
-Perform automatic backups.
-
-### How to enable
-1. Navigate to `nc-backup-auto` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `DESTDIR` to a desired location for the backups.
-4. Change `INCLUDEDATA` to `yes` (optional), to backup your data as well.
-5. Change `BACKUPDAYS` to the number of days to perform the backup.
-6. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
-7. Click Run or Start.
-
-## nc-backup
-Perform a manual backup.
-
-### How to configure
-1. Navigate to `nc-backup` in the TUI or the WebUI.
-2. Change `DESTDIR` to the desired location you want your backup to be.
-3. Change `INCLUDEDATA` to `yes` if you want to include the Nextcloud data to the backup as well.
-4. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
-5. Click Run or Start.
 
 ## nc-database
 Enable if you want to change the Nextcloud database location (e.x. to a usb drive).
@@ -189,47 +233,6 @@ Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM
 1. Navigate to `nc-ramlogs` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 4. Click Run or Start.
-
-## nc-restore
-Restore a previously backuped Nextcloud instance.<br>
-If the `data` folder of Nextcloud was not included in the backup: After restoring, edit /var/www/nextcloud/config/config.php and point your Nextcloud instance to the path where the data is. After that run nc-scan to make Nextcloud aware of the new files.
-
-```
-file: config.php
-...
-'datadirectory' => '/<your-path>/ncdata',
-...
-'logfile' => '/<your-path>/ncdata/nextcloud.log',
-...
-```
-
-## nc-rsync
-To get the rsync connection between the ncp and a backup-server working you need to establish two main steps:
-1. The backup-server needs to have a user. This user needs diskspace, the permission for ssh-autologin and the right to use rsync.
-2. On your ncp, root needs to be allowed to ssh-autologin to the user of the backup-server.
-
-Step 1: 
-Please check what you need to do on your server side. In case you use a Synology NAS (DiskStation, RackStation), you need to enable ssh ("Control Panel", "Terminal & SNMP"), give the user - which you use to backup the data - administration access ("Control Panel", "User"), and enable Rsync ("Control Panel", "File Sharing", "File Services").
-
-Step 2: 
-* Login to your ncp on the terminal
-* change to the root account (sudo -s)
-* go to the home directory of the root (cd ~)
-* follow these steps to create the auto-login for the root user: [http://linuxproblem.org/art_9.html](http://linuxproblem.org/art_9.html) (a: root user, A: the IP of the ncp, b: user at the backup-server, B: IP of the backup server)
-* make sure that ssh-access works for the root user to the backup-server
-
-After these steps you should be able to backup your data with rsync between the ncp and the backup-server. Test this with the following command:
-
-`rsync -e 'ssh -p 22' -av /home/pi/ b@B:/path/to/your/backup/`
-
-If this works check the following next command:
-
-`rsync -e 'ssh -p 22' -aAv /home/pi/ b@B:/path/to/your/backup/`
-
-If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script (this counts for ncp version 0.64.2, the ACL option might be dropped in later versions, please check).
-
-## nc-rsync-auto
-See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
 
 ## nc-scan-auto
 Automate a Nextcloud scan for user files.
