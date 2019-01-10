@@ -1,13 +1,13 @@
 [nc-scan-auto]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan-auto
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
-##### Table of Contents  
+### Table of Contents  
 [BACKUPS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#backups)  
-[CONFIG](#emphasis)  
-[NETWORKING](#lists)  
-[SECURITY](#links)  
-[SYSTEM](#images)
-[TOOLS](#images)   
+[CONFIG](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#config)  
+[NETWORKING](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#networking)  
+[SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)  
+[SYSTEM](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#system)
+[TOOLS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#tools)   
 
 # BACKUPS
 ## nc-backup-auto
