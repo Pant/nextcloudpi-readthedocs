@@ -1,6 +1,14 @@
 [nc-scan-auto]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan-auto
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
+##### Table of Contents  
+[BACKUPS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#backups)  
+[CONFIG](#emphasis)  
+[NETWORKING](#lists)  
+[SECURITY](#links)  
+[SYSTEM](#images)
+[TOOLS](#images)   
+
 # BACKUPS
 ## nc-backup-auto
 Perform automatic backups.
