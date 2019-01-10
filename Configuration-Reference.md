@@ -210,6 +210,20 @@ You need to enable UPnP on your Router. Also disable it after you configure port
 2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
 3. Click Run or Start.
 
+
+## no-ip
+Use the DDNS (Dynamic DNS) service by noip.com.
+
+Run the TUI (`ncp-config`) or use the WebUI.
+1. Navigate to `no-ip` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `USER` with your user name.
+4. Change `PASS` with your password.
+5. Change `DOMAIN` with your (sub)Domain Name.
+6. Change `TIME` with the interval time you want to update the DNS record. Default 30mins.
+7. Click Run or Start.
+
+
 ## samba
 Configure SMB/CIFS file server (for Mac/Linux/Windows)
 
@@ -286,8 +300,7 @@ Enable Automatic installation of security updates to keep your cloud safe.
 3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
 4. Click Run or Start.
 
-
-
+# TOOLS
 
 ## nc-format-USB
 Do this if you want to format your USB Drive and make it compatible with linux user/permissions system
@@ -315,17 +328,5 @@ Perform a manual update.
 
 ### How to run
 1. Navigate to `nc-update` in the TUI or the WebUI.
-
-## no-ip
-Use the DDNS (Dynamic DNS) service by noip.com.
-
-Run the TUI (`ncp-config`) or use the WebUI.
-1. Navigate to `no-ip` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `USER` with your user name.
-4. Change `PASS` with your password.
-5. Change `DOMAIN` with your (sub)Domain Name.
-6. Change `TIME` with the interval time you want to update the DNS record. Default 30mins.
-7. Click Run or Start.
 
 
