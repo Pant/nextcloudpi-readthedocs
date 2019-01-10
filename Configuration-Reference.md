@@ -171,20 +171,6 @@ Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
 This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. 
 
 See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
-## fail2ban
-As soon as your NextClouPi is connected to the internet it might get attacked. Most attacks are probably automated attacks by botnets or scripts trying to break into your System by simply using standard username/password combinations like admin/admin. [fail2ban](https://github.com/fail2ban/fail2ban/wiki/How-fail2ban-works2) scans your webserver logs (which can be found under /var/log/apache2/error.log) for failed login attempts. If there are to many failed attempts (default is 6 failed attempts within 10 minutes) fail2ban will ban the attacker's IP address for a certain amount of time (default is 10 minutes). If you activate mail alerts you will receive emails when fail2ban locks out certain IP addresses. 
-NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
-
-
-### How to activate
-Run the TUI (`ncp-config`) or use the WebUI.
-1. Change `ACTIVE` to `yes`
-2. Change (optional) `BANTIME` (in seconds, default: 600 = 10 minutes) to change the duration of a ban for a certain IP address after too many failed login attempts.
-3. Change (optional) `FINDTIME` (in seconds, default: 600 = 10 minutes) to change the time slot in which  failed login attempts are counted and the IP address gets banned.
-4. Change (optional) `MAXRETRY` (default: 6 attempts) to change the number of failed login attempts that trigger an IP address ban.
-5. Change (optional) `EMAIL` with your personal email to receive ban notifications.
-6. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
-7. Click Run (WebUI) or Start (TUI)
 
 ## freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
@@ -238,7 +224,22 @@ Configure SMB/CIFS file server (for Mac/Linux/Windows)
 5. Change `PWD` to the NextCloudPi User's Password.
 6. Click Run or Start.
 
+# SECURITY
 
+## fail2ban
+As soon as your NextClouPi is connected to the internet it might get attacked. Most attacks are probably automated attacks by botnets or scripts trying to break into your System by simply using standard username/password combinations like admin/admin. [fail2ban](https://github.com/fail2ban/fail2ban/wiki/How-fail2ban-works2) scans your webserver logs (which can be found under /var/log/apache2/error.log) for failed login attempts. If there are to many failed attempts (default is 6 failed attempts within 10 minutes) fail2ban will ban the attacker's IP address for a certain amount of time (default is 10 minutes). If you activate mail alerts you will receive emails when fail2ban locks out certain IP addresses. 
+NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
+
+
+### How to activate
+Run the TUI (`ncp-config`) or use the WebUI.
+1. Change `ACTIVE` to `yes`
+2. Change (optional) `BANTIME` (in seconds, default: 600 = 10 minutes) to change the duration of a ban for a certain IP address after too many failed login attempts.
+3. Change (optional) `FINDTIME` (in seconds, default: 600 = 10 minutes) to change the time slot in which  failed login attempts are counted and the IP address gets banned.
+4. Change (optional) `MAXRETRY` (default: 6 attempts) to change the number of failed login attempts that trigger an IP address ban.
+5. Change (optional) `EMAIL` with your personal email to receive ban notifications.
+6. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
+7. Click Run (WebUI) or Start (TUI)
 
 ## modsecurity
 Web Application Firewall for extra security (experimental)
