@@ -150,8 +150,22 @@ Enable or disable the WebUI.
 1. Navigate to `nc-webui` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 
+# NETWORKING
+
 ## NFS
 Configure a NFS network file system server. This is a lightweight way to mount your cloud files through LAN in a Linux computer.
+
+### SSH Activate/deactivate 
+
+In order to enable SSH, the password for user pi can not remain set to the default raspberry.
+You HAVE to create a NEW password for pi if you want this program to enable SSH, it will fail if you dont!
+Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
+
+1. Navigate to `SSH` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change the password.
+4. Confirm new password.
+4. Click Run or Start.
 
 ## dnsmasq
 This is a DNS server that you might need in case you cannot access you cloud from inside your house by the external URL, such as _mycloud.freeDNS.org_. This depends on wether your router supports _NAT loopback_. 
@@ -172,7 +186,7 @@ Run the TUI (`ncp-config`) or use the WebUI.
 6. Change (optional) `MAILALERTS` to activate/deactivate email notifications.
 7. Click Run (WebUI) or Start (TUI)
 
-## DDNS_freeDNS
+## freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
 
 Most home users do not have a static IP but rather a dynamic IP that changes from time to time. in order for you to be able to access your Nextcloud instance, from outside of your house, without typing an IP address you need a DDNS service which tracks IP changes and updates the DNS records. 
@@ -198,6 +212,32 @@ In order to trust a connection to a website and send your user name and password
 2. Change the `DOMAIN` with your (sub)Domain Name.
 3. Change the `EMAIL` with your Email address. (It is recomended to use a valid Email address)
 4. Click Run or Start.
+
+## nc-forward-ports
+NextCloudPi has implemented a UPnP client to be able to configure the Router to port forward to your Raspberry Pi.
+
+### Requirements
+You need to enable UPnP on your Router. Also disable it after you configure port forwarding.
+
+### How to configure
+1. Navigate to `nc-forward-ports` in the TUI or the WebUI.
+2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
+3. Click Run or Start.
+
+## samba
+Configure SMB/CIFS file server (for Mac/Linux/Windows)
+
+>If we intend to modify the data folder through SAMBA, then we have to synchronize NextCloud to make it aware of the changes. 
+>This can be done manually or automatically using [`nc-scan`][nc-scan]  and [`nc-scan-auto`][nc-scan-auto] from `nextcloudpi-config`
+
+### How to configure
+1. Navigate to `samba` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `NCUSER` to your Nextcloud User (default=admin).
+4. Change `USER` to the NextCloudPi User (default=pi).
+5. Change `PWD` to the NextCloudPi User's Password.
+6. Click Run or Start.
+
 
 
 ## modsecurity
@@ -235,16 +275,6 @@ Do this if you want to format your USB Drive and make it compatible with linux u
 2. Change `LABEL` to a label you like.
 3. Click Run or Start.
 
-## nc-forward-ports
-NextCloudPi has implemented a UPnP client to be able to configure the Router to port forward to your Raspberry Pi.
-
-### Requirements
-You need to enable UPnP on your Router. Also disable it after you configure port forwarding.
-
-### How to configure
-1. Navigate to `nc-forward-ports` in the TUI or the WebUI.
-2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
-3. Click Run or Start.
 
 ## nc-ramlogs
 Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM)
@@ -287,19 +317,6 @@ Run the TUI (`ncp-config`) or use the WebUI.
 6. Change `TIME` with the interval time you want to update the DNS record. Default 30mins.
 7. Click Run or Start.
 
-## samba
-Configure SMB/CIFS file server (for Mac/Linux/Windows)
-
->If we intend to modify the data folder through SAMBA, then we have to synchronize NextCloud to make it aware of the changes. 
->This can be done manually or automatically using [`nc-scan`][nc-scan]  and [`nc-scan-auto`][nc-scan-auto] from `nextcloudpi-config`
-
-### How to configure
-1. Navigate to `samba` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `NCUSER` to your Nextcloud User (default=admin).
-4. Change `USER` to the NextCloudPi User (default=pi).
-5. Change `PWD` to the NextCloudPi User's Password.
-6. Click Run or Start.
 
 ## unattended-upgrades
 Enable Automatic installation of security updates to keep your cloud safe.
@@ -310,14 +327,3 @@ Enable Automatic installation of security updates to keep your cloud safe.
 3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
 4. Click Run or Start.
 
-### SSH Activate/deactivate 
-
-In order to enable SSH, the password for user pi can not remain set to the default raspberry.
-You HAVE to create a NEW password for pi if you want this program to enable SSH, it will fail if you dont!
-Note: Use normal AlphaNumeric, the only special characters allowed are .,@-_/
-
-1. Navigate to `SSH` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change the password.
-4. Confirm new password.
-4. Click Run or Start.
