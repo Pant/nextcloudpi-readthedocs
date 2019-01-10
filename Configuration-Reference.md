@@ -250,6 +250,8 @@ The downside is that it can break some Apps, so disable it if something doesn't 
 
 Learn more [here](https://ownyourbits.com/2017/03/23/modsecurity-web-application-firewall-for-nextcloud/)
 
+# SYSTEM
+
 ## nc-automount
 Enable this feature if you want your device to automount USB drives.
 
@@ -258,6 +260,31 @@ Enable this feature if you want your device to automount USB drives.
 2. Change `ACTIVE` to yes.
 3. Click Run or Start.
 
+## nc-ramlogs
+Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM)
+
+### How to restore
+1. Navigate to `nc-ramlogs` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+4. Click Run or Start.
+
+## nc-swapfile
+Change the location and the size of the swap file.
+
+### How to configure
+1. Navigate to `nc-swapfile` in the TUI or the WebUI.
+2. Change `SWAPFILE` to the location you want the new swap file to be.
+3. Change `SWAPSIZE` to the desired size of the swap file (default=1024).
+4. Click Run or Start.
+
+## unattended-upgrades
+Enable Automatic installation of security updates to keep your cloud safe.
+
+### How to enable
+1. Navigate to `unattended-upgrades` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
+4. Click Run or Start.
 
 
 
@@ -276,29 +303,12 @@ Do this if you want to format your USB Drive and make it compatible with linux u
 2. Change `LABEL` to a label you like.
 3. Click Run or Start.
 
-
-## nc-ramlogs
-Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM)
-
-### How to restore
-1. Navigate to `nc-ramlogs` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-4. Click Run or Start.
-
 ## nc-scan
 Perform a Nextcloud scan for user files.
 
 ### How to run
 1. Navigate to `nc-scan` in the TUI or the WebUI.
 
-## nc-swapfile
-Change the location and the size of the swap file.
-
-### How to configure
-1. Navigate to `nc-swapfile` in the TUI or the WebUI.
-2. Change `SWAPFILE` to the location you want the new swap file to be.
-3. Change `SWAPSIZE` to the desired size of the swap file (default=1024).
-4. Click Run or Start.
 
 ## nc-update
 Perform a manual update.
@@ -318,13 +328,4 @@ Run the TUI (`ncp-config`) or use the WebUI.
 6. Change `TIME` with the interval time you want to update the DNS record. Default 30mins.
 7. Click Run or Start.
 
-
-## unattended-upgrades
-Enable Automatic installation of security updates to keep your cloud safe.
-
-### How to enable
-1. Navigate to `unattended-upgrades` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
-4. Click Run or Start.
 
