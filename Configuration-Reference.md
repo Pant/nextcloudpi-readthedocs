@@ -65,6 +65,90 @@ If this also works ("A" means ACL-support) then you are fine. If this gives and 
 ## nc-rsync-auto
 See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
 
+# CONFIG
+
+## nc-autoupdate-ncp
+Automatically update NextCloudPi.
+
+### How to enable
+1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change the user to be notified when new updates are installed (default=admin).
+4. Click Run or Start.
+
+## nc-database
+Enable if you want to change the Nextcloud database location (e.x. to a usb drive).
+
+> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system.
+
+>You need to use a USB drive that is permanently on and is responsive or the database will fail.     
+
+> ** If it ever fails with a white page, move the database back to the SD **
+
+### How to configure
+1. Navigate to `nc-database` in the TUI or the WebUI.
+2. Change `DBDIR` to your database location.
+3. Click Run or Start.
+
+## nc-datadir
+Change the `data` folder location of Nextcloud.
+
+> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system  
+
+### How to configure
+1. Navigate to `nc-datadir` in the TUI or the WebUI.
+2. Change `DATADIR` to your data location.
+3. Click Run or Start.
+
+## nc-httpsonly
+Force secure connection using HTTPS.
+
+### How to enable
+1. Navigate to `nc-httpsonly` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Click Run or Start.
+
+## nc-init
+(Re)initiate Nextcloud to a clean configuration.
+
+## nc-limits
+Configure system limits for NextCloudPi.
+
+> **Note** that `MAXFILESIZE` can be at maximum `2G` for now, due to limitation of 32bit php.
+
+### How to configure
+1. Navigate to `nc-limits` in the TUI or the WebUI.
+2. Change `MAXFILESIZE` to the desired maximum file size (<=2G).
+3. Change `MEMORYLIMIT` to the memory limit you want (default=768M).
+4. Click Run or Start.
+
+## nc-nextcloud
+Download and install a specific Nextcloud version. This destroys any existing instance. You need to run nc-init after completing nc-nextcloud, to take care of setting up database and cron jobs.
+
+## nc-notify-updates
+Get notified for updates (Pending or Installed) through the Nextcloud notification system.
+
+### How to enable
+1. Navigate to `nc-notify-updates` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `USER` to the user you want to be notified (default=admin).
+4. Click Run or Start.
+
+## nc-scan-auto
+Automate a Nextcloud scan for user files.
+
+### How to enable
+1. Navigate to `nc-scan-auto` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Set `SCANINTERVAL` to the interval (in minutes) you want to scan every.
+4. Click Run or Start.
+
+## nc-webui
+Enable or disable the WebUI.
+
+### How to enable
+1. Navigate to `nc-webui` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
 
 ## NFS
 Configure a NFS network file system server. This is a lightweight way to mount your cloud files through LAN in a Linux computer.
@@ -133,39 +217,9 @@ Enable this feature if you want your device to automount USB drives.
 2. Change `ACTIVE` to yes.
 3. Click Run or Start.
 
-## nc-autoupdate-ncp
-Automatically update NextCloudPi.
-
-### How to enable
-1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change the user to be notified when new updates are installed (default=admin).
-4. Click Run or Start.
 
 
-## nc-database
-Enable if you want to change the Nextcloud database location (e.x. to a usb drive).
 
-> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system.
-
->You need to use a USB drive that is permanently on and is responsive or the database will fail.     
-
-> ** If it ever fails with a white page, move the database back to the SD **
-
-### How to configure
-1. Navigate to `nc-database` in the TUI or the WebUI.
-2. Change `DBDIR` to your database location.
-3. Click Run or Start.
-
-## nc-datadir
-Change the `data` folder location of Nextcloud.
-
-> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system  
-
-### How to configure
-1. Navigate to `nc-datadir` in the TUI or the WebUI.
-2. Change `DATADIR` to your data location.
-3. Click Run or Start.
 
 ## nc-format-USB
 Do this if you want to format your USB Drive and make it compatible with linux user/permissions system
@@ -192,55 +246,12 @@ You need to enable UPnP on your Router. Also disable it after you configure port
 2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
 3. Click Run or Start.
 
-## nc-httpsonly
-Force secure connection using HTTPS.
-
-### How to enable
-1. Navigate to `nc-httpsonly` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Click Run or Start.
-
-## nc-init
-(Re)initiate Nextcloud to a clean configuration.
-
-## nc-limits
-Configure system limits for NextCloudPi.
-
-> **Note** that `MAXFILESIZE` can be at maximum `2G` for now, due to limitation of 32bit php.
-
-### How to configure
-1. Navigate to `nc-limits` in the TUI or the WebUI.
-2. Change `MAXFILESIZE` to the desired maximum file size (<=2G).
-3. Change `MEMORYLIMIT` to the memory limit you want (default=768M).
-4. Click Run or Start.
-
-## nc-nextcloud
-Download and install a specific Nextcloud version. This destroys any existing instance. You need to run nc-init after completing nc-nextcloud, to take care of setting up database and cron jobs.
-
-## nc-notify-updates
-Get notified for updates (Pending or Installed) through the Nextcloud notification system.
-
-### How to enable
-1. Navigate to `nc-notify-updates` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `USER` to the user you want to be notified (default=admin).
-4. Click Run or Start.
-
 ## nc-ramlogs
 Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM)
 
 ### How to restore
 1. Navigate to `nc-ramlogs` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
-4. Click Run or Start.
-
-## nc-scan-auto
-Automate a Nextcloud scan for user files.
-
-### How to enable
-1. Navigate to `nc-scan-auto` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Set `SCANINTERVAL` to the interval (in minutes) you want to scan every.
 4. Click Run or Start.
 
 ## nc-scan
@@ -263,13 +274,6 @@ Perform a manual update.
 
 ### How to run
 1. Navigate to `nc-update` in the TUI or the WebUI.
-
-## nc-webui
-Enable or disable the WebUI.
-
-### How to enable
-1. Navigate to `nc-webui` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
 
 ## no-ip
 Use the DDNS (Dynamic DNS) service by noip.com.
