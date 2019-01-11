@@ -15,9 +15,13 @@ That's it. Visit https://yourIP/activation copy and save auto generated password
 
 #### Check and manage
 
-Check if running with
+Check if running with:
  > docker ps
 
-Update to latest NCP version with
+Update to latest NCP version with:
  > docker exec -it nextcloudpi ncp-update
+
+Make sure container re-start, unless manually stopped with:
+ > docker update --restart=unless-stopped nextcloudpi
+
 
