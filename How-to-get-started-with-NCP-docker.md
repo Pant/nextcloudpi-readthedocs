@@ -1,7 +1,7 @@
 #### Install Docker
 I used [the docker documentation](https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository) for Debian 9 that worked fine, but you'll find instructions for other linux flavor there too. 
 #### Download and start 
-The the x86 version of NextCloudPi docker container. It features the latest Nextcloud plus networking and system management extras.
+The the x86 version of NextCloudPi docker container. It features the latest Nextcloud networking and system management extras.
 
 Run it with
 
