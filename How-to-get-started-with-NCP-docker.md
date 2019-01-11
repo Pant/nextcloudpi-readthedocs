@@ -24,4 +24,5 @@ Update to latest NCP version with:
 Make sure container re-start, unless manually stopped with:
  > docker update --restart=unless-stopped nextcloudpi
 
-
+View other options with:
+ > docker help
