@@ -19,7 +19,7 @@ Initially just checking that the board boots, activation and wizard works, and n
 - odroid version - @bit67 @nachoparker @kunibert
 - rock64 version @nachoparker  
 - bananapi version @theCalcaholic 
-- orangepi version (new)
+- orangepi version @esbeeb
 - docker version armhf @ushills 
 - docker version x86 @ushills @not_real_name
 - curl installer (debian) @ovpso alias @Oliver_Van
