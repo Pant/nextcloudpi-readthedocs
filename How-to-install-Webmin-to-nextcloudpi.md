@@ -1,4 +1,4 @@
-This guide will help you to install Webmin to nextcloudpi on Odroid XU4.
+This guide will help you to install Webmin to nextcloudpi.
 
 I tried to install webmin to nextcloudpi on odroid xu4 and I had some troubles, so I decided to write an short guide how to do it. Maybe the same problems are existing on some of the other images of nextcloudpi.
 
