@@ -9,8 +9,9 @@
 [SYSTEM](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#system)   
 [TOOLS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#tools)
  
-
+----------------------------------------
 # BACKUPS
+
 ## nc-backup-auto
 Perform automatic backups.
 
@@ -74,6 +75,7 @@ If this also works ("A" means ACL-support) then you are fine. If this gives and 
 ## nc-rsync-auto
 See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
 
+---------------------------------------------------
 # CONFIG
 
 ## nc-autoupdate-ncp
@@ -159,6 +161,7 @@ Enable or disable the WebUI.
 1. Navigate to `nc-webui` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 
+-------------------------------------------------------
 # NETWORKING
 
 ## NFS
@@ -247,6 +250,7 @@ Configure SMB/CIFS file server (for Mac/Linux/Windows)
 5. Change `PWD` to the NextCloudPi User's Password.
 6. Click Run or Start.
 
+--------------------------------------------------
 # SECURITY
 
 ## fail2ban
@@ -273,6 +277,7 @@ The downside is that it can break some Apps, so disable it if something doesn't 
 
 Learn more [here](https://ownyourbits.com/2017/03/23/modsecurity-web-application-firewall-for-nextcloud/)
 
+-------------------------------------------------------------
 # SYSTEM
 
 ## nc-automount
@@ -309,6 +314,7 @@ Enable Automatic installation of security updates to keep your cloud safe.
 3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
 4. Click Run or Start.
 
+-----------------------------------------------------
 # TOOLS
 
 ## nc-format-USB
