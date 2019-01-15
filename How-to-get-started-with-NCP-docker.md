@@ -31,9 +31,9 @@ View other options with:
  > docker help
 
 Start docker with custom storage volume with:
-> sudo mkdir /home/ncp
+> sudo mkdir /media/ncdata
 
-> docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /home/ncp:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $z230.olinux.tk 
+> docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /media/ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $z230.olinux.tk 
 
 Add IP or domain to trusted domains array with:
- > sudo /home/ncp/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
+ > sudo /media/ncdata/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
