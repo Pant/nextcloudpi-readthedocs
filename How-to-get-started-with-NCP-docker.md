@@ -21,6 +21,9 @@ Check if running with:
 Update to latest NCP version with:
  > docker exec -it nextcloudpi ncp-update
 
+Run NCP-config to access all NCP apps with:
+ > docker exec -it nextcloudpi ncp-config
+
 Make sure container re-start, unless manually stopped with:
  > docker update --restart=unless-stopped nextcloudpi
 
