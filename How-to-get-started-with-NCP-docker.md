@@ -7,7 +7,7 @@ Run it with
 
  > docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $DOMAIN
 
-DOMAIN should be your trusted domain: the URL or IP that will be used to access.Substitute x86 with armhf if your on RaspberryPi or other armfs devices
+DOMAIN should be your trusted domain: the URL or IP that will be used to access.  Substitute _x86_ with _armhf_ if your on RaspberryPi or other armfs devices.
 
 Any folder can be used instead of the volume ncdata to hold the Nextcloud data.
 
