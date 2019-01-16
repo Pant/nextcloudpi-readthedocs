@@ -36,4 +36,7 @@ Start docker with custom storage volume with:
 > docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /media/ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $sub.domain.tld 
 
 Add IP or domain to trusted domains array with:
- > sudo /media/ncdata/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
+ > sudo /media/ncdata/data/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
+
+Reload apache2 webservice with:
+ > docker exec -it nextcloudpi service apache2 reload
