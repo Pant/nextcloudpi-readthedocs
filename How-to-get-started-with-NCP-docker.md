@@ -18,25 +18,25 @@ That's it. Visit https://yourIP/activation copy and save auto generated password
 Check if running with:
  > docker ps
 
-Update to latest NCP version with:
+#### Update to latest NCP version with:
  > docker exec -it nextcloudpi ncp-update
 
-Run NCP-config to access all NCP apps with:
+#### Run NCP-config to access all NCP apps with:
  > docker exec -it nextcloudpi ncp-config
 
-Make sure container re-start, unless manually stopped with:
+#### Make sure container re-start, unless manually stopped with:
  > docker update --restart=unless-stopped nextcloudpi
 
-View other options with:
+#### View other options with:
  > docker help
 
-Start docker with custom storage volume with:
+#### Start docker with custom storage volume with:
 > sudo mkdir /media/ncdata
 
 > docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /media/ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $sub.domain.tld 
 
-Add IP or domain to trusted domains array with:
+#### Add IP or domain to trusted domains array with:
  > sudo /media/ncdata/data/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
 
-Reload apache2 webservice with:
+#### Reload apache2 webservice with:
  > docker exec -it nextcloudpi service apache2 reload
