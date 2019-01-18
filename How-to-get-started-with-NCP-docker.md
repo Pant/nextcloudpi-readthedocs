@@ -5,7 +5,7 @@ The the x86 version of NextCloudPi docker container. It features the latest Next
 
 Run it with
 
- > docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $DOMAIN
+ > docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 DOMAIN
 
 DOMAIN should be your trusted domain: the URL or IP that will be used to access.  Substitute _x86_ with _armhf_ if your on RaspberryPi or other armfs devices.
 
@@ -33,7 +33,7 @@ Check if running with:
 #### Start docker with custom storage volume with:
 > sudo mkdir /media/ncdata
 
-> docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /media/ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 $sub.domain.tld 
+> docker run -d -p 4443:4443 -p 443:443 -p 80:80 -v /media/ncdata:/data --name nextcloudpi ownyourbits/nextcloudpi-x86 sub.domain.tld 
 
 #### Add IP or domain to trusted domains array with:
  > sudo /media/ncdata/data/bin/ncc config:system:set trusted_domains 9 --value="sub.domain.tld"
