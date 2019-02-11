@@ -89,14 +89,14 @@ OR
 
 You can also use btrfs-sync to copy the snapshots (all versions) from NextcloudHDD2 to NextcloudHDD1
 
-```
+
  > btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
-```
+
 
 Turn the maintanence mode off:
 
-```
+
  > ncc maintenance:mode –off
-```
+
 
 Make the Nextcloud instance aware of the restored data files by running the ncp-app `nc-scan`.
