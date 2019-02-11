@@ -19,20 +19,20 @@ You can of course install your OS and all programs on one disk that also include
 # How to format drives
 
 1. Partition tables: GPT
-2. Encryption: LUKS
+2. Encryption: LUKS (optional)
 3. Filesystem: BTRFS
 
 Big drives (bigger than 2 TB) needs to be partitioned with GPT.
 
-Both NextcloudHDD1 and NextcloudHDD2 needs to be formatted to BTRFS  to get backups working with snapshots. 
+Both NextcloudHDD1 and NextcloudHDD2 needs to be formatted to BTRFS to get backups working with snapshots. Using `nc-format-USB` will format the drive with the right settings. Beware that doing this will wipe out all existing data from the drive.
 
-You most likely want to use LUKS full drive encryption so nobody gets your data by just taking your drive. This can be easily done by using partitioning tools like Gnome disks or Gparted. Gnome disks might be the easiest tool for most of the people, it is usually preinstalled in Debian and Ubuntu desktop versions. 
+You may want to use LUKS full drive encryption so nobody gets your data by just taking your drive, but take into account that this could hurt performace, specially in slower boards. This can be easily done by using partitioning tools like Gnome disks or Gparted. Gnome disks might be the easiest tool for most of the people, it is usually preinstalled in Debian and Ubuntu desktop versions. 
 
-To get the support for BTRFS with partitioning tool you need to install btrfs-tools (as root or using sudo) by: 
+In order to create a BTRFS partition from your PC you need to install `btrfs-tools`  
 
-
-apt install btrfs-tools
-
+```
+sudo apt install btrfs-tools
+```
 
 **NOTE**: Newest Ubuntu 18.04 LTS has support for formating drive to BTRFS with LUKS encryption in a simple way by GUI tools but for example Debian Strech Stable does not. You might be able to do it with Strech but its difficult get it working right. So use the most recent Debian based OS as you can for formatting the drives or find a guide for some more complicated way.
 
@@ -41,7 +41,7 @@ apt install btrfs-tools
 
 # Steps to backup
 
-1. For the first make sheduled BTRFS -snapshots running for your data by using NCP function nc-snapshot-auto for it.
+1. For the first make scheduled BTRFS -snapshots running for your data by using NCP function `nc-snapshot-auto` for it.
 
 **Simple explanation**:
 With the snapshots you get restore points for your data -directory, a bit similar way as you can have for your “Windows System Restore” or “Mac Time machine”. “Snapper” on linux is also using BTRFS -snapshots. Restore points with BTRFS -snapshots normally live inside the same drive as you have the data -directory to restore. Every single snapshot represents the state of the data -directory on one specific point of time. Snapshot contains the files that are deleted after one version earlier and links to all the files that where represented in that specific version of data -directory. When you run snapshots all your deleted data are stored in the snapshots for some specific retention time that is configured. In NCP you configure how many snapshots you keep before they are deleted. Because of this snapshots -directory as a whole can be defined as historical log of the original directory, but is containing also the deleted data. So running BTRFS -snapshots using NCP -functions protects you from data alteration or deletion on the data -directory, but it wont protect you from braking of the drive you run them in. So that’s why you need to also do the step 2.
@@ -89,10 +89,14 @@ OR
 
 You can also use btrfs-sync to copy the snapshots (all versions) from NextcloudHDD2 to NextcloudHDD1
 
+```
 btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
+```
 
 Turn the maintanence mode off:
 
+```
 ncc maintenance:mode –off
+```
 
-Make the Nextcloud instance aware of the restored data files by running NCP -function nc-scan.
+Make the Nextcloud instance aware of the restored data files by running the ncp-app `nc-scan`.
