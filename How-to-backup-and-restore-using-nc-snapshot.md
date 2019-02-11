@@ -43,18 +43,18 @@ sudo apt install btrfs-tools
 
 1. For the first make scheduled BTRFS -snapshots running for your data by using NCP function `nc-snapshot-auto` for it.
 
-**Simple explanation**:
+     **Simple explanation**:
 With the snapshots you get restore points for your data -directory, a bit similar way as you can have for your “Windows System Restore” or “Mac Time machine”. “Snapper” on linux is also using BTRFS -snapshots. Restore points with BTRFS -snapshots normally live inside the same drive as you have the data -directory to restore. Every single snapshot represents the state of the data -directory on one specific point of time. Snapshot contains the files that are deleted after one version earlier and links to all the files that where represented in that specific version of data -directory. When you run snapshots all your deleted data are stored in the snapshots for some specific retention time that is configured. In NCP you configure how many snapshots you keep before they are deleted. Because of this snapshots -directory as a whole can be defined as historical log of the original directory, but is containing also the deleted data. So running BTRFS -snapshots using NCP -functions protects you from data alteration or deletion on the data -directory, but it wont protect you from braking of the drive you run them in. So that’s why you need to also do the step 2.
 
 2. Run the scheduled sync function for the BTRFS -snapshots to backup to the NextcloudHDD2 by using the NCP function nc-snapshot-sync for it.
 
-**Simple explanation**:
+     **Simple explanation**:
 Scheduled syncing of the snapshots is periodically copying all your new snapshots to your NextcloudHDD2, so you get fully replicated snapshots including all your data in data -directory. So after this you have full backup of your data -directory with versioning but this data directory on backup drive is “invisible” for regular file explorer.
 
 
 3. Make sheduled data less backup to the NextcloudHDD2 using NCP function nc-backup-auto.
 
-**Simple explanation**:
+     **Simple explanation**:
 This is for backing up your NC -configurations and for your NC -database. Sheduled dataless backup means nc-backup-auto function in NCP when you do not choose to include data fom the options.
 
 4. Make backup of your NCP -configurations to the NextcloudHDD2 using NCP function nc-export-ncp for it. This is the last step so you get the configurations you just made earlier saved to the first backup.
@@ -69,7 +69,7 @@ This is for backing up your NC -configurations and for your NC -database. Shedul
 
 To restore inside backup drive:
 
-sudo btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
+ > sudo btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
 
 **NOTE**: like explained above the snapshots logs are linked to the hidden data on your NextcloudHDD2 so you have to restore from snapshots to inside the backupdrive not to the new replacement drive that replaces NextcloudHDD1.
 
@@ -77,11 +77,11 @@ sudo btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /me
 
 Turn maintenance mode on:
 
-ncc maintenance:mode –on
+ > ncc maintenance:mode –on
 
 Delete manually the data -directory that has been created automatically to the new NextcloudHDD1. If there is already snapshots running on the new replacement drive delete the directory by:
 
-sudo btrfs subvolume delete /media/NextcloudHDD1/ncdata
+ > sudo btrfs subvolume delete /media/NextcloudHDD1/ncdata
 
 Copy manually the just restored data -directory (one version) from the NextcloudHDD2 to NextcloudHDD1
   
@@ -90,13 +90,13 @@ OR
 You can also use btrfs-sync to copy the snapshots (all versions) from NextcloudHDD2 to NextcloudHDD1
 
 ```
-btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
+ > btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
 ```
 
 Turn the maintanence mode off:
 
 ```
-ncc maintenance:mode –off
+ > ncc maintenance:mode –off
 ```
 
 Make the Nextcloud instance aware of the restored data files by running the ncp-app `nc-scan`.
