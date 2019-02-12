@@ -8,7 +8,7 @@ To fully backup and restore your NC instance containing:
 
 Snapshots are very fast and takes very little space because they are not duplicating your data while they are versioning it. In this backup strategy you use BTRFS -snapshots function included in NCP. In this setup snapshots only backs up your data -directory (4.), so you need to backup other things important to run your cloud (1, 2, 3) with using separate options that are included here. This guide is not including OS and and all apps running on it, like NCP app itself. For those you need a separate solution. But if you use SSD for OS drive its most likely more durable than HDD when it only runs OS and apps but does not store cloud data and backups. SSD running only OS and applications should last a lifetime if you look only the average read and write durability announced by manufacturer. 
 
-NOTE: On command line (Terminal) run commands as a root or use sudo.
+**NOTE**: On command line (Terminal) run commands as a root or use sudo.
 
 # Drives for this example
 
@@ -70,35 +70,35 @@ This is for backing up your NC -configurations and for your NC -database. Shedul
 3. Restore your ncdata -directory from snapshots inside your backup drive
 
 To restore inside backup drive:
-
- > btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
-
+```
+ btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
+```
 **NOTE**: like explained above the snapshots logs are linked to the hidden data on your NextcloudHDD2 so you have to restore from snapshots to inside the backupdrive not to the new replacement drive that replaces NextcloudHDD1.
 
 4. Copy the just restored data -directory to the new replacement drive the new NextcloudHDD1, by these steps
 
 Turn maintenance mode on:
-
- > ncc maintenance:mode –on
-
+```
+ncc maintenance:mode –on
+```
 Delete manually the data -directory that has been created automatically to the new NextcloudHDD1. If there is already snapshots running on the new replacement drive delete the directory by:
-
- > btrfs subvolume delete /media/NextcloudHDD1/ncdata
-
+```
+btrfs subvolume delete /media/NextcloudHDD1/ncdata
+```
 Copy manually the just restored **data -directory** (one version) from the NextcloudHDD2 to NextcloudHDD1
   
 OR
 
 You can also use btrfs-sync **to copy** the **snapshots** (all versions) from NextcloudHDD2 to NextcloudHDD1
 
-
- > btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
-
+```
+ btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
+```
 
 Turn the maintanence mode off:
 
-
- > ncc maintenance:mode –off
-
+```
+ ncc maintenance:mode –off
+```
 
 Make the Nextcloud instance aware of the restored data files by running the ncp-app `nc-scan`.
