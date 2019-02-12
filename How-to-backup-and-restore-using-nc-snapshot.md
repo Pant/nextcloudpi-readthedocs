@@ -6,7 +6,9 @@ To fully backup and restore your NC instance containing:
 3. NC -database,
 4. NC -data (ncdata contains all user`s files in cloud)
 
-Snapshots are very fast and takes very little space because they are not duplicating your data while they are versioning it. In this backup strategy you use BTRFS -snapshots function included in NCP. In this setup snapshots only backs up your data -directory (4.), so you need to backup other things important to run your cloud (1, 2, 3) with using separate options that are included here. This guide is not including OS and and all apps running on it, like NCP app itself. For those you need a separate solution. But if you use SSD for OS drive its most likely more durable than HDD when it only runs OS and apps but does not store cloud data and backups. SSD running only OS and applications should last a lifetime if you look only the average read and write durability announced by manufacturer.
+Snapshots are very fast and takes very little space because they are not duplicating your data while they are versioning it. In this backup strategy you use BTRFS -snapshots function included in NCP. In this setup snapshots only backs up your data -directory (4.), so you need to backup other things important to run your cloud (1, 2, 3) with using separate options that are included here. This guide is not including OS and and all apps running on it, like NCP app itself. For those you need a separate solution. But if you use SSD for OS drive its most likely more durable than HDD when it only runs OS and apps but does not store cloud data and backups. SSD running only OS and applications should last a lifetime if you look only the average read and write durability announced by manufacturer. 
+
+NOTE: On command line (Terminal) run commands as a root or use sudo.
 
 # Drives for this example
 
@@ -31,7 +33,7 @@ You may want to use LUKS full drive encryption so nobody gets your data by just 
 In order to create a BTRFS partition from your PC you need to install `btrfs-tools`  
 
 ```
-sudo apt install btrfs-tools
+apt install btrfs-tools
 ```
 
 **NOTE**: Newest Ubuntu 18.04 LTS has support for formating drive to BTRFS with LUKS encryption in a simple way by GUI tools but for example Debian Strech Stable does not. You might be able to do it with Strech but its difficult get it working right. So use the most recent Debian based OS as you can for formatting the drives or find a guide for some more complicated way.
@@ -69,7 +71,7 @@ This is for backing up your NC -configurations and for your NC -database. Shedul
 
 To restore inside backup drive:
 
- > sudo btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
+ > btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
 
 **NOTE**: like explained above the snapshots logs are linked to the hidden data on your NextcloudHDD2 so you have to restore from snapshots to inside the backupdrive not to the new replacement drive that replaces NextcloudHDD1.
 
@@ -81,13 +83,13 @@ Turn maintenance mode on:
 
 Delete manually the data -directory that has been created automatically to the new NextcloudHDD1. If there is already snapshots running on the new replacement drive delete the directory by:
 
- > sudo btrfs subvolume delete /media/NextcloudHDD1/ncdata
+ > btrfs subvolume delete /media/NextcloudHDD1/ncdata
 
-Copy manually the just restored data -directory (one version) from the NextcloudHDD2 to NextcloudHDD1
+Copy manually the just restored **data -directory** (one version) from the NextcloudHDD2 to NextcloudHDD1
   
 OR
 
-You can also use btrfs-sync to copy the snapshots (all versions) from NextcloudHDD2 to NextcloudHDD1
+You can also use btrfs-sync **to copy** the **snapshots** (all versions) from NextcloudHDD2 to NextcloudHDD1
 
 
  > btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
