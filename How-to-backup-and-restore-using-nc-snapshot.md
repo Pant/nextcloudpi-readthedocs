@@ -8,13 +8,13 @@ To fully backup and restore your NC instance containing:
 
 Snapshots are very fast and takes very little space because they are not duplicating your data while they are versioning it. In this backup strategy you use BTRFS -snapshots function included in NCP. In this setup snapshots only backs up your data -directory (4.), so you need to backup other things important to run your cloud (1, 2, 3) with using separate options that are included here. This guide is not including OS and and all apps running on it, like NCP app itself. For those you need a separate solution. But if you use SSD for OS drive its most likely more durable than HDD when it only runs OS and apps but does not store cloud data and backups. SSD running only OS and applications should last a lifetime if you look only the average read and write durability announced by manufacturer. 
 
-**NOTE**: On command line (Terminal) run commands as a root or use sudo.
+>**NOTE**: On command line (Terminal) run commands as a root or use sudo.
 
 # Drives for this example
 
-You can of course install your OS and all programs on one disk that also includes your Nextcloud instance with all your data and use one backupdrive for backing it up, but in this guide we use three different physical drives (HDD, SSD, thumb drive or SD):
+You can of course install your OS and all programs on one disk that also includes your Nextcloud instance with all your data and use one backup-drive for backing it up, but in this guide we use three different physical drives (HDD, SSD, thumb drive or SD):
 
-1. OS drive for operating system (Debian strech) and programs on it named “NextcloudDrive0” and 
+1. OS drive for operating system (Debian Stretch) and programs on it named “NextcloudDrive0” and 
 2. primary drive for Nextcloud instance named “NextcloudHDD1” and
 3. secondary drive for Nextcloud instance backups “NextcloudHDD2”
 
@@ -36,7 +36,7 @@ In order to create a BTRFS partition from your PC you need to install `btrfs-too
 apt install btrfs-tools
 ```
 
-**NOTE**: Newest Ubuntu 18.04 LTS has support for formating drive to BTRFS with LUKS encryption in a simple way by GUI tools but for example Debian Strech Stable does not. You might be able to do it with Strech but its difficult get it working right. So use the most recent Debian based OS as you can for formatting the drives or find a guide for some more complicated way.
+>**NOTE**: Newest Ubuntu 18.04 LTS has support for formatting drive to BTRFS with LUKS encryption in a simple way by GUI tools but for example Debian Stretch **Stable** does not. You might be able to do it with Stretch Stable but its difficult get it working right. So use the most recent Debian based OS as you can for formatting the drives or find a guide for some more complicated way.
 
 1. Create partition table GPT,
 2. Format drive to BTRFS + LUKS by first choosing first format to btrfs and then checking the box that says use encryption. Choose your encryption pass phrase and save it to some place safe and when mounting the drive choose option to remember the passphrase.
@@ -46,7 +46,7 @@ apt install btrfs-tools
 1. For the first make scheduled BTRFS -snapshots running for your data by using NCP function `nc-snapshot-auto` for it.
 
      **Simple explanation**:
-With the snapshots you get restore points for your data -directory, a bit similar way as you can have for your “Windows System Restore” or “Mac Time machine”. “Snapper” on linux is also using BTRFS -snapshots. Restore points with BTRFS -snapshots normally live inside the same drive as you have the data -directory to restore. Every single snapshot represents the state of the data -directory on one specific point of time. Snapshot contains the files that are deleted after one version earlier and links to all the files that where represented in that specific version of data -directory. When you run snapshots all your deleted data are stored in the snapshots for some specific retention time that is configured. In NCP you configure how many snapshots you keep before they are deleted. Because of this snapshots -directory as a whole can be defined as historical log of the original directory, but is containing also the deleted data. So running BTRFS -snapshots using NCP -functions protects you from data alteration or deletion on the data -directory, but it wont protect you from braking of the drive you run them in. So that’s why you need to also do the step 2.
+With the snapshots you get restore points for your data -directory, a bit similar way as you can have for your “Windows System Restore” or “Mac Time machine”. “Snapper” on Linux is also using BTRFS -snapshots. Restore points with BTRFS -snapshots normally live inside the same drive as you have the data -directory to restore. Every single snapshot represents the state of the data -directory on one specific point of time. Snapshot contains the files that are deleted after one version earlier and links to all the files that where represented in that specific version of data -directory. When you run scheduled snapshots there will be hourly snapshots, daily snapshots, weekly snapshots and monthly snapshots. All your deleted data are stored in the snapshots for specific retention time that is preconfigured in NCP. These configurations are: one per hour, limit: 24,one per week, limit: 4, one per day, limit: 30, one per month, limit: 12 snapshots. So effectively you have one year retention time for your files in cloud. Because of this snapshots -directory as a whole can be defined as historical log of the original directory, but is containing also the deleted data. So running BTRFS -snapshots using NCP -functions protects you from data alteration or deletion on the data -directory, but it wont protect you from braking of the drive you run them in. So that’s why you need to also do the step 2.
 
 2. Run the scheduled sync function for the BTRFS -snapshots to backup to the NextcloudHDD2 by using the NCP function nc-snapshot-sync for it.
 
@@ -54,10 +54,10 @@ With the snapshots you get restore points for your data -directory, a bit simila
 Scheduled syncing of the snapshots is periodically copying all your new snapshots to your NextcloudHDD2, so you get fully replicated snapshots including all your data in data -directory. So after this you have full backup of your data -directory with versioning but this data directory on backup drive is “invisible” for regular file explorer.
 
 
-3. Make sheduled data less backup to the NextcloudHDD2 using NCP function nc-backup-auto.
+3. Make scheduled data less backup to the NextcloudHDD2 using NCP function nc-backup-auto.
 
      **Simple explanation**:
-This is for backing up your NC -configurations and for your NC -database. Sheduled dataless backup means nc-backup-auto function in NCP when you do not choose to include data fom the options.
+This is for backing up your NC -configurations and for your NC -database. Scheduled data-less backup means nc-backup-auto function in NCP when you do not choose to include data from the options.
 
 4. Make backup of your NCP -configurations to the NextcloudHDD2 using NCP function nc-export-ncp for it. This is the last step so you get the configurations you just made earlier saved to the first backup.
 
@@ -73,9 +73,11 @@ To restore inside backup drive:
 ```
  btrfs subvolume snapshot /media/NextcloudHDD2/ncp-snapshots/daily-xxxxx /media/NextcloudHDD2/ncdata
 ```
-**NOTE**: like explained above the snapshots logs are linked to the hidden data on your NextcloudHDD2 so you have to restore from snapshots to inside the backupdrive not to the new replacement drive that replaces NextcloudHDD1.
+>**NOTE**: like explained above the snapshots logs are linked to the hidden data on your NextcloudHDD2 so you have to restore from snapshots to inside the backup-drive not to the new replacement drive that replaces NextcloudHDD1.
 
 4. Copy the just restored data -directory to the new replacement drive the new NextcloudHDD1, by these steps
+
+>**NOTE**: Now when you have already running Nextcloud instance so for manual alterations you have to also manually switch maintenance mode on and off.
 
 Turn maintenance mode on:
 ```
@@ -95,7 +97,7 @@ You can also use btrfs-sync **to copy** the **snapshots** (all versions) from Ne
  btrfs-sync /media/NextcloudHDD2/.snapshots /media/NextcloudHDD1/snapshots
 ```
 
-Turn the maintanence mode off:
+Turn the maintenance mode off:
 
 ```
  ncc maintenance:mode –off
