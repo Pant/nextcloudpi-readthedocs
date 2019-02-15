@@ -1,6 +1,6 @@
 If you want to receive emails for password recovery and notifications, you have to set up the email settings in Nextcloud.
 
-Email settings for Nextcloud are located in Admin -> Additional Settings -> Email server. There are 2 recommended ways to set the email address that mails come from:
+Email settings for Nextcloud are located in Admin -> Basic Settings -> Email server. There are 2 recommended ways to set the email address that mails come from:
 
 1. PHP (postfix)
 2. SMTP
