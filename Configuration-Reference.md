@@ -14,6 +14,22 @@
 * * [nc-snapshot-sync](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-sync)
 * * [nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot)
 * [CONFIG](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#config)   
+* * [nc-admin](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-admin)
+* * [nc-autoupdate-nc](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-autoupdate-nc)
+* * [nc-autoupdate-ncp](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-autoupdate-ncp)
+* * [nc-database](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-database)
+* * [nc-datadir](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-datadir)
+* * [nc-httpsonly](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-httpsonly)
+* * [nc-init](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-init)
+* * [nc-limits](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-limits)
+* * [nc-nextcloud](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-nextcloud)
+* * [nc-notify-updates](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-notify-updates)
+* * [nc-passwd](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-passwd)
+* * [nc-prettyURL](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-prettyURL)
+* * [nc-scan-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan-auto)
+* * [nc-trusted-domains](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-trusted-domains)
+* * [nc-update-nc-apps-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nc-apps-auto)
+* * [nc-webui](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-webui)
 * [NETWORKING](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#networking)   
 * [SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)   
 * [SYSTEM](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#system)   
@@ -106,6 +122,7 @@ See comments on nc-rsync. This lets you automatically schedule the rsync process
 
 ## nc-snapshot-auto
 Automatic btrfs snapshots
+See [How to backup and restore using nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/How-to-backup-and-restore-using-nc-snapshot)
 
 ## nc-snapshot-sync
 Automatic btrfs snapshots sync to external drive or location
@@ -189,14 +206,33 @@ Get notified for updates (Pending or Installed) through the Nextcloud notificati
 3. Change `USER` to the user you want to be notified (default=admin).
 4. Click Run or Start.
 
-## nc-scan-auto
-Automate a Nextcloud scan for user files.
+
 
 ### How to enable
 1. Navigate to `nc-scan-auto` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 3. Set `SCANINTERVAL` to the interval (in minutes) you want to scan every.
 4. Click Run or Start.
+
+## nc-passwd
+View or (re)set password for admin user **ncp** for NCP-web at localhost:4443
+
+## nc-prettyURL
+Set pretty URLs (no index.php in URL)
+
+## nc-scan-auto
+Periodically scan NC for externally modified files
+Set the time in minutes in Scan Interval.
+
+>>> If there are too many files this can greatly affect performance. <<<
+
+## nc-trusted-domains
+Manually add trusted domains
+Note that this is normally not needed, as NCP will do this automatically for you in most cases
+
+## nc-update-nc-apps-auto
+Periodically update all installed Nextcloud Apps
+
 
 ## nc-webui
 Enable or disable the WebUI.
