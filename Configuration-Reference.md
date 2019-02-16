@@ -105,6 +105,12 @@ See comments on nc-rsync. This lets you automatically schedule the rsync process
 ---------------------------------------------------
 # CONFIG
 
+## nc-admin
+View or (re)set password for user **ncp**, the adminstrator of Nextcloud web interface.
+
+## nc-autoupdate-nc
+Automatically update Nextcloud.
+
 ## nc-autoupdate-ncp
 Automatically update NextCloudPi.
 
