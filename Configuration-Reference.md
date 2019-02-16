@@ -34,6 +34,23 @@ Perform a manual backup.
 4. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
 5. Click Run or Start.
 
+## nc-export-ncp
+Export NextCloudPi configuration
+Note: This exports only the settings from NCP, **NO NC data, NC database or NC configuration is included**
+
+### How to configure
+1. Create the directory where you want the NCP settings to be saved.
+2. Set export directory path.
+3. Click "Apply"
+
+## nc-import-ncp
+Import NextCloudPi configuration
+Note: This importts only the settings from NCP, **NO NC data, NC database or NC configuration is included**
+
+### How to configure
+1. Set import file name and path.
+3. Click "Apply"
+
 ## nc-restore
 Restore a previously backuped Nextcloud instance.<br>
 If the `data` folder of Nextcloud was not included in the backup: After restoring, edit /var/www/nextcloud/config/config.php and point your Nextcloud instance to the path where the data is. After that run nc-scan to make Nextcloud aware of the new files.
