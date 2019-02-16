@@ -10,7 +10,9 @@
 * * [nc-restore](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-restore)
 * * [nc-rsync-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-rsync-auto)
 * * [nc-rsync](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-rsync)
+* * [nc-snapshot-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-auto)
 * * [nc-snapshot-sync](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-sync)
+* * [nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot)
 * [CONFIG](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#config)   
 * [NETWORKING](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#networking)   
 * [SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)   
@@ -102,6 +104,14 @@ If this also works ("A" means ACL-support) then you are fine. If this gives and 
 ## nc-rsync-auto
 See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
 
+## nc-snapshot-auto
+Automatic btrfs snapshots
+
+## nc-snapshot-sync
+Automatic btrfs snapshots sync to external drive or location
+
+## nc-snapshot
+Manual btrfs snapshots
 ---------------------------------------------------
 # CONFIG
 
