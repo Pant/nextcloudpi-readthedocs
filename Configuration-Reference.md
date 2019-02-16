@@ -36,7 +36,8 @@ Perform a manual backup.
 
 ## nc-export-ncp
 Export NextCloudPi configuration
-Note: This exports only the settings from NCP, **NO NC data, NC database or NC configuration is included**
+Note: This exports **only** the settings from NCP.
+**NO** NC data, NC database or NC configuration are included.
 
 ### How to configure
 1. Create the directory where you want the NCP settings to be saved.
@@ -45,7 +46,8 @@ Note: This exports only the settings from NCP, **NO NC data, NC database or NC c
 
 ## nc-import-ncp
 Import NextCloudPi configuration
-Note: This importts only the settings from NCP, **NO NC data, NC database or NC configuration is included**
+Note: This imports **only** the settings from NCP. 
+**NO** NC data, NC database or NC configuration are included
 
 ### How to configure
 1. Set import file name and path.
