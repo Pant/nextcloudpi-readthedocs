@@ -4,6 +4,7 @@
 ### Table of Contents  
 * [BACKUPS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#backups)   
 * * [nc-backup-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-backup-auto)
+* * [nc-backup](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-backup)
 * [CONFIG](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#config)   
 * [NETWORKING](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#networking)   
 * [SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)   
