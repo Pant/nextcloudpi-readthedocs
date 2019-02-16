@@ -112,6 +112,7 @@ Automatic btrfs snapshots sync to external drive or location
 
 ## nc-snapshot
 Manual btrfs snapshots
+
 ---------------------------------------------------
 # CONFIG
 
