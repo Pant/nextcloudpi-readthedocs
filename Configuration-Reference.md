@@ -142,7 +142,7 @@ Automatically update Nextcloud.
 ## nc-autoupdate-ncp
 Automatically update NextCloudPi.
 
-### How to enable
+#### How to enable
 1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 3. Change the user to be notified when new updates are installed (default=admin).
