@@ -33,6 +33,15 @@
 * [NETWORKING](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#networking)   
 * * [NFS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nfs)
 * * [SSH](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ssh)
+* * [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq)
+* * [duckDNS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#duckdns)
+* * [freeDNS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#freedns)
+* * [letsencrypt](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#letsencrypt)
+* * [nc-forward-ports](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-forward-ports)
+* * [nc-static-IP](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-static-ip)
+* * [no-IP](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#no-ip)
+* * [samba](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#samba)
+* * [spDYN](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#spdyn)
 * [SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)   
 * [SYSTEM](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#system)   
 * [TOOLS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#tools)
@@ -266,6 +275,9 @@ This is a DNS server that you might need in case you cannot access you cloud fro
 
 See [this post](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) for details.
 
+## duckDNS
+Free Dynamic DNS provider (need account from https://duckdns.org)
+
 ## freeDNS
 [FreeDNS](https://freedns.afraid.org/) client.
 
@@ -304,6 +316,9 @@ You need to enable UPnP on your Router. Also disable it after you configure port
 2. Set the ports your Nextcloud runs on. (It is recomended that you use the defaults)
 3. Click Run or Start.
 
+## nc-static-IP
+Set up a static IP address
+Static IP (ACTIVE=yes), or DHCP (ACTIVE=no)
 
 ## no-ip
 Use the DDNS (Dynamic DNS) service by noip.com.
@@ -331,6 +346,9 @@ Configure SMB/CIFS file server (for Mac/Linux/Windows)
 4. Change `USER` to the NextCloudPi User (default=pi).
 5. Change `PWD` to the NextCloudPi User's Password.
 6. Click Run or Start.
+
+## spDYN
+Free Dynamic DNS provider (need account from spdyn.de)
 
 --------------------------------------------------
 # SECURITY
