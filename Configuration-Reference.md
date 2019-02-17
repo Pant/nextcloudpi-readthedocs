@@ -43,8 +43,27 @@
 * * [samba](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#samba)
 * * [spDYN](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#spdyn)
 * [SECURITY](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#security)   
+* * [ufw](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#ufw)
+* * [fail2ban](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#fail2ban)
+* * [modsecurity](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#modsecurity)
+* * [nc-audit](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-audit)
 * [SYSTEM](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#system)   
+* * [nc-automount](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-automount)
+* * [nc-hdd-monitor](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-hdd-monitor)
+* * [nc-hdd-test](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-hdd-test)
+* * [nc-ramlogs](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-ramlogs)
+* * [nc-swapfile](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-swapfile)
+* * [nc-zram](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-zram)
+* * [unattended-upgrades](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#unattended-upgrades)
 * [TOOLS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#tools)
+* * [nc-fix-permissions](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-fix-permissions)
+* * [nc-format-USB](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-format-usb)
+* * [nc-previews](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-previews)
+* * [nc-scan](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan)
+* * [nc-update-nc-apps](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nc-apps)
+* * [nc-update-nextcloud](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nextcloud)
+* * [nc-update](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update)
+
  
 ----------------------------------------
 # BACKUPS
@@ -353,6 +372,10 @@ Free Dynamic DNS provider (need account from spdyn.de)
 --------------------------------------------------
 # SECURITY
 
+## UFW
+Uncomplicated Firewall, program for managing a netfilter firewall
+Beware of blocking the SSH port you are using! SSH uses port 22 by default, ports 80 and 443 are for the webserver
+
 ## fail2ban
 As soon as your NextClouPi is connected to the internet it might get attacked. Most attacks are probably automated attacks by botnets or scripts trying to break into your System by simply using standard username/password combinations like admin/admin. [fail2ban](https://github.com/fail2ban/fail2ban/wiki/How-fail2ban-works2) scans your webserver logs (which can be found under /var/log/apache2/error.log) for failed login attempts. If there are to many failed attempts (default is 6 failed attempts within 10 minutes) fail2ban will ban the attacker's IP address for a certain amount of time (default is 10 minutes). If you activate mail alerts you will receive emails when fail2ban locks out certain IP addresses. 
 NextCloudPi uses fail2ban to secure Nextcloud logins as well as SSH logins.
@@ -377,6 +400,10 @@ The downside is that it can break some Apps, so disable it if something doesn't 
 
 Learn more [here](https://ownyourbits.com/2017/03/23/modsecurity-web-application-firewall-for-nextcloud/)
 
+## nc-audit
+Perform a security audit with lynis and debsecan
+
+
 -------------------------------------------------------------
 # SYSTEM
 
@@ -388,6 +415,13 @@ Enable this feature if you want your device to automount USB drives.
 2. Change `ACTIVE` to yes.
 3. Click Run or Start.
 
+## nc-hdd-monitor
+Monitor HDD health automatically
+
+## nc-hdd-test
+Check HDD health
+Running no test will display test results
+
 ## nc-ramlogs
 Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM)
 
@@ -395,6 +429,7 @@ Enable mounting logs in RAM to prevent SD degradation (faster, consumes more RAM
 1. Navigate to `nc-ramlogs` in the TUI or the WebUI.
 2. Change `ACTIVE` to `yes`.
 4. Click Run or Start.
+
 
 ## nc-swapfile
 Change the location and the size of the swap file.
@@ -417,6 +452,9 @@ Enable Automatic installation of security updates to keep your cloud safe.
 -----------------------------------------------------
 # TOOLS
 
+## nc-fix-permissions
+Fix permissions for NC data files, in case they were copied externally
+
 ## nc-format-USB
 Do this if you want to format your USB Drive and make it compatible with linux user/permissions system
 
@@ -431,15 +469,26 @@ Do this if you want to format your USB Drive and make it compatible with linux u
 2. Change `LABEL` to a label you like.
 3. Click Run or Start.
 
+## nc-previews
+Generate previews for the gallery
+This will make browsing the gallery much more smooth.
+For big collections, this can take a LONG time, depending on your hardware
+
 ## nc-scan
 Perform a Nextcloud scan for user files.
 
 ### How to run
 1. Navigate to `nc-scan` in the TUI or the WebUI.
 
+## nc-update-nc-apps
+Update all installed Nextcloud Apps
+
+## nc-update-nextcloud
+Update current instance to a new Nextcloud version
+Set to 0 to update to the latest available version
 
 ## nc-update
-Perform a manual update.
+Perform a manual update of NextClouPi.
 
 ### How to run
 1. Navigate to `nc-update` in the TUI or the WebUI.
