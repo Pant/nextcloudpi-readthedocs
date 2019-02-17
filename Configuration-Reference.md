@@ -497,5 +497,7 @@ Perform a manual update of NextClouPi.
 ### How to run
 1. Navigate to `nc-update` in the TUI or the WebUI.
 
+------------------------------------------------------
 
-up to date with v.1.6.3
+## Configuration Reference Document Version  
+Feb 17th 2019 up to date with v.1.6.3
