@@ -13,6 +13,7 @@
 * * [nc-snapshot-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-auto)
 * * [nc-snapshot-sync](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-sync)
 * * [nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot)
+* * [nc-snapshot-restore](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-snapshot-restore)
 * [CONFIG](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#config)   
 * * [nc-admin](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-admin)
 * * [nc-autoupdate-nc](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-autoupdate-nc)
@@ -159,6 +160,9 @@ Automatic btrfs snapshots sync to external drive or location
 
 ## nc-snapshot
 Manual btrfs snapshots
+
+## nc-snapshot-restore
+Manual restore a btrfs snapshot (coming shortly with upcoming update from current 1.6.3)
 
 ---------------------------------------------------
 # CONFIG
@@ -494,3 +498,4 @@ Perform a manual update of NextClouPi.
 1. Navigate to `nc-update` in the TUI or the WebUI.
 
 
+up to date with v.1.6.3
