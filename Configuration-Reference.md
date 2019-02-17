@@ -64,6 +64,7 @@
 * * [nc-update-nc-apps](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nc-apps)
 * * [nc-update-nextcloud](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nextcloud)
 * * [nc-update](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update)
+* [Document version](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#configuration-reference-document-version)
 
  
 ----------------------------------------
