@@ -1,1 +1,1 @@
-![NCP-logo](https://user-images.githubusercontent.com/8775469/52916959-edcc4e80-32e5-11e9-88dc-cc084de702a1.jpg)
+![NCP-logo](https://user-images.githubusercontent.com/8775469/52916959-edcc4e80-32e5-11e9-88dc-cc084de702a1.jpg =100x100)
