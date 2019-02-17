@@ -29,3 +29,5 @@ We have 1GB RAM which is nice but not for every Nextcloud-App is this enough to 
 By default the database is cached to RAM if it is smaller then 15MB.
 This can be increased if database is bigger then 15MB.
 Maybe there are other tweaks to speed things up. 
+
+### Read article [What's wrong with the Raspberry Pi](https://ownyourbits.com/2019/02/02/whats-wrong-with-the-raspberry-pi/) 
