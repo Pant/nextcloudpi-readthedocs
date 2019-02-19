@@ -4,7 +4,7 @@ First we need to install Berryboot, it's a bootloader and management tool for OS
 ## Part 1: First time boot and choosing device to install Nextcloud to.
 
 1. - Download [berryboot-20170527-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi2-pi3.zip) if you have a quadcore RPI.  
-   - Download [berryboot-20170527-pi0-pi1-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi0-pi1-pi2-pi3.zip) for a singlecore RPI.
+   - Download [berryboot-20170527-pi0-pi1-pi2-pi3.zip](http://downloads.sourceforge.net/project/berryboot/berryboot-20170527-pi0-pi1-pi2-pi3.zip) for a singlecore RPI **Please NOTE: only armv7 is supported, armv6 is no longer supported by NCP, due to incompatible php version.**
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
 3. Insert the SD card into your RPI and power it up for first boot.
 4. You'll be presented with following Berryboot Welcome Screen:
