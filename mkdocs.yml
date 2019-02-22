@@ -23,7 +23,7 @@ pages:
         - Sync NC to Android: Configure/Sync-Nextcloud-tasks-calendars-and-contacts-on-your-Android-device.md
         - How to backup and restore using nc-snapshot: Configure/How-to-backup-and-restore-using-nc-snapshot.md
     - Maintain:
-        - Enable SSH: Maintain/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web).md
+        - Enable SSH: Maintain/How-to-enable-SSH-using-nextcloudpi-config-or-ncp-web.md
         - Email settings: Maintain/Email-settings.md
         - Backup & Restore: Maintain/How-to-backup-and-restore-a-NextCloudPi-instance-using-ncp-config.md
         - Auto Backup: Maintain/How-to-periodically-backup-to-a-second-USB-drive-with-NextCloudPi.md
