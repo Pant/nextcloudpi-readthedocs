@@ -1,0 +1,39 @@
+site_name: NextCloudPi Documentation
+theme: readthedocs
+pages:
+    - Getting Started:
+        - Home & Overview: index.md
+        - How to Install: Getting-Started/How-to-install-NextCloudPi.md
+        - How to Access LAN: Getting-Started/How-to-access-NextCloudPi.md
+        - How to Access WAN: Getting-Started/How-to-access-from-outside-your-network.md
+        - How to Berryboot 1: Getting-Started/Berryboot-install-NextCloudPi-on-an-external-drive-step-by-step.md
+        - How to Berryboot 2: Getting-Started/BerryBoot-Instructions-for-NextCloudPi.md
+        - FAQ: Getting-Started/FAQ.md
+        - Why is my Pi slow: Getting-Started/Why-is-my-Pi-so-slow.md
+        - How & where to get help: Getting-Started/How-and-where-to-get-help.md
+        - How to get started with NCP Docker: Getting-Started/How-to-get-started-with-NCP-docker.md
+    - Configure: 
+        - Adding languages: Configure/Add-a-new-language-to-ncp-web.md
+        - Configuration Reference: Configure/Configuration-Reference.md
+        - Configure External USB drive: Configure/How-to-configure-an-external-USB-drive-with-NextCloudPi.md
+        - NCP-config: Configure/How-to-configure-NextCloudPi.md
+        - 2FAuthentication: Configure/Two-Factor-Authentication-for-Nextcloud.md
+        - Letsencrypt DNS: Configure/How-to-get-certificate-with-Letsencrypt-using-DNS-to-verify-domain.md
+        - Letsencrypt closed ports: Configure/How-to-configure-Lets-Encrypt-with-closed-ports-80-and-443.md
+        - Sync NC to Android: Configure/Sync-Nextcloud-tasks-calendars-and-contacts-on-your-Android-device.md
+        - How to backup and restore using nc-snapshot: Configure/How-to-backup-and-restore-using-nc-snapshot.md
+    - Maintain:
+        - Enable SSH: Maintain/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web).md
+        - Email settings: Maintain/Email-settings.md
+        - Backup & Restore: Maintain/How-to-backup-and-restore-a-NextCloudPi-instance-using-ncp-config.md
+        - Auto Backup: Maintain/How-to-periodically-backup-to-a-second-USB-drive-with-NextCloudPi.md
+        - Contribute: Maintain/Contribute.md
+        - Development env: Maintain/Development-environment.md
+        - Testing NCP: Maintain/Testing-NextCloudPi.md
+        - Workflow Testing Feature: Maintain/Workflow-and-testing-of-new-features.md
+        - Update Lynis: Maintain/How-to-update-Lynis.md
+        - App developers guide: Maintain/ncp-app-developer-guide.md
+    - General:
+        - How to install Webmin: General-Info/How-to-install-Webmin-to-nextcloudpi.md
+        - Should I use a Raspberry PI?: General-Info/Should-I-use-a-Raspberry-Pi.md
+
