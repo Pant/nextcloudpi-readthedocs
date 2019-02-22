@@ -59,6 +59,7 @@
 * [TOOLS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#tools)
 * * [nc-fix-permissions](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-fix-permissions)
 * * [nc-format-USB](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-format-usb)
+* * [nc-maintenance](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-maintenance)
 * * [nc-previews](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-previews)
 * * [nc-scan](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan)
 * * [nc-update-nc-apps](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-update-nc-apps)
@@ -473,6 +474,10 @@ Do this if you want to format your USB Drive and make it compatible with linux u
 1. Navigate to `nc-format-USB` in the TUI or the WebUI.
 2. Change `LABEL` to a label you like.
 3. Click Run or Start.
+
+## nc-maintenance
+Turn on or off maintenance mode.
+Open maintenance mode (ACTIVE=yes), or close maintenance mode  (ACTIVE=no)
 
 ## nc-previews
 Generate previews for the gallery
