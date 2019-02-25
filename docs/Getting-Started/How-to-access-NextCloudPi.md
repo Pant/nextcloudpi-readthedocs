@@ -1,19 +1,17 @@
-# Как получить доступ и активировать NextCloudPi
-
-[nc-wifi]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-wifi
+# Доступ к NextCloudPi
 
 Это руководство поможет вам получить доступ к NextCloudPi.
 
 # Доступ
 
-## Мгновенный Доступ к Домену
-При запуске, ваше устройство должно стать доступным на [https://nextcloudpi](https://nextcloudpi) или на [https://nextcloudpi.local](https://nextcloudpi.local).
+## Прямой доступ к домену
+При запуске, ваше устройство должно стать доступным по адресу [https://nextcloudpi](https://nextcloudpi) или на [https://nextcloudpi.local](https://nextcloudpi.local).
 
 ![](https://ownyourbits.com/wp-content/uploads/2017/09/local-access1.jpg)
 
-Если вы используете Windows, вам понадобитсо установить [Bonjour Services for Windows](https://support.apple.com/kb/DL999)  чтобы вы смогли бы открыть локальные домены. Если ваш браузер перенаправляет вас на какую-либо поисковую систему, вы можете вставить весь адрес (вместе с https://). 
+Если вы используете Windows, то вам потребуется установить [Bonjour Services for Windows](https://support.apple.com/kb/DL999), чтобы ваш ПК смог найти домен в локальной сети. Если вместо страницы Nextcloud браузер перенаправляет вас на страницу какой-либо поисковой системы, то убедитесь, что вы вставляете полный путь в строку браузера(вместе с https://).
 
-Если это не поможет, попробуйте следующее, чтобы узнать IP-адрес вашего Raspberry Pi.
+Если прямой доступ к домену не работает, то вам необходимо узнать IP-адрес вашего Raspberry Pi в локальной сети. Для этого попробуйте следующее.
 
 ## Как найти IP-адрес Raspberry Pi
 Вы должны найти локальный IP-адрес Raspberry Pi, чтобы подключиться к нему и настроить его.
