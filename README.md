@@ -1,4 +1,3 @@
-# nextcloudpi-readthedocs
-NextCloudPi Documentation
+# NextCloudPi Documentation - English Version
 
 https://nextcloudpi-documentation.readthedocs.io/en/latest/
