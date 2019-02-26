@@ -1,2 +1,12 @@
-site_name: NextCloudPi Documentation
+site_name: Документация по NextCloudPi
 theme: readthedocs
+pages:
+    - Getting Started:
+        - Home & Overview: index.md
+        - How to Access LAN: Getting-Started/How-to-access-NextCloudPi.md
+        - How to Access WAN: Getting-Started/How-to-access-from-outside-your-network.md
+    - Configure: 
+        - Configuration Reference: Configure/Configuration-Reference.md
+        - Configure External USB drive: Configure/How-to-configure-an-external-USB-drive-with-NextCloudPi.md
+        - NCP-config: Configure/How-to-configure-NextCloudPi.md
+        - Letsencrypt closed ports: Configure/How-to-configure-Lets-Encrypt-with-closed-ports-80-and-443.md
