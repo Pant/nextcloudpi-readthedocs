@@ -1,4 +1,4 @@
-# Как настроить Let's Encrypt
+# Конфигурирование Let's Encrypt если 80 и 443 порты закрыты
 
 > Эта запись была первоначально написана @albrechtar [в этом вопросе github](https://github.com/nextcloud/nextcloudpi/issues/186#issuecomment-328333387)
 
