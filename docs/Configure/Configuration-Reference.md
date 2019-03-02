@@ -1,7 +1,12 @@
 [nc-scan-auto]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan-auto
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
-### Table of Contents  
+### 目錄
+
+※ 因為這些功能標題尚未得到完全翻譯，因此此目錄無法進行任何翻譯。
+
+*Because these feature headings have not been fully translated, this directory cannot be translated in any way*
+
 * [BACKUPS](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#backups)   
 * * [nc-backup-auto](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-backup-auto)
 * * [nc-backup](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-backup)
@@ -72,49 +77,54 @@
 # BACKUPS
 
 ## nc-backup-auto
-Perform automatic backups.
+執行自動備份。
 
-### How to enable
-1. Navigate to `nc-backup-auto` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `DESTDIR` to a desired location for the backups.
-4. Change `INCLUDEDATA` to `yes` (optional), to backup your data as well.
-5. Change `BACKUPDAYS` to the number of days to perform the backup.
-6. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
-7. Click Run or Start.
+### 如何啟用？
+1. 使用 TUI 或 WebUI 開啟 `nc-backup-auto` 功能頁面。
+2. 將 `ACTIVE` 修改(勾選)成 `yes`。
+3. 將 `DESTDIR` 修改成備份儲存的位置。
+4. 若需要連數據一起備份，將 `INCLUDEDATA` 修改(勾選)成 `yes` (可選)。
+5. 將`BACKUPDAYS`修改為執行備份的天數。(每隔[幾]天備份一次)
+6. 將 `BACKUPLIMIT` 修改成備份保留時間，達到這個時間，系統將會把備份刪除、並替換成新的備份。
+7. 按下 Run 或 Start。
 
 ## nc-backup
-Perform a manual backup.
+執行手動備份。
 
-### How to configure
-1. Navigate to `nc-backup` in the TUI or the WebUI.
-2. Change `DESTDIR` to the desired location you want your backup to be.
-3. Change `INCLUDEDATA` to `yes` if you want to include the Nextcloud data to the backup as well.
-4. Change `BACKUPLIMIT` to the number of backups to be kept. If limit is reached, then the new backup will replace the older one.
-5. Click Run or Start.
+### 如何設定？
+1. 使用 TUI 或 WebUI 開啟 `nc-backup` 功能頁面。
+2. 將 `DESTDIR` 修改成備份儲存的位置。
+3. 若需要連數據一起備份，將 `INCLUDEDATA` 修改(勾選)成 `yes` (可選)。
+4. 將 `BACKUPLIMIT` 修改成備份保留時間，達到這個時間，系統將會把備份刪除、並替換成新的備份。
+5. 按下 Run 或 Start。
 
 ## nc-export-ncp
-Export NextCloudPi configuration
-Note: This exports **only** the settings from NCP.
-**NO** NC data, NC database or NC configuration are included.
+匯出 NextCloudPi 配置
 
-### How to configure
-1. Create the directory where you want the NCP settings to be saved.
-2. Set export directory path.
-3. Click "Apply"
+注意： 這**僅**匯出 NextCloudPi 的配置設定。
+
+**沒有** NextCloud 數據、NextCloud 資料庫、NextCloud 設置。
+
+### 如何設定？
+1. 建立要匯出 ncp 設置的目錄。
+2. 設置匯出目錄路徑。
+3. 按下 "Apply"。
 
 ## nc-import-ncp
-Import NextCloudPi configuration
-Note: This imports **only** the settings from NCP. 
-**NO** NC data, NC database or NC configuration are included
+匯入 NextCloudPi 配置
 
-### How to configure
-1. Set import file name and path.
-3. Click "Apply"
+注意：**僅**匯入 NCP 的所有設定。
+
+**沒有** NextCloud 數據、NextCloud 資料庫、NextCloud 設置。
+
+### 如何設定？
+1. 設置匯入的檔案名稱及路徑。
+2. 按下 "Apply"。
 
 ## nc-restore
-Restore a previously backuped Nextcloud instance.<br>
-If the `data` folder of Nextcloud was not included in the backup: After restoring, edit /var/www/nextcloud/config/config.php and point your Nextcloud instance to the path where the data is. After that run nc-scan to make Nextcloud aware of the new files.
+從備份檔案中復原 NextCloud。
+
+若`data`資料夾中並沒有使用者數據，還原後請編輯 `/var/www/nextcloud/config/config.php`，將使用者數據位置設定至內。再運行`nc-scan`重新掃描使用者數據。
 
 ```
 file: config.php
