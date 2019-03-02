@@ -1,10 +1,12 @@
-歡迎來到 NextCloudPi 說明頁面！這裡充滿了許多 NextCloudPi 的相關知識，例如設置參考、維護說明等。歡迎你跟我們一起為這個社區貢獻，讓這個社區能夠蓬勃發展！
+# 歡迎來到 NextCloudPi 說明頁面！
+
+這裡充滿了許多 NextCloudPi 的相關知識，例如設置參考、維護說明等。歡迎你跟我們一起為這個社區貢獻，讓這個社區能夠蓬勃發展！
+
+※ 由於繁體中文文檔翻譯才剛開始，大部分文檔都還是英文。在資源上還沒有很足夠。若這造成了你的困擾，請參見英文版本。
 
 ![](https://camo.githubusercontent.com/4f384c9344f2deded0ade5f65890a114af8f834e/68747470733a2f2f6f776e796f7572626974732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031372f31312f6e63702d7371756172652e706e67)
 
 如果這是你第一次使用 NextCloudPi，可以從 [如何安裝](https://github.com/nextcloud/nextcloudpi/wiki/How-to-install-NextCloudPi)這篇文章開始閱讀。
-
-All the wiki pages are available alphabetically from the right side bar, in an effort to make them more accessible here they are listed into three main categories. It is a work in progress......
 
 所有說明頁面都可以從側邊欄找到，為了使它們更易於查詢及訪問，它們列為三個主要類別。
 
