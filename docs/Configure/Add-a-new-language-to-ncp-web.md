@@ -1,11 +1,12 @@
-In order to create a new language for _ncp-web_, follow these steps
+想為  _ncp-web_ 建立新語言嗎？請按照下列步驟操作。
 
-- start your [development environment](https://github.com/nextcloud/nextcloudpi/wiki/Development-environment)
+- 建立開發環境 [development environment](https://github.com/nextcloud/nextcloudpi/wiki/Development-environment)
 
-- download the templates from [here](https://ownyourbits.com/downloads/l10n_templates.zip)
+- 下載 [範本](https://ownyourbits.com/downloads/l10n_templates.zip)
 
-_You can view the Chinese translation, which is the most translated translation of the current NCP. (using Chinese translation as a template)_
-_Since the file has not been updated for a long time, we started making new templates._
+※ _很抱歉的，我們的社區沒有足夠的時間維護翻譯範本，翻譯範本可能已經過時，我們正在努力製作新的範本 _
+
+_若你在翻譯的時候遇到瓶頸，你可以查看中文翻譯，這是當前 ncp 翻譯最多的譯文，或者直接使用中文翻譯作為範本。_
 
 - learn your language code [here](https://www.metamodpro.com/browser-language-codes)
 
