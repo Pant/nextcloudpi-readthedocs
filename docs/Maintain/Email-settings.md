@@ -1,11 +1,11 @@
-If you want to receive emails for password recovery and notifications, you have to set up the email settings in Nextcloud.
+如果你想要接收 NexCloud 電子郵件通知、忘記密碼等功能，你必須參照以下說明來進行設定。
 
-Email settings for Nextcloud are located in Admin -> Basic Settings -> Email server. There are 2 recommended ways to set the email address that mails come from:
+電子郵件位於 Nextcloud 設定 管理 -> 基本設定 -> 郵件伺服器。有建議兩種方法來設定電子郵件：
 
 1. PHP (postfix)
 2. SMTP
 
-PHP is the most simple and easier to configure.
+最簡單設定的是 PHP 
 
 The differences between them are that in PHP mode, sent emails pass through the ncp mail server named `postfix`, as opposed in SMTP mode where the email get passed through your email provider(Gmail, Yahoo, etc). With SMTP emails are saved in `Sent` folder of your account. 
 
