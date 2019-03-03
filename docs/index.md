@@ -9,7 +9,7 @@ All the wiki pages are available alphabetically from the right side bar, in an e
 
 | Getting Started             | Configure                     | Maintain             |
 | :-------------------------- | :---------------------------: | -------------------: |
-| [Home & Overview](index)            | [Adding languages](Configure/Add-a-new-language-to-ncp-web)              | [Enable SSH](Maintain/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web))           |
+| [Home & Overview](index.md)            | [Adding languages](Configure/Add-a-new-language-to-ncp-web)              | [Enable SSH](Maintain/How-to-enable-SSH-using-nextcloudpi-config-(or-ncp-web))           |
 | [How to Install](Getting-Started/How-to-install-NextCloudPi)              | [Configuration Reference](Configure/Configuration-Reference)       | [Email settings](Maintain/Email-settings)       |
 | [How to Access LAN](Getting-Started/How-to-access-NextCloudPi)           | [Configure External USB drive](Configure/How-to-configure-an-external-USB-drive-with-NextCloudPi)  | [Backup & Restore](Maintain/How-to-backup-and-restore-a-NextCloudPi-instance-using-ncp-config)     |
 | [How to Access WAN](Getting-Started/How-to-access-from-outside-your-network)           | [NCP-config](Configure/How-to-configure-NextCloudPi)                    | [Auto Backup](Maintain/How-to-periodically-backup-to-a-second-USB-drive-with-NextCloudPi)         | 
