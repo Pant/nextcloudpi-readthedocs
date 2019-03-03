@@ -8,10 +8,10 @@ First we need to install Berryboot, it's a bootloader and management tool for OS
 2. Unzip the file into an empty fat32 formatted (micro) SD card.
 3. Insert the SD card into your RPI and power it up for first boot.
 4. You'll be presented with following Berryboot Welcome Screen:
-[[https://user-images.githubusercontent.com/8775469/32147239-5a3d5218-bce4-11e7-9947-c54a0e8d1357.png]]   
+![](https://user-images.githubusercontent.com/8775469/32147239-5a3d5218-bce4-11e7-9947-c54a0e8d1357.png)   
 In this first screen you can enable or disable overscan, check your network connection, set your time-zone and keyboard layout.If your Pi is connected to the Internet BerryBoot will try to detect your location based on your IP-address, and set the right timezone automatically. Verify that it is correct and press “ok”
 5. In the next screen you choose were to install:  
-[[https://user-images.githubusercontent.com/8775469/32147241-6218820a-bce4-11e7-9d74-26066dff5424.png]]   
+![](https://user-images.githubusercontent.com/8775469/32147241-6218820a-bce4-11e7-9d74-26066dff5424.png)   
 Select where you want to store the operating system files, and press “format”
 You can choose to install the operating system files: 
 - on the SD card itself
@@ -24,7 +24,7 @@ Be aware that if you choose an external drive, the files of the operating system
 When done you'll be presented with OS installation selection screen, just click cancel, returning to the main Berryboot menu and click exit to reboot your RPI, after which we can proceed to 
 
 ## Part 2 Import the NextCloudPi.img into the Berryboot menu
-[[https://user-images.githubusercontent.com/8775469/32148601-d812147a-bcf9-11e7-96f7-f33faed236f2.jpg]]
+![](https://user-images.githubusercontent.com/8775469/32148601-d812147a-bcf9-11e7-96f7-f33faed236f2.jpg)
 Importing a squashfs image can be done through:
 - downloading from network location
 - copying from usb
@@ -34,8 +34,8 @@ Put your SquashFS formatted image on a USB stick, go to the “Operating system 
 
 If you don't have a NextCloudPi squashfs image yet, you can [download latest image or torrent here](https://ownyourbits.com/downloads/)  
 Once installed and available in the menu hit exit to reboot and wait for NCP to start. 
-There will be short delay before being greeted by Berryboot Menu, and another 10sec delay, in which you can interupt booting and hit the edit menu button to add another or clone/copy your OS in the menu editor. If not just wait 10sec or hit the boot button. If you see the NCP logo, you are ready to [Start using](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi) and personalise your own NextCloudPi instance.
-[[https://user-images.githubusercontent.com/8775469/32148896-276b15b4-bcfd-11e7-84b9-a1eba36f7e6e.jpg]]
+There will be short delay before being greeted by Berryboot Menu, and another 10sec delay, in which you can interupt booting and hit the edit menu button to add another or clone/copy your OS in the menu editor. If not just wait 10sec or hit the boot button. If you see the NCP logo, you are ready to [Start using](Getting-Started/How-to-access-NextCloudPi) and personalise your own NextCloudPi instance.
+![](https://user-images.githubusercontent.com/8775469/32148896-276b15b4-bcfd-11e7-84b9-a1eba36f7e6e.jpg)
 
 If you have your own custom image, and need to convert it to squashfs, this will be the object of another how to. In the mean time use the instructions through link below.
 
