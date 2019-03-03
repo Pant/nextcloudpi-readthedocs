@@ -5,7 +5,7 @@ You certainly can!  The latest Pi model will have better performance, but has a 
 - Pi 3b+ is a decent choice with gigabit networking, but there are better options!
 - Pi 2 works just okay.
 - Pi 3 works slightly better than the 2 model.
-- Pi Zero W has very low performance.
+- Pi Zero W has very low performance. **Note: armv6 is no longer supported!**
 
 ## Best ARM Device for NextcloudPi
 
