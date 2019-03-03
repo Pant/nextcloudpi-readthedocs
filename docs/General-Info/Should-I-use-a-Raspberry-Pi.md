@@ -17,4 +17,4 @@ For price vs. performance the most popular NextcloudPi ARM Devices are:
 - [ODROID HC-1]() -- 2.5" Hard Disk support for $49.00
 - [ODROID HC-2](https://ameridroid.com/products/odroid-hc1) -- 3.5" Hard Disk support for $55.00
 
-## If you have further questions, be sure to ask on our [Telegram chat](https://t.me/nextcloudpi) or [Community Forum](https://help.nextcloud.com).  There are tons of other options available, [which you can read about here](https://help.nextcloud.com/t/best-cheap-hardware-to-run-nextcloud-on).
+## If you have further questions, be sure to ask on our [Telegram chat](https://t.me/nextcloudpi) or [Community Forum](https://help.nextcloud.com/tags/ncp).  There are tons of other options available, [which you can read about here](https://help.nextcloud.com/t/best-cheap-hardware-to-run-nextcloud-on).
