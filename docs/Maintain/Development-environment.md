@@ -1,35 +1,32 @@
-## Using docker
+## 使用 docker
 
-In order to facilitate development, the x86 NextCloudPi docker container can be used.
+為了便於開發，建議使用x86 NextCloudPi docker容器。
 
-Install docker and docker-compose and
+安裝 docker、docker-compose 及(參照下面)
 
 ```
 git clone https://github.com/nextcloud/nextcloudpi.git
 cd nextcloudpi
 docker-compose -f docker-compose-ncpdev.yml up
 ```
+安裝完成後。我們將可以訪問網路介面了(`https://localhost:4443`)
 
-We can now access the interface at `https://localhost:4443`. 
+我們將開始工作於 `ncp-web` 資料夾，並且從 repo 處理文件，這樣就不必兩邊互相複製了。
 
-We can start working in the folder `ncp-web` from the repo and refresh the browser to see the changes live.
+當然。我們可以修改任何 NCP 功能於`nextcloudpi-config.d`資料夾
 
-In the same way, we can edit any NCP option in the folder `nextcloudpi-config.d`.
+## 使用 QEMU
 
-Changes can be made directly on the repo, no more copying files back and forth!
-
-## Using QEMU
-
-Follow [this guide](https://ownyourbits.com/2017/02/06/raspbian-on-qemu-with-network-access/)
+請參見： [此說明](https://ownyourbits.com/2017/02/06/raspbian-on-qemu-with-network-access/)
 
 ```
 sudo ./qemu-pi.sh NextCloudPi_03-13-17.img
 ```
 
-## Using VirtualBox
+## 使用 VirtualBox
 
-Follow [this guide](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
+請參見：[此說明](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
 
-## Using virt-manager
+## 使用 virt-manager
 
-Follow [this guide](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
+請參見：[此說明](https://ownyourbits.com/2018/10/25/introducing-the-nextcloudpi-vm/)
