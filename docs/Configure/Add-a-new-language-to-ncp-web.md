@@ -45,3 +45,5 @@ to German
         "nc-backup": "Backup erstellen" 
     } 
 }
+
+```
