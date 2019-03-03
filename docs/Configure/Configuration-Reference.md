@@ -2,8 +2,8 @@
 [nc-scan]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-scan
 
 ### Table of Contents  
-* [BACKUPS](/docs/Configure/Configuration-Reference.md#backups)   
-* * [nc-backup-auto](/docs/Configure/Configuration-Reference.md#nc-backup-auto)
+* [BACKUPS](Configure/Configuration-Reference.md#backups)   
+* * [nc-backup-auto](Configure/Configuration-Reference#nc-backup-auto)
 * * [nc-backup](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-backup)
 * * [nc-export-ncp](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-export-ncp)
 * * [nc-import-ncp](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-import-ncp)
