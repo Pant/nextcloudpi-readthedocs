@@ -1,10 +1,10 @@
-Sometimes ports 80 and 443 are not available.  We are going to use Letsencrypt's certbot `--manual` and `--preffered-challenges dns` options to get certificates and activate them manually. 
-You'll need a domain and access to the DNS records to create a TXT record pointing to: _acme-challenge.yourNCP.yourdomain.tld with a challenge value provided by `certbot` when running it with the `dns` option.
+若你在使用 Letsencrypt 取得 SSL 證書時，80、443連接埠無法驗證、使用時，我們必須使用 certbot Letsencrypt `--manual`、`--preffered-challenges dns`指令來取得證書。
 
+在使用這個指令之前，你必須先擁有一個域名，並在 DNS 頁面中加入 TXT 紀錄：`acme-challenge.yourNCP.yourdomain.tld`。在運行指令時，certbot 將以此紀錄做為域名擁有權的依據。
 
 1. `sudo apt install certbot python-certbot-apache`
-This installs Letsencrypt's certbot and apache module (apache not tested yet)
-1. `sudo nano /etc/hosts`
+安裝 certbot Letsencrypt、apache module (apache 尚未測試)
+2. `sudo nano /etc/hosts`
 Add a line with your local IP hostname.domain.tld
 1. `sudo certbot -d yourNCP.domain.tld --manual --preferred-challenges dns certonly`
 This, interactively, generates all the required files and the certificate after providing challenge value for DNS TXT record and succesfully reading the DNS record.
