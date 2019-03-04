@@ -1,27 +1,27 @@
-In Nextcloud, there is the option to set up Two Factor Authentication. The steps you have to follow in order to use it are the following:
+## 雙重認證
 
-1. Install `TOTP` app on Nextcloud.
-2. Enable `TOTP` on `Personal Settings`, under `TOTP second-factor auth` section. A QR code will show up.
-3. Install `andOTP` on your android phone (you can use any TOTP client you want, `andOTP` is available in F-droid)
-4. Scan the QR code that is shown in step 2 with `andOTP`.
-5. `andOTP` and Nextcloud are merged and now every 30 seconds a new TOTP password is generated.
+若您需要使用雙重認證於 Nextcloud 中，請依照以下文件進行操作：
 
-Now when you log in you will be prompted, in a second step, to type a TOTP password. Type the password shown in the `andOTP` app.
+1. 安裝 `TOTP` 應用程式於 NextCloud
+2. 啟用 `TOTP` on `Personal Settings`，under `TOTP second-factor auth` section. QR Code 將會出現於畫面中。
+3. 安裝 `andOTP` 於你的 Android 手機中。(或者你有更好的雙重認證應用程式，也可以進行替換。`andOTP` 可以於 F-droid 找到)
+4. 開啟 `andOTP` 並在第二步中掃描 QR Code 。
+5. 接下來`andOTP` 將於 Nextcloud 進行連結，並於每30秒產生一個新 TOTP password 密碼。
 
-## App Passwords
+現在，當您登入時，系統將會提示你輸入TOTP密碼。密碼位置於你的手機 `andOTP` 應用程式中。
 
-You must add `App Passwords` to generate a password for every app that needs access to your Nextcloud account.
-Example: Nextcloud Desktop / Mobile Client, DavDroid app, Notes App (Mobile), etc.
+## 應用程式(裝置)密碼
 
-To add an App Password do the following.
+當你使用這個功能時，你必須新增 `應用程式密碼` 來使用 NextCloud 客戶端(任何) 。
 
-1. Navigate to Personal settings, under `Settings` section (here you will see every application that has access to your Nextcloud Account). Scroll until you find `App passwords`.
-2. Fill in the box that says `App name` with the application's name that you want to use (use a name that is convenient and it is distinguished from other apps).
-3. An Application Password is now generated and displayed in a gray box. Type this password (and the your username) on the application you want to use. After you log in hit `Done`. 
+例如：Nextcloud 桌面/手機客戶端、DavDroid、Notes等
 
-*Note: After you type `Done`, the password will never be revealed again. You may want to use a password manager to save this password, or create a new App Password every time you loose a password*
+請依照以下文件進行操作：
 
+1. 開啟設定-->個人設定-->安全性-->Devices & sessions。此處可以看到所有訪問你的 NextCloud 裝置。
 
+2. 在下方 `應用程式名稱` 填寫你所要使用的應用程式名稱。這只為了區分而已。
 
+3. 點擊 `建立新的應用程式密碼`，現在使用權杖將顯示在你面前。你可以使用此權杖來登入應用程式。
 
-
+*注意：當你確定之後，權杖可能永遠不會再顯示出來。建議你將權杖儲存在其它地方。
