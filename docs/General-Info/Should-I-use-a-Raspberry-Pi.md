@@ -13,7 +13,9 @@
 
 對於價格、性能，我們簡單的整理出了以下較流行的主機板
 - [Rock64](https://www.pine64.org/?page_id=7147) -- Raspberry Pi 3b 相同的價格
+
 - [ODROID HC-1]() --  支援2.5英寸硬碟 $49.00
+
 - [ODROID HC-2](https://ameridroid.com/products/odroid-hc1) -- 支援3.5英寸硬碟 $55.00
 
 ## 如果你有更多問題，歡迎你跟我們一起在[論壇](https://help.nextcloud.com)、[群組討論](https://t.me/nextcloudpi)。想要看到更多選項，也可以在[這裡](https://help.nextcloud.com/t/best-cheap-hardware-to-run-nextcloud-on)查閱。
