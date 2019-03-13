@@ -3,6 +3,7 @@ theme: readthedocs
 pages:
     - Начало работы:
         - Введение: index.md
+        - Установка: Getting-Started/How-to-install-NextCloudPi.md
         - Активация NextCloudPi: Getting-Started/How-to-access-NextCloudPi.md
         - Удалённый доступ: Getting-Started/How-to-access-from-outside-your-network.md
     - Конфигурация:
