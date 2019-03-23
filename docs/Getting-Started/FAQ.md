@@ -4,7 +4,7 @@ NCP an officially recognized Nextcloud community project that provides a working
 
 ### How do I install NextCloudPi on a Raspberry Pi?
 
-Follow the guide [How to install NextCloudPi](http://docs.nextcloudpi.com/en/latest/Getting-Started/FAQ/#how-do-i-install-nextcloudpi-on-a-raspberry-pi).
+Follow the guide [How to install NextCloudPi](http://docs.nextcloudpi.com/en/latest/Getting-Started/How-to-install-NextCloudPi/).
 
 ### I get stuck at "NC not yet initialized..." / Nextcloud is so slow / failing randomly / getting server errors even with a fresh image?
 
