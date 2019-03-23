@@ -15,7 +15,7 @@ Most commonly these things are caused by hardware problems.
 
 ### How can I access from outside my home network?
 
-See [this guide](http://docs.nextcloudpi.com/en/latest/Getting-Started/FAQ/#how-can-i-access-from-outside-my-home-network)
+See [this guide](http://docs.nextcloudpi.com/en/latest/Getting-Started/How-to-access-from-outside-your-network/)
 
 ### I have been updating through `nc-update` but why isn't Nextcloud on the latest version?
 
