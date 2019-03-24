@@ -73,4 +73,4 @@ Time for some patience again ;-) It might take some time depending size.
 [Video demonstration how to restore your ncp instance with ncp-web](https://youtu.be/YdXVIJPZWvw)
 ..............
 This a a work in progress, thank you for your patience ;-)
-Please comment or ask for help [HERE](https://github.com/nextcloud/nextcloudpi/issues/269)
+Please comment or ask for help [HERE](https://help.nextcloud.com/c/support/appliances-docker-snappy-vm)
