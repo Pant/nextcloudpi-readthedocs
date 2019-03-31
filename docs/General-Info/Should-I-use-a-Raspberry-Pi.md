@@ -1,6 +1,6 @@
 ## Hi, I'm looking to use NextcloudPi; should I use a Raspberry Pi?
 
-You certainly can!  The latest Pi model will have better performance, but has a few downsides as nicely described in _[What's Wrong with the Raspberry Pi](https://ownyourbits.com/2019/02/02/whats-wrong-with-the-raspberry-pi/)_.
+You certainly can!  The latest Pi model will have better performance, but has a few downsides as nicely described in _[What's Wrong with the Raspberry Pi](https://ownyourbits.com/2019/02/02/whats-wrong-with-the-raspberry-pi/)_. If you want to learn more about rpi's power requirements, this [article](https://www.elinux.org/RPi_Hardware) will be of use.
 
 - Pi 3b+ is a decent choice with gigabit networking, but there are better options!
 - Pi 2 works just okay.
