@@ -50,11 +50,11 @@ You will get a list of all connected devices on your network. For more info look
 
 ## Access from outside home network
 
-See [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network)
+See [this guide](http://docs.nextcloudpi.com/en/latest/Getting-Started/How-to-access-from-outside-your-network/)
 
 ## Using your DDNS domain also inside NextCloudP's home network
 
-Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-from-outside-your-network).
+Most probably, you will want to use the same DDNS domain inside your house that you setup to use [from outside](http://docs.nextcloudpi.com/en/latest/Getting-Started/How-to-access-from-outside-your-network/).
 
 That way, your phone, tablet and laptop can seamlessly access your cloud regardless where you are.
 
@@ -66,7 +66,7 @@ If it works your're all set, otherwise your router doesn't support automatic _NA
 
 If that is not possible, you may enable and use a DNS server on NextCloudP.
 
-* B1) Enable the [dnsmasq](https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#dnsmasq) in the NextCloudPi configuration. Just enter your registered DDNS domain as DOMAIN, and the IP of your router (as DNSSERVER).
+* B1) Enable the [dnsmasq](http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#dnsmasq) in the NextCloudPi configuration. Just enter your registered DDNS domain as DOMAIN, and the IP of your router (as DNSSERVER).
 
 * B2) Let your computers and devices use NextCloudP's DNS server when connected inside your house:
 
@@ -90,4 +90,4 @@ We will be redirected to ncp-web where we can run the first run Wizard.
 
 From this point we can access Nextcloud by the IP address, nextcloudpi.local or the DDNS domain name we have registered. We can access the web panel at port 4443, for example https://nextcloudpi.local:4443
 
-Next, learn [how to configure NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
+Next, learn [how to configure NextCloudPi](http://docs.nextcloudpi.com/en/latest/Configure/How-to-configure-NextCloudPi/).
