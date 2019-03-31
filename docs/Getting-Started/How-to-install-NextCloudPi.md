@@ -4,7 +4,7 @@
 
 If you are comfortable using BitTorrent please use it for downloading and share the Torrent files to save us some server traffic, thank you! For this you can use a BitTorrent client like [Transmission](https://transmissionbt.com/download/) and leave it running to continue serving the files after downloading.
 
-You'll find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPi system images at [nextcloudpi.com](https://ownyourbits.com/nextcloudpi/#download). Click the download icon and you'll see a list of folders that contain the links and .tar.bz files. 
+You'll find the torrent, as well as a magnet links to and the direct downloads of the NextCloudPi system images at [nextcloudpi.com](https://ownyourbits.com/downloads/). Click the download icon and you'll see a list of folders that contain the links and .tar.bz files. 
 
 
 ## MD5 checksum (to verify the download)
