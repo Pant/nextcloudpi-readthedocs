@@ -1,8 +1,7 @@
-[nc-forward-ports]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#nc-forward-ports
-[freeDNS]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#freeDNS
-[no-ip]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#no-ip
-[letsencrypt]: https://github.com/nextcloud/nextcloudpi/wiki/Configuration-Reference#letsencrypt
-
+[nc-forward-ports]: http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#nc-forward-ports
+[freeDNS]: http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#freedns
+[no-ip]: http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#no-ip
+[letsencrypt]: http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#letsencrypt
 You can do these steps from the TUI or from the WebUI.
 
 #### Port Forwarding
@@ -22,7 +21,7 @@ NextCloudPi has two different DDNS clients for two different DDNS providers([Fre
 
 Note: You only need one DDNS service.
 
-Read [this guide](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi#using-your-ddns-domain-inside-and-outside-home) if you have problems accessing from inside your home with the DDNS domain URL.
+Read [this guide](https://ownyourbits.com/2017/03/09/dnsmasq-as-dns-cache-server-for-nextcloudpi-and-raspbian/) if you have problems accessing from inside your home with the DDNS domain URL.
 
 ##### FreeDNS (freedns.afraid.org)
 Run the TUI (`nextcloud-config`) or use the WebUI.
