@@ -137,8 +137,11 @@ file: config.php
 
 ## nc-rsync
 To get the rsync connection between the ncp and a backup-server working you need to establish two main steps:
+
 1. The backup-server needs to have a user. This user needs diskspace, the permission for ssh-autologin and the right to use rsync.
+
 2. On your ncp, root needs to be allowed to ssh-autologin to the user of the backup-server.
+
 
 Step 1: 
 Please check what you need to do on your server side. In case you use a Synology NAS (DiskStation, RackStation), you need to enable ssh ("Control Panel", "Terminal & SNMP"), give the user - which you use to backup the data - administration access ("Control Panel", "User"), and enable Rsync ("Control Panel", "File Sharing", "File Services").
@@ -161,73 +164,78 @@ If this works check the following next command:
 If this also works ("A" means ACL-support) then you are fine. If this gives and error message ("ACL not supported on server") then you need to either enable ACL-support on the backup-server-side or you need to tweak the ncp-script in: "/usr/local/etc/ncp-config.d/nc-rsync.sh" and "/usr/local/etc/ncp-config.d/nc-rsync-auto.sh" and remove the "A"-option in the rsync-command of the script (this counts for ncp version 0.64.2, the ACL option might be dropped in later versions, please check).
 
 ## nc-rsync-auto
-See comments on nc-rsync. This lets you automatically schedule the rsync process every SYNCDAY.
+
+請查閱關於 nc-rsync 的說明。主要的設定是相同的，啟用此功能能夠使 rsync 每天 **同步** 
 
 ## nc-snapshot-auto
-Automatic btrfs snapshots
-See [How to backup and restore using nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/How-to-backup-and-restore-using-nc-snapshot)
+自動建立 btrfs 快照
+請查閱 [How to backup and restore using nc-snapshot](https://github.com/nextcloud/nextcloudpi/wiki/How-to-backup-and-restore-using-nc-snapshot)
 
 ## nc-snapshot-sync
-Automatic btrfs snapshots sync to external drive or location
+自動建立 btrfs 快照，並同步於 磁碟機、主機存取空間
 
 ## nc-snapshot
-Manual btrfs snapshots
+btrfs 快照
 
 ## nc-snapshot-restore
-Manual restore a btrfs snapshot (coming shortly with upcoming update from current 1.6.3)
+復原 btrfs 快照 (1.6.3 進行更新)
 
 ---------------------------------------------------
-# CONFIG
+# 配置
 
 ## nc-admin
 View or (re)set password for user **ncp**, the adminstrator of Nextcloud web interface.
-
+查閱、重設 **NCP** 設定網頁密碼
 ## nc-autoupdate-nc
-Automatically update Nextcloud.
+自動更新 NextCloud。
+
+這項功能你可以大可放心，在 NextCloud 發布更新後，你並不會立即更新到最新版本，而是會在 NextCloudPi 社群中先測試過後，沒有發現任何錯誤之後，才會推送給你。
 
 ## nc-autoupdate-ncp
-Automatically update NextCloudPi.
+自動更新 NextCloudPi。
 
-#### How to enable
-1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change the user to be notified when new updates are installed (default=admin).
-4. Click Run or Start.
+#### 如何設定？
+
+1. 使用 TUI 或 WebUI 開啟 `nc-autoupdate-ncp` 功能頁面。
+2. 將 `ACTIVE` 修改(勾選)成 `yes`。
+3. 修改通知對象，預設值為admin。(於更新後通知)
+4. 按下 Run 或 Start。
 
 ## nc-database
-Enable if you want to change the Nextcloud database location (e.x. to a usb drive).
 
-> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system.
+若要修改 Nextcloud 資料庫位置 (例： USB 裝置)，請參照以下說明。
+> **注意** ：不支援非 Unix 檔案系統 (例： NTFS)，此類型的檔案系統不支援相容的使用者、權限系統。
 
->You need to use a USB drive that is permanently on and is responsive or the database will fail.     
+> 當你使用這個功能時，必須確保 USB 裝置能夠24小時永不間段的開機，否則系統可能會出現錯誤。
 
-> ** If it ever fails with a white page, move the database back to the SD **
+> ** 當此功能啟用此功能但失敗時，資料庫將自動移動回 SD 卡 **
 
-### How to configure
-1. Navigate to `nc-database` in the TUI or the WebUI.
-2. Change `DBDIR` to your database location.
-3. Click Run or Start.
+### 如何設定？
+1. 使用 TUI 或 WebUI 開啟 `nc-database` 功能頁面。
+2. 將 `DBDIR` 修改成你想要的資料庫位置。
+3. 按下 Run 或 Start。
 
 ## nc-datadir
-Change the `data` folder location of Nextcloud.
+若要修改 Nextcloud `使用者資料`位置 (例： USB 裝置)，請參照以下說明。
 
-> **Note** that non Unix filesystems such as NTFS are not supported because they do not provide a compatible user/permissions system  
+> **注意** ：不支援非 Unix 檔案系統 (例： NTFS)，此類型的檔案系統不支援相容的使用者、權限系統。
 
-### How to configure
-1. Navigate to `nc-datadir` in the TUI or the WebUI.
-2. Change `DATADIR` to your data location.
-3. Click Run or Start.
+### 如何設定？
+1. 使用 TUI 或 WebUI 開啟 `nc-datadir` 功能頁面。
+2. 將 `DATADIR` 修改成你想要的儲存位置。
+3. 按下 Run 或 Start。
 
 ## nc-httpsonly
-Force secure connection using HTTPS.
+強制啟用 HTTPS 進行連線。
 
-### How to enable
-1. Navigate to `nc-httpsonly` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Click Run or Start.
+### 如何設定？
+1. 使用 TUI 或 WebUI 開啟 `nc-httpsonly` 功能頁面。
+2. 將 `ACTIVE` 修改(勾選)成 `yes`。
+3. 按下 Run 或 Start。
 
 ## nc-init
-(Re)initiate Nextcloud to a clean configuration.
+
+重設(灌) Nextcloud 成乾淨的設定(例：資料庫設定、管理員密碼、應用程式)
 
 ## nc-limits
 Configure system limits for NextCloudPi.
