@@ -11,7 +11,7 @@ DOMAIN should be your trusted domain: the URL or IP that will be used to access.
 
 Any folder can be used instead of the volume ncdata to hold the Nextcloud data.
 
-That's it. Visit https://yourIP/activation copy and save auto generated passwords, and start using your Nextcloud instance.
+That's it. Visit https://DOMAIN//activate/ copy and save auto generated passwords, and start using your Nextcloud instance.
 
 #### Check and manage
 
