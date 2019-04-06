@@ -132,7 +132,7 @@ To get the rsync connection between the ncp and a backup-server working you need
 
 Step 1: 
 Please check what you need to do on your server side. In case you use a Synology NAS (DiskStation, RackStation), you need to enable ssh ("Control Panel", "Terminal & SNMP"), give the user - which you use to backup the data - administration access ("Control Panel", "User"), and enable Rsync ("Control Panel", "File Sharing", "File Services").
-
+https://github.com/Pant/nextcloudpi-readthedocs/blob/master/docs/Configure/Configuration-Reference.md
 Step 2: 
 * Login to your ncp on the terminal
 * change to the root account (sudo -s)
@@ -172,17 +172,6 @@ Manual restore a btrfs snapshot (coming shortly with upcoming update from curren
 ## nc-admin
 View or (re)set password for user **ncp**, the adminstrator of Nextcloud web interface.
 
-## nc-autoupdate-nc
-Automatically update Nextcloud.
-
-## nc-autoupdate-ncp
-Automatically update NextCloudPi.
-
-#### How to enable
-1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change the user to be notified when new updates are installed (default=admin).
-4. Click Run or Start.
 
 ## nc-database
 Enable if you want to change the Nextcloud database location (e.x. to a usb drive).
@@ -243,13 +232,6 @@ Get notified for updates (Pending or Installed) through the Nextcloud notificati
 4. Click Run or Start.
 
 
-
-### How to enable
-1. Navigate to `nc-scan-auto` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Set `SCANINTERVAL` to the interval (in minutes) you want to scan every.
-4. Click Run or Start.
-
 ## nc-passwd
 View or (re)set password for admin user **ncp** for NCP-web at localhost:4443
 
@@ -261,13 +243,15 @@ Periodically scan NC for externally modified files
 Set the time in minutes in Scan Interval.
 
 >>> If there are too many files this can greatly affect performance. <<<
+### How to enable
+1. Navigate to `nc-scan-auto` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Set `SCANINTERVAL` to the interval (in minutes) you want to scan every.
+4. Click Run or Start.
 
 ## nc-trusted-domains
 Manually add trusted domains
 Note that this is normally not needed, as NCP will do this automatically for you in most cases
-
-## nc-update-nc-apps-auto
-Periodically update all installed Nextcloud Apps
 
 
 ## nc-webui
@@ -446,15 +430,6 @@ Change the location and the size of the swap file.
 3. Change `SWAPSIZE` to the desired size of the swap file (default=1024).
 4. Click Run or Start.
 
-## unattended-upgrades
-Enable Automatic installation of security updates to keep your cloud safe.
-
-### How to enable
-1. Navigate to `unattended-upgrades` in the TUI or the WebUI.
-2. Change `ACTIVE` to `yes`.
-3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
-4. Click Run or Start.
-
 -----------------------------------------------------
 # TOOLS
 
@@ -490,6 +465,30 @@ Perform a Nextcloud scan for user files.
 ### How to run
 1. Navigate to `nc-scan` in the TUI or the WebUI.
 
+
+### How to run
+1. Navigate to `nc-update` in the TUI or the WebUI.
+
+# Updates
+
+## nc-autoupdate-nc
+Automatically update Nextcloud.
+
+## nc-autoupdate-ncp
+Automatically update NextCloudPi.
+
+#### How to enable
+1. Navigate to `nc-autoupdate-ncp` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change the user to be notified when new updates are installed (default=admin).
+4. Click Run or Start.
+
+## nc-notify-updates
+Enable or disable update notifications.
+
+## nc-update-nc-apps-auto
+Periodically update all installed Nextcloud Apps
+
 ## nc-update-nc-apps
 Update all installed Nextcloud Apps
 
@@ -500,8 +499,14 @@ Set to 0 to update to the latest available version
 ## nc-update
 Perform a manual update of NextClouPi.
 
-### How to run
-1. Navigate to `nc-update` in the TUI or the WebUI.
+## unattended-upgrades
+Enable Automatic installation of security updates to keep your cloud safe.
+
+### How to enable
+1. Navigate to `unattended-upgrades` in the TUI or the WebUI.
+2. Change `ACTIVE` to `yes`.
+3. Change `AUTOREBOOT` to `yes` if you want your Raspberry Pi to reboot automatically in order to apply updates (optional).
+4. Click Run or Start.
 
 ------------------------------------------------------
 
