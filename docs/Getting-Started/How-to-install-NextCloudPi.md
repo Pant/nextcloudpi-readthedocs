@@ -91,8 +91,8 @@ Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry
 
 #### Once NextCloudPi is running
 
-1. [Navigate to the WebUI or the TUI](https://github.com/nextcloud/nextcloudpi/wiki/How-to-configure-NextCloudPi).
-2. Select [`SSH`][ssh] from the list.
+1. [Navigate to the WebUI or the TUI](http://docs.nextcloudpi.com/en/latest/Configure/How-to-configure-NextCloudPi/).
+2. Select [`SSH`][http://docs.nextcloudpi.com/en/latest/Configure/Configuration-Reference/#ssh] from the list.
 3. Change `Enabled` to `yes`.
 4. Type in `USER` an existing or a new user that you want to create.
 5. Type in `PASS` a password to update the password for an existing user, or to create a password for a new user.
@@ -101,4 +101,4 @@ Remove the SD card and insert it to the Raspberry Pi. Then connect the Raspberry
 
 ---
 
-Now you have Nextcloud up and running, now setup it up by learning [how to access NextCloudPi](https://github.com/nextcloud/nextcloudpi/wiki/How-to-access-NextCloudPi)
+Now you have Nextcloud up and running, now setup it up by learning [how to access NextCloudPi](http://docs.nextcloudpi.com/en/latest/Getting-Started/How-to-access-NextCloudPi/)
