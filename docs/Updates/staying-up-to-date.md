@@ -13,7 +13,9 @@ Automatically apply Nextcloud updates
 
 Notify in Nextcloud when a NextCloudPi update is available
 
-## nc-update-nc-apps-auto Periodically update all installed Nextcloud Apps
+## nc-update-nc-apps-auto 
+
+Periodically update all installed Nextcloud Apps
 
 ## nc-update-nc-apps      
 
