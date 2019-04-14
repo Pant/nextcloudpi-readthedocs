@@ -217,7 +217,7 @@ Force secure connection using HTTPS.
 3. Click Run or Start.
 
 ## nc-init
-(Re)initiate Nextcloud to a clean configuration.
+(Re)initiate Nextcloud to a clean configuration. Your configuration, users and data will be lost. Make a backup before proceding.
 
 ## nc-limits
 Configure system limits for NextCloudPi.
